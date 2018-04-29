@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146.816 255.906">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="token-line" transform="translate(-667.5 -5084.5)">
+    <path id="Path_328" data-name="Path 328" class="cls-1" d="M88.816,254.406H17.874A17.425,17.425,0,0,1,.5,237.033V17.874A17.425,17.425,0,0,1,17.874.5H88.816" transform="translate(725.5 5085)"/>
+    <line id="Line_9" data-name="Line 9" class="cls-2" x1="59" transform="translate(667.5 5212.5)"/>
+  </g>
+</svg>

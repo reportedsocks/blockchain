@@ -1,0 +1,20 @@
+<svg id="LK_ico" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36.66 36.66">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1fb6fd"/>
+      <stop offset="0.719" stop-color="#0d5ca0"/>
+      <stop offset="1" stop-color="#0c2660"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_402" data-name="Path 402" class="cls-1" d="M18.33,0A18.33,18.33,0,1,1,0,18.33,18.334,18.334,0,0,1,18.33,0"/>
+  <path id="Path_403" data-name="Path 403" class="cls-2" d="M65.318,56.334A1.717,1.717,0,1,0,63.6,54.617a1.719,1.719,0,0,0,1.718,1.717m11.669.746a5.156,5.156,0,0,0-4.214,1.942v-1.6H69.337v11.48h3.436V62.7a2.712,2.712,0,0,1,2.707-2.584c1.507,0,1.88,1.283,1.88,2.567v6.243H80.8V62.438c0-4.526-2.139-5.359-3.809-5.359M63.616,68.906h3.436V57.461H63.616Z" transform="translate(-53.292 -43.726)"/>
+</svg>

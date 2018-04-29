@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 114 114">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00ceff;
+      }
+
+      .cls-2 {
+        fill: #e5e5e5;
+      }
+
+      .cls-3 {
+        fill: #ccc;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        filter: url(#Path_392);
+      }
+    </style>
+    <filter id="Path_392" x="0" y="0" width="114" height="114" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.392"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="VIGET" transform="translate(9 6)">
+    <g class="cls-5" transform="matrix(1, 0, 0, 1, -9, -6)">
+      <path id="Path_392-2" data-name="Path 392" class="cls-1" d="M48,0A48,48,0,1,1,0,48,48,48,0,0,1,48,0Z" transform="translate(9 6)"/>
+    </g>
+    <path id="Path_1" data-name="Path 1" class="cls-2" d="M143.617,107.911a1.63,1.63,0,0,0-1.575-.131l-51.581,24A2.564,2.564,0,0,0,89,134.123a2.525,2.525,0,0,0,1.519,2.25l47.55,20.719a2.553,2.553,0,0,0,3.563-2.156l2.681-45.619A1.585,1.585,0,0,0,143.617,107.911Z" transform="translate(-72.311 -87.454)"/>
+    <path id="Path_2" data-name="Path 2" class="cls-3" d="M171.6,143.087l3.225,21.488,35.7-56.175Z" transform="translate(-139.425 -88.075)"/>
+    <path id="Path_3" data-name="Path 3" class="cls-4" d="M142.044,107.73l-51.581,24a2.515,2.515,0,0,0,.056,4.594l13.988,6.094,38.906-34.687A1.591,1.591,0,0,0,142.044,107.73Z" transform="translate(-72.312 -87.405)"/>
+    <path id="Path_4" data-name="Path 4" class="cls-2" d="M193.038,146.331,188.8,164.575,224.5,108.4Z" transform="translate(-153.4 -88.075)"/>
+    <path id="Path_5" data-name="Path 5" class="cls-4" d="M243.069,108.613c-.075-.037-.131-.075-.206-.112L211.4,146.413l26.119,11.381a2.553,2.553,0,0,0,3.563-2.156l2.681-45.619A1.585,1.585,0,0,0,243.069,108.613Z" transform="translate(-171.763 -88.156)"/>
+  </g>
+</svg>

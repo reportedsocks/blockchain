@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 832 1116.105">
+  <defs>
+    <style>
+      .roadmap-1, .roadmap-3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 5px;
+      }
+
+      .roadmap-1, .roadmap-3, .roadmap-4, .roadmap-5, .roadmap-6 {
+        stroke: #fff;
+      }
+
+      .roadmap-1, .roadmap-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .roadmap-2, .roadmap-9 {
+        fill: #fff;
+      }
+
+      .roadmap-3 {
+        stroke-dasharray: 0 11;
+      }
+
+      .roadmap-4, .roadmap-5, .roadmap-6 {
+        stroke-width: 3.375px;
+      }
+
+      .roadmap-4, .roadmap-5 {
+        fill: url(#linear-gradient);
+      }
+
+      .roadmap-6 {
+        fill: url(#linear-gradient-7);
+      }
+
+      .roadmap-7 {
+        fill: #112a7c;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .roadmap-7, .roadmap-9 {
+        font-size: 16px;
+      }
+
+      .roadmap-8 {
+        font-family: SegoeUI-Bold, Montserrat;
+      }
+
+      .roadmap-9 {
+        font-family: SegoeUI, Segoe UI;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00c6f5"/>
+      <stop offset="1" stop-color="#0afa79"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00d8ff"/>
+      <stop offset="1" stop-color="#035796"/>
+    </linearGradient>
+  </defs>
+  <g id="Roadmap" transform="translate(-578 -7281.261)">
+    <g id="pointer" transform="translate(937.419 7352.5)">
+      <g id="Group_261" data-name="Group 261" transform="translate(0.1 555.019)">
+        <g id="Group_260" data-name="Group 260" transform="translate(0 -446.153)">
+          <line id="Line_9" data-name="Line 9" class="roadmap-1" y2="923.505" transform="translate(16.481)"/>
+          <g id="Group_259" data-name="Group 259" transform="translate(0 911.361)">
+            <path id="Path_326" data-name="Path 326" class="roadmap-2" d="M.1,380.8l16.481,13.339L33.062,380.8v11.3L16.581,405.439.1,392.1Z" transform="translate(-0.1 -380.8)"/>
+          </g>
+        </g>
+      </g>
+      <path id="Path_407" data-name="Path 407" class="roadmap-3" d="M0-24.739V145.385" transform="translate(16.581 -44)"/>
+      <g id="Group_262" data-name="Group 262" transform="translate(3.008 173.126)">
+        <circle id="Ellipse_446" data-name="Ellipse 446" class="roadmap-4" cx="13.572" cy="13.572" r="13.572" transform="translate(0 -0.592)"/>
+        <path id="Path_327" data-name="Path 327" class="roadmap-5" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 92.408)"/>
+        <path id="Path_328" data-name="Path 328" class="roadmap-5" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 185.408)"/>
+        <path id="Path_329" data-name="Path 329" class="roadmap-5" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 277.408)"/>
+        <path id="Path_330" data-name="Path 330" class="roadmap-5" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 370.408)"/>
+        <path id="Path_331" data-name="Path 331" class="roadmap-5" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 462.408)"/>
+        <path id="Path_332" data-name="Path 332" class="roadmap-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 555.409)"/>
+        <path id="Path_333" data-name="Path 333" class="roadmap-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 647.408)"/>
+        <path id="Path_334" data-name="Path 334" class="roadmap-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 740.408)"/>
+      </g>
+    </g>
+    <text id="_2012_August_" data-name="2012 August
+" class="roadmap-7" transform="translate(1034 7517)"><tspan x="0" y="0">2012 August</tspan><tspan class="roadmap-8"><tspan x="0" y="21"></tspan></tspan></text>
+    <text id="_2018_January_" data-name="2018 January
+" class="roadmap-7" transform="translate(1034 7692)"><tspan x="0" y="0">2018 January</tspan><tspan class="roadmap-8"><tspan x="0" y="21"></tspan></tspan></text>
+    <text id="_2018_April" data-name="2018 April" class="roadmap-7" transform="translate(1034 7871)"><tspan x="0" y="0">2018 April</tspan></text>
+    <text id="_2018_May" data-name="2018 May" class="roadmap-7" transform="translate(1034 8066)"><tspan x="0" y="0">2018 May</tspan></text>
+    <text id="_2018_July" data-name="2018 July" class="roadmap-7" transform="translate(1034 8270)"><tspan x="0" y="0">2018 July</tspan></text>
+    <text id="_2017_November_" data-name="2017 November
+" class="roadmap-7" transform="translate(878 7607)"><tspan x="-120.422" y="0">2017 November</tspan><tspan class="roadmap-8"><tspan x="0" y="21"></tspan></tspan></text>
+    <text id="_2018_February" data-name="2018 February" class="roadmap-7" transform="translate(719 7795)"><tspan x="50.555" y="17">2018 February</tspan></text>
+    <text id="_2018_February-2" data-name="2018 February" class="roadmap-7" transform="translate(739 7981)"><tspan x="30.555" y="17">2018 February</tspan></text>
+    <text id="_2018_June" data-name="2018 June" class="roadmap-7" transform="translate(739 8158)"><tspan x="62.633" y="17">2018 June</tspan></text>
+    <text id="Boomstarter_technological_crowdfunding_platform_launch_in_Russia_" data-name="Boomstarter technological crowdfunding platform launch in Russia " class="roadmap-9" transform="translate(1034 7527)"><tspan x="0" y="17">Boomstarter technological crowdfunding </tspan><tspan x="0" y="38">platform launch in Russia </tspan></text>
+    <text id="Definition_of_the_concept_and_technology_of_smart_crowdfunding_and_the_start_of_product_development" data-name="Definition of the concept and technology of smart crowdfunding and the start of product development" class="roadmap-9" transform="translate(1034 7702)"><tspan x="0" y="17">Definition of the concept and technology of </tspan><tspan x="0" y="38">smart crowdfunding and the start of product </tspan></text>
+    <text id="Publication_of_WhitePaper._Community_formation_around_the_project._Attraction_of_the_first_investments_through_private_token_sale_" data-name="Publication of WhitePaper.
+Community formation around the project. 
+Attraction of the first investments through private token sale
+" class="roadmap-9" transform="translate(1034 7881)"><tspan x="0" y="17">Publication of WhitePaper.</tspan><tspan x="0" y="38">Community formation around the project. </tspan><tspan x="0" y="59">Attraction of the first investments through private </tspan><tspan x="0" y="80">token sale</tspan></text>
+    <text id="The_start_of_smart_crowdfunding_system_development" data-name="The start of smart crowdfunding system development" class="roadmap-9" transform="translate(1034 8076)"><tspan x="0" y="17">The start of smart crowdfunding system </tspan><tspan x="0" y="38">development</tspan></text>
+    <text id="Launch_of_main_token_Crowdsale" data-name="Launch of main token Crowdsale" class="roadmap-9" transform="translate(1034 8280)"><tspan x="0" y="17">Launch of main token Crowdsale</tspan></text>
+    <text id="Market_and_solutions_research_for_smart_crowdfunding" data-name="Market and solutions research for smart crowdfunding" class="roadmap-9" transform="translate(578 7617)"><tspan x="19.172" y="17">Market and solutions research for smart </tspan><tspan x="201.797" y="38">crowdfunding</tspan></text>
+    <text id="Start_of_WhitePaper_creation" data-name="Start of WhitePaper creation" class="roadmap-9" transform="translate(578 7820)"><tspan x="101.195" y="17">Start of WhitePaper creation</tspan></text>
+    <text id="Start_of_WhitePaper_creation-2" data-name="Start of WhitePaper creation" class="roadmap-9" transform="translate(578 8006)"><tspan x="101.195" y="17">Start of WhitePaper creation</tspan></text>
+    <text id="Launch_of_token_Pre-Sale" data-name="Launch of token Pre-Sale" class="roadmap-9" transform="translate(578 8183)"><tspan x="123.898" y="17">Launch of token Pre-Sale</tspan></text>
+  </g>
+</svg>
