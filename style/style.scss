@@ -680,7 +680,7 @@ $font: 'Montserrat', sans-serif;
 }
 .blockchain-container{
   @extend .explanation-container;
-  z-index: 8;
+  z-index: 9;
   margin-top: -120px;
   padding-bottom: 100px;
 }
@@ -737,4 +737,92 @@ $font: 'Montserrat', sans-serif;
   p{
     margin-bottom: 0;
   }
+}
+.contract-container{
+  @extend .description-container;
+  z-index: 8;
+  padding-bottom: 200px;
+}
+.contract-heading{
+  @extend .description-heading; 
+}
+.contract-scroll{
+ width: 900px;
+ height: 400px;
+ overflow: hidden;
+ border:2px solid #0063AE;
+  border-radius: 30px;
+  margin-top: 50px;
+  background-color: #0192C6;
+  @include breakpoint-lg {
+    width: 780px;
+  }
+}
+.contract-block{
+  width: 920px;
+  height: 400px;
+  overflow-y: auto;
+  overflow-x:hidden;
+  background-color: #0192C6;
+  
+  padding: 30px 20px;
+  font-family: $font;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  @include breakpoint-lg {
+    width: 800px;
+    padding: 30px 40px 0 0; 
+  }
+  
+
+}
+
+.contract-row{
+  padding:0px 0px 0px 25px;
+  display:none;
+  white-space: pre;
+}
+.contract-row-2{
+  padding:0px 0px 0px 25px;
+  white-space: pre;
+  opacity:0;
+}
+.contract-row .new{
+  opacity: 0;
+  
+}
+.contract-row .div_opacity{
+  
+  opacity: 1;
+}
+.contract-row .after{
+
+  &:after{
+    content: "|";
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    
+  }
+}
+.contract-list{
+  ul{
+    padding-left: 20px;
+  }
+  li{
+    list-style-type: none;
+  }
+  
+}
+.span-red{
+  color: red;
+}
+.Github-bttn{
+  @extend .promo-bttn;
+  margin-top: 50px;
+  button{
+    margin-bottom: 0;
+  }
+  
 }

@@ -109,7 +109,7 @@
   .promo-offer p {
     margin: 0 0 30px 0; }
 
-.promo-bttn button {
+.promo-bttn button, .Github-bttn button {
   font-family: "Montserrat", sans-serif;
   font-size: 29px;
   font-weight: 700;
@@ -124,10 +124,10 @@
   background: -o-linear-gradient(bottom, #FA940A, #F5CF00);
   background: linear-gradient(to top, #FA940A, #F5CF00);
   margin-bottom: 30px; }
-  .promo-bttn button:hover {
+  .promo-bttn button:hover, .Github-bttn button:hover {
     -webkit-box-shadow: inset 0 -15px 15px rgba(0, 0, 0, 0.14);
     box-shadow: inset 0 -15px 15px rgba(0, 0, 0, 0.14); }
-  .promo-bttn button:focus {
+  .promo-bttn button:focus, .Github-bttn button:focus {
     outline: none; }
 
 .promo-lower-text {
@@ -251,7 +251,7 @@
 .market-unit {
   line-height: 1; }
 
-.description-container, .explanation-container, .roadmap-container, .blockchain-container, .token-container, .distribution-container, .team-container {
+.description-container, .explanation-container, .roadmap-container, .blockchain-container, .token-container, .distribution-container, .team-container, .contract-container {
   margin-top: -112px;
   position: relative;
   background-color: #fff;
@@ -263,13 +263,13 @@
   padding-top: 100px;
   padding-bottom: 100px; }
 
-.description-heading, .explanation-heading, .roadmap-heading, .token-heading, .distribution-heading, .team-heading {
+.description-heading, .explanation-heading, .roadmap-heading, .token-heading, .distribution-heading, .team-heading, .contract-heading {
   font-family: "Montserrat", sans-serif;
   font-size: 47px;
   font-weight: 900;
   color: #000;
   margin-bottom: 30px; }
-  .description-heading:after, .explanation-heading:after, .roadmap-heading:after, .token-heading:after, .distribution-heading:after, .team-heading:after {
+  .description-heading:after, .explanation-heading:after, .roadmap-heading:after, .token-heading:after, .distribution-heading:after, .team-heading:after, .contract-heading:after {
     content: '';
     position: absolute;
     width: 165px;
@@ -615,7 +615,7 @@
     outline: none; }
 
 .blockchain-container {
-  z-index: 8;
+  z-index: 9;
   margin-top: -120px;
   padding-bottom: 100px; }
 
@@ -667,4 +667,72 @@
   font-size: 14px;
   color: #fff; }
   .footer-text p {
+    margin-bottom: 0; }
+
+.contract-container {
+  z-index: 8;
+  padding-bottom: 200px; }
+
+.contract-scroll {
+  width: 900px;
+  height: 400px;
+  overflow: hidden;
+  border: 2px solid #0063AE;
+  border-radius: 30px;
+  margin-top: 50px;
+  background-color: #0192C6; }
+  @media only screen and (max-width: 1200px) {
+    .contract-scroll {
+      width: 780px; } }
+
+.contract-block {
+  width: 920px;
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #0192C6;
+  padding: 30px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff; }
+  @media only screen and (max-width: 1200px) {
+    .contract-block {
+      width: 800px;
+      padding: 30px 40px 0 0; } }
+
+.contract-row {
+  padding: 0px 0px 0px 25px;
+  display: none;
+  white-space: pre; }
+
+.contract-row-2 {
+  padding: 0px 0px 0px 25px;
+  white-space: pre;
+  opacity: 0; }
+
+.contract-row .new {
+  opacity: 0; }
+
+.contract-row .div_opacity {
+  opacity: 1; }
+
+.contract-row .after:after {
+  content: "|";
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px; }
+
+.contract-list ul {
+  padding-left: 20px; }
+
+.contract-list li {
+  list-style-type: none; }
+
+.span-red {
+  color: red; }
+
+.Github-bttn {
+  margin-top: 50px; }
+  .Github-bttn button {
     margin-bottom: 0; }

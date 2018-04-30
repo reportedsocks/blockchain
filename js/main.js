@@ -1,4 +1,13 @@
 $( document ).ready(function() {
+$("body").niceScroll({
+	zindex:'999999',
+	cursorcolor:"#FA940A",
+	cursorwidth:"15px",
+	background:"rgba(0,99,174,.6)",
+	cursorborder:"none"
+});
+
+
 $('#token-bttn').on("click",function(){
 	$('#diagram-text').html( " <h1>75<sup>%</sup></h1><p>Token Sale</p> ");
 	$('#diagram-text').css({"left": "24%", "top" : "17%"});
@@ -288,8 +297,47 @@ $(window).scroll(function(){
 
   }
   );
+
+	$.fn.animate_Text = function() {
+  var string = this.text();
+  return this.each(function(){
+   var $this = $(this);
+   $this.html(string.replace(/./g, '<span class="new after">$&</span>'));
+   $this.find('span.new').each(function(i, el){
+    setTimeout(function(){
+     $(el).animate({opacity: '1'},20,function(){
+     	$(el).removeClass('after');
+     });
+
+     }, 15 * i);
+   });
+  });
+
+ };
+
+ $(window).scroll(function(){
+	var offset = $('.contract-block').offset();
+	var offsetTop =offset.top-600;
+  	if ($(this).scrollTop() > offsetTop ) {
+ 	$('.contract-row').show();
+ 		$('.contract-row').animate_Text();
+ 		$('.contract-row').animate({opacity: '1'},9000,function(){
+ 			$('.contract-row-2').css('opacity','1');
+ 		});
+		$(window).off('scroll');
+  	}
+ 
+	
 		  
 });
+//$(".contract-scroll").niceScroll(".contract-row",{
+	//cursorcolor:"aquamarine"
+//});
+ });
+	
+
+ 
+
 		
 
 
