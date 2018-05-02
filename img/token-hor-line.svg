@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.12 54.86">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="token-hor-line" transform="translate(-49.148 -97.246)">
+    <path id="Path_345" data-name="Path 345" class="cls-1" d="M19.388,151.12H7.8c-4.29,0-7.8-4.653-7.8-10.34V10.341C0,4.653,3.51,0,7.8,0H19.388" transform="translate(201.268 132.718) rotate(90)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-2" y1="35.77" transform="translate(125.68 97.246)"/>
+  </g>
+</svg>

@@ -4,18 +4,134 @@ $font: 'Montserrat', sans-serif;
     @content;
   }
 }
+@mixin breakpoint-md{
+  @media only screen and (max-width:992px){
+    @content;
+  }
+}
+@mixin breakpoint-sm{
+  @media only screen and (max-width:768px){
+    @content;
+  }
+}
+@mixin breakpoint-xs{
+  @media only screen and (max-width:576px){
+    @content;
+  }
+}
+body{
+  overflow: hidden;
+}
 .header-container{
   background-image: url('../img/bg-header.png');
   
   background-repeat: no-repeat;
+  @include breakpoint-md {
+    background-size: cover;
+  }
+  @include breakpoint-sm {
+   padding-bottom: 50px;
+  }
   
+}
+.viget-telegram{
+  width: 100px;
+  height:100px;
+  position: fixed;
+  top:85%;
+  right:15%;
+  z-index: 100;
+  
+  @include breakpoint-md {
+    width: 80px;
+    height: 80px;
+  }
+  @include breakpoint-md {
+    right:5%;
+  }
+}
+.hidden-menu{
+  margin-top: 30px;
+  display:none;
+}
+.promo-bttn-menu{
+  @extend .promo-bttn;
+  margin-top: 30px;
+  width: 90%;
+  button{
+    padding: 10px 0 !important;
+    width: 100%;
+  }
+}
+.whitepaper-bttn-menu{
+  @extend .whitepaper-bttn;
+  margin-bottom: 30px;
+  padding: 10px 0 !important;
+    width: 100%;
+}
+.whitepaper-bttn-div{
+  width: 90%;
+}
+.fixed-header{
+  
+  z-index: 99999999;
+  padding: 10px 15px;
+  transition:.5s;
+}
+.not-showed{
+  display: none;
+}
+.showed{
+  display: flex;
+}
+.blue{
+  background-color: #0674B2;
+}
+.bg-linear{
+  background: linear-gradient(to bottom,#19584C,#052741)
+}
+.menu-button-div{
+  width: 90%;
+}
+.menu-button{
+  font-family: $font;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+  border:none;
+  background-color: transparent;
+  background-image: url(../img/menu-arrow.png);
+  background-position-x:95%;
+  background-position-y:center;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 0px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  &:focus{
+    outline: none;
+  }
 }
 .header{
   padding-top: 20px; 
   padding-bottom: 100px;
+  @include breakpoint-xs {
+    padding-bottom: 50px;
+    padding-top: 80px;
+  }
 }
 .header-links{
   margin-bottom: 100px;
+  @include breakpoint-md {
+    margin-bottom: 45px;
+  }
+}
+.header-logo{
+   @include breakpoint-sm {
+    margin-bottom: 20px;
+  }
 }
 .menu-point-1{
   font-family: $font;
@@ -96,6 +212,10 @@ $font: 'Montserrat', sans-serif;
       background: linear-gradient(to right, #00C6F5,#0AFA79 );
       position: absolute;
   }
+  @include breakpoint-xs {
+    color: #fff;
+    font-size: 29px; 
+  }
 }
 .header-text{
   color: #fff;
@@ -103,18 +223,30 @@ $font: 'Montserrat', sans-serif;
   font-family: $font;
   font-weight: 600;
   padding-right: 60px;
+  @include breakpoint-xs {
+    font-size: 18px; 
+  }
  
 } 
 .header-promo{
   background: linear-gradient(to top, #0063AE,#39F0CF );
   border-radius: 30px;
   padding:30px 0px;
+  @include breakpoint-md {
+    margin-top: 30px; 
+  }
 }
 .promo-heading{
   color: #fff;
   font-size: 28px;
   font-family: $font;
   font-weight: 900;
+  @include breakpoint-xs {
+    font-size: 17px; 
+    p{
+      margin-bottom: 5px;
+    }
+  }
 }
 .promo-upper-text{
   color: #fff;
@@ -124,6 +256,12 @@ $font: 'Montserrat', sans-serif;
   p{
     margin-top: 15px;
     margin-bottom: 0px;
+    @include breakpoint-xs {
+     margin-top: 0px;
+  }
+  }
+  @include breakpoint-xs {
+    font-size: 13px; 
   }
 }
 .promo-offer{
@@ -133,6 +271,12 @@ $font: 'Montserrat', sans-serif;
   font-weight: 700;
   p{
     margin: 0 0 30px 0;
+  }
+  @include breakpoint-xs {
+    font-size: 16px; 
+    p{
+    margin: 0 0 15px 0;
+  }
   }
 }
 .promo-bttn{
@@ -153,8 +297,10 @@ $font: 'Montserrat', sans-serif;
   &:focus{
     outline: none;
   }
-
-
+  @include breakpoint-xs {
+  font-size: 17px; 
+  margin-bottom: 15px;
+  }
   }
 }
 .promo-lower-text{
@@ -162,9 +308,25 @@ $font: 'Montserrat', sans-serif;
   font-size: 27px;
   font-family: $font;
   font-weight: 700;
+  @include breakpoint-xs {
+    font-size: 16px; 
+    p{
+      margin: 0;
+    }
+  }
+}
+.text-header-xs{
+  color: #fff;
+  font-size: 20px;
+  font-family: $font;
+  font-weight: 900;
+  margin-top: 20px;
 }
 .header-reasons{
   margin-top: 100px;
+  @include breakpoint-sm {
+    margin-top: 45px;
+  }
 }
 .reasons-container{
   color: #fff;
@@ -187,6 +349,12 @@ $font: 'Montserrat', sans-serif;
     &:focus{
       outline: none;
     }
+    @include breakpoint-sm {
+    font-size: 14px;
+  }
+  }
+  @include breakpoint-sm {
+    font-size: 16px;
   }
 }
 .whitepaper-bttn{
@@ -264,21 +432,43 @@ $font: 'Montserrat', sans-serif;
   @include breakpoint-lg {
     padding:50px 20px 135px 0;
   }
+  @include breakpoint-sm {
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    margin-top: -40px;
+  }
+  @include breakpoint-xs {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    
+  }
 
 }
 .users-number{
   font-size: 120px;
   font-weight: 900;
   line-height: 1;
+  @include breakpoint-xs {
+    font-size: 73px;
+  }
 }
 .users-unit{
   font-size: 36px;
   font-weight: 900;
   max-width: 260px;
+  @include breakpoint-sm {
+    max-width: 135px;
+  }
+  @include breakpoint-xs {
+    font-size: 25px;
+  }
 }
 .users-heading{
   margin-bottom: 5px;
   white-space: pre-wrap;
+  @include breakpoint-xs {
+    font-size: 20px;
+  }
 }
 .market-container{
   @extend .users-container;
@@ -287,6 +477,10 @@ $font: 'Montserrat', sans-serif;
   @include breakpoint-lg {
     padding-left: 20px;
   }
+  @include breakpoint-sm {
+    margin-top: -75px;
+  }
+
 }
 .market-number{
   @extend .users-number;
@@ -309,6 +503,21 @@ $font: 'Montserrat', sans-serif;
   border-bottom-left-radius: 0px;
   padding-top:100px;
   padding-bottom: 100px;
+  @include breakpoint-md {
+    border-top-left-radius: 105px;
+    border-top-right-radius: 105px;
+    padding-top: 80px;
+  }
+  @include breakpoint-sm {
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    padding-top: 60px;
+  }
+  @include breakpoint-xs {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-top: 30px;
+  }
 }
 .description-heading{
   font-family: $font;
@@ -323,6 +532,9 @@ $font: 'Montserrat', sans-serif;
     height: 12px;
     background: linear-gradient(to right, #64E8DE, #8A64EB);
   }
+  @include breakpoint-xs {
+    font-size: 29px;
+  }
 }
 .description-text{
   font-family: $font;
@@ -330,18 +542,35 @@ $font: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #6A6A6A;
   margin-bottom: 80px;
+  @include breakpoint-xs {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+}
+.description-row{
+  width: 50%;
+  @include breakpoint-xs {
+    width: auto;
+  }
 }
 .feature-text{
   font-family: $font;
   font-size: 29px;
   font-weight: 900;
   color: #112A7C;
+  @include breakpoint-xs {
+    font-size: 21px;
+  }
 }
 .feature-number{
   font-family: $font;
   font-size: 90px;
   font-weight: 900;
   color: #112A7C;
+  @include breakpoint-xs {
+    font-size: 73px;
+  }
 }
 .feature-name{
   font-family: $font;
@@ -349,6 +578,12 @@ $font: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #000;
   white-space: pre-wrap;
+
+  @include breakpoint-xs {
+    border-top: 2px solid #707070;
+    font-size: 16px;
+    width:55%;
+  }
 }
 .explanation-container{
   @extend.description-container;
@@ -356,6 +591,9 @@ $font: 'Montserrat', sans-serif;
   background: linear-gradient( to top, #8180E8, #8A64EB);
   z-index: 3;
   padding-bottom: 240px;
+  @include breakpoint-md {
+    padding-bottom: 200px;
+  }
 }
 .explanation-heading{
   @extend .description-heading;
@@ -376,27 +614,60 @@ $font: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #fff; 
 }
-.viget-telegram{
-  width: 100px;
-  height:100px;
-  position: fixed;
-  top:85%;
-  right:15%;
-  z-index: 100;
+.md-explain-text{
+  @extend .explain-text; 
+  width:auto;
+  @include breakpoint-xs {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 30px;
+  }
 }
+.explain-icon-container-1{
+  @include breakpoint-xs {
+    width: 100%;
+    max-width: 170px;
+  }
+}
+.explain-icon-container-2{
+  @include breakpoint-xs {
+    width: 70%;
+    max-width: 170px;
+  }
+}
+.explain-icon-container-3{
+  @include breakpoint-xs {
+    width: 120%;
+    max-width: 170px;
+    margin-top: 10px;
+  }
+}
+.explain-row-md{
+  margin-top: 40px;
+}
+
 .token-container{
   @extend.description-container;
   margin-top: -125px;
   background-image: url('../img/token_bg.png');
   background-position: center;
   z-index: 4;
+  @include breakpoint-sm {
+    padding-bottom: 160px;
+  }
 }
 .token-heading{
   @extend .description-heading;
   color: #fff;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   &:after{
     background: linear-gradient(to right, #00C6F5, #0AFA79);
+  }
+  @include breakpoint-lg {
+    margin-bottom: 40px;
+  }
+  @include breakpoint-md {
+    margin-bottom: 0px;
   }
 }
 .token-icons{
@@ -422,6 +693,17 @@ $font: 'Montserrat', sans-serif;
     left: -100px;
 
   }
+  @include breakpoint-md {
+    &:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    top:30%;
+    left: -60px;
+  }
+}
 }
 .after-line{
   margin-bottom: 0;
@@ -438,6 +720,18 @@ $font: 'Montserrat', sans-serif;
     top:65%;
     left: -100px;
   }
+  @include breakpoint-md {
+    &:after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    top:65%;
+    left: -60px;
+  }
+}
+
 }
 .token-line{
   img{
@@ -451,6 +745,9 @@ $font: 'Montserrat', sans-serif;
 .distribution-container{
   @extend .description-container;
   z-index: 5;
+  @include breakpoint-xs {
+    padding-bottom: 0;
+  }
 }
 .distribution-heading{
   @extend .description-heading;
@@ -459,8 +756,26 @@ $font: 'Montserrat', sans-serif;
     top: 79px;
     left: 17px;
     background: linear-gradient(to right, #00C6F5, #0AFA79);
+    @include breakpoint-xs {
+    top:50px;
+  }
   }
 }
+.dist-xs-text{
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  p{
+    margin: 0;
+  }
+ }
+ .dist-xs-perst{
+  font-family: $font;
+  font-size: 29px;
+  font-weight: 900;
+  color: #05F1B4;
+ }
 .distribution-text{
   font-family: $font;
   font-size: 18px;
@@ -468,12 +783,20 @@ $font: 'Montserrat', sans-serif;
   color: #000; 
   margin-bottom: 5px;
   margin-top: 50px;
+  @include breakpoint-xs {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
 }
 .distribution-number{
   font-family: $font;
   font-size: 45px;
   font-weight: 300;
   color: #000; 
+  @include breakpoint-xs {
+    font-size: 29px;
+  }
 }
 .distribution-bttn{
   border:none;
@@ -483,6 +806,7 @@ $font: 'Montserrat', sans-serif;
   font-weight: 300;
   color: #000; 
   margin-top: 50px;
+  padding: 0;
   &:hover{
     outline: none;
     font-weight: 400;
@@ -555,11 +879,22 @@ $font: 'Montserrat', sans-serif;
     font-weight: 600;
   }
 }
+.buy-bttn-container{
+  padding-top: 75px;
+  padding-bottom: 60px;
+  background-image: url(../img/buy-bg-xs.png);
+  background-position: center;
+  margin-top: 40px;
+}
 .team-container{
   @extend .description-container;
   background-color: #F7F7F7;
   z-index: 6;
   margin-top: 100px;
+  @include breakpoint-xs {
+   margin-top: 0;
+   background-color: #fff;
+  }
 }
 .team-heading{
   @extend .description-heading;
@@ -567,9 +902,17 @@ $font: 'Montserrat', sans-serif;
   &:after{
     background: linear-gradient(to right, #00C6F5, #0AFA79);
   }
+  @include breakpoint-xs {
+   margin-top: 20px;
+  }
 }
 .team-member-container{
   width:23%;
+  @include breakpoint-sm {
+    width:80%;
+    margin-top: 25px;
+  }
+  
 }
 .member-icon{
   position: relative;
@@ -580,6 +923,29 @@ $font: 'Montserrat', sans-serif;
   right:12% ;
   width:37px;
   height:37px;
+  @include breakpoint-md {
+    right: -12%;
+  }
+  @include breakpoint-sm {
+    right: 0;
+  }
+  @include breakpoint-xs {
+    right: -7;
+    width:25px;
+    height:25px;
+  }
+}
+.LK-icon-2{
+  position: absolute;
+  bottom: 18%;
+  right:12% ;
+  width:37px;
+  height:37px;
+}
+.member-info-sm{
+   @include breakpoint-sm {
+    padding-left: 25px;
+  }
 }
 .member-name{
   font-family: $font;
@@ -588,6 +954,9 @@ $font: 'Montserrat', sans-serif;
   color: #112A7C;
   p{
     margin: 20px 0 0 0;
+  }
+  @include breakpoint-xs {
+    font-size: 20px;
   }
 }
 .member-post{
@@ -598,6 +967,9 @@ $font: 'Montserrat', sans-serif;
   p{
     margin: 0 0 5px 0;
   }
+  @include breakpoint-xs {
+    font-size: 10px;
+  }
 }
 .member-text{
   font-family: $font;
@@ -607,13 +979,28 @@ $font: 'Montserrat', sans-serif;
   p{
     margin: 15px 0 0 0;
   }
+  @include breakpoint-xs {
+    font-size: 10px;
+  }
+}
+.member-icon-image{
+  @include breakpoint-xs {
+    width: 80px;
+    height: 80px;
+  }
 }
 .team-row{
   margin-top: 70px;
+  @include breakpoint-xs {
+    margin-top: 0;
+  }
 }
 
 .team-bttn-div{
   margin:70px 0;
+  @include breakpoint-xs {
+    margin:30px 0;
+  }
 }
 .show-team-bttn{
   border: 1px solid #6A6A6A;
@@ -638,6 +1025,9 @@ $font: 'Montserrat', sans-serif;
 .hidden-team{
   display: none;
   margin-bottom: 70px;
+  @include breakpoint-xs {
+    margin-bottom:30px;
+  }
 }
 .roadmap-container{
   @extend .explanation-container;
@@ -653,6 +1043,10 @@ $font: 'Montserrat', sans-serif;
   position: absolute;
   top:7%;
   left:15%;
+  @include breakpoint-md {
+    top:4%;
+    left:8%;
+  }
 }
 .roadmap-svg{
   position: relative;
@@ -705,10 +1099,39 @@ $font: 'Montserrat', sans-serif;
 .blockchain-icon{
   width:18%;
 }
+.blockchan-icon-container-2{
+  @extend .explain-icon-container-2;
+  img{
+    margin-top: 50px;
+  }
+}
+.blockchain-img{
+  margin-top: 35px;
+}
+.md-blockchain-head-text{
+  @extend .blockchain-head-text;
+  width: auto;
+}
+.md-blockchain-text{
+  @extend .blockchain-text;
+  width: auto;
+}
+.blockchain-row-md{
+  @extend .explain-row-md;
+}
 .buy-container{
   padding-top: 100px;
   padding-bottom:80px;
   background-image: url('../img/buy-bg.png');
+  @include breakpoint-md {
+    padding-top: 60px;
+    padding-bottom:45px;
+  }
+  @include breakpoint-xs {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .buy-heading{
   font-family: $font;
@@ -716,11 +1139,18 @@ $font: 'Montserrat', sans-serif;
   font-size: 48px;
   color: #fff;
   margin-bottom: 25px;
+  @include breakpoint-xs {
+    font-size: 29px;
+  }
 }
 .footer-container{
   padding-top: 50px;
   padding-bottom: 80px;
   background: linear-gradient(to top, #64E8DE,#76A7E4);
+  @include breakpoint-md {
+    padding-top: 15px;
+  padding-bottom: 55px;
+  }
 }
 .footer-social{
   @extend .header-social;
@@ -757,6 +1187,15 @@ $font: 'Montserrat', sans-serif;
   @include breakpoint-lg {
     width: 780px;
   }
+  @include breakpoint-md {
+    width: 580px;  
+  }
+  @include breakpoint-sm {
+    width: 520px;   
+  }
+  @include breakpoint-xs {
+    width: 100%;   
+  }
 }
 .contract-block{
   width: 920px;
@@ -774,6 +1213,17 @@ $font: 'Montserrat', sans-serif;
     width: 800px;
     padding: 30px 40px 0 0; 
   }
+  @include breakpoint-md {
+    width: 600px;
+  }
+  @include breakpoint-sm {
+    width: 540px;
+  }
+  @include breakpoint-xs {
+    width: 107%;   
+    overflow-x:auto;
+    height: 107%;
+  }
   
 
 }
@@ -782,6 +1232,9 @@ $font: 'Montserrat', sans-serif;
   padding:0px 0px 0px 25px;
   display:none;
   white-space: pre;
+   @include breakpoint-sm {
+    padding: 0;
+  }
 }
 .contract-row-2{
   padding:0px 0px 0px 25px;
@@ -809,6 +1262,9 @@ $font: 'Montserrat', sans-serif;
 .contract-list{
   ul{
     padding-left: 20px;
+    @include breakpoint-sm {
+      padding-left: 10px;
+    }
   }
   li{
     list-style-type: none;
@@ -825,4 +1281,65 @@ $font: 'Montserrat', sans-serif;
     margin-bottom: 0;
   }
   
+}
+.token-crt-bttn{
+  background-color: transparent;
+  border:1px solid #fff;
+  font-family: $font;
+  font-size: 16px;
+  color:#fff;
+  font-weight: 700;
+  margin-top: 50px;
+  padding: 10px 90px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  &:hover{
+    outline: none;
+    background-color: rgba(255,255,255,.3);
+  }
+  &:focus{
+    outline: none;
+  }
+}
+.token-focused{
+  background-color: #fff;
+  color: #112A7C;
+  &:hover{
+    outline: none;
+    background-color: #fff;
+  }
+}
+.token-mnr-bttn{
+  @extend .token-crt-bttn;
+  margin-top: 0;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 10px 77px;
+   margin-bottom: 30px;
+}
+.token-icons-sm{
+  margin-top: 20px;
+}
+.token-text-sm{
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  font-family: $font;
+  margin-top: 20px;
+}
+.token-miner-div{
+  display: none;
+}
+.telegram-bttn{
+  @extend .whitepaper-bttn;
+  margin-top: 10px;
+  padding: 12px 107px;
+  background-image: url(../img/telegram-xs-icon.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-y:center;
+  background-position-x:25px;  
 }

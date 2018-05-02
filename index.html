@@ -17,10 +17,36 @@
   <body>
     <div class="container-fluid header-container">
       <div class="container header">
-    <div class="row header-links">
-      <div class="col-lg-3"><img src="img/Logo.svg">
+        <div class="row d-sm-none fixed-top fixed-header">
+          <div class="col-6"><img src="img/Logo.svg"></div>
+          <div class="offset-2 col-2 header-tel-icon"><img src="img/s-telegram-icon.svg"></div>
+          <div class="col-2 header-menu-icon"><img src="img/menu-icon.svg"></div>
+          <div class="col-10 offset-1 hidden-menu">
+          
+          
+          
+          <div class="d-flex flex-column align-items-center">
+            <div class="menu-button-div"><form action="#description-container"><button type="submit" class="menu-button">Why us?</button></form></div>
+            <div class="menu-button-div"><form action="#explanation-container"><button type="submit" class="menu-button">How it works</button></form></div>
+            <div class="menu-button-div"><form action="#token-container"><button type="submit" class="menu-button">Token application</button></form></div>
+            <div class="menu-button-div"><form action="#distribution-container"><button type="submit" class="menu-button">Distribution</button></form></div>
+            <div class="menu-button-div"><form action="#team-container"><button type="submit" class="menu-button">Our team</button></form></div>
+            <div class="menu-button-div"><form action="#roadmap-container"><button type="submit" class="menu-button">Roadmap</button></form></div>
+            <div class="menu-button-div"><form action="#blockchain-container"><button type="submit" class="menu-button">Why blockchain?</button></form></div>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="promo-bttn-menu"><button>JOIN WHITELIST</button></div>
+            <div class="whitepaper-bttn-div"><button class="whitepaper-bttn-menu ">White Paper</button></div>
+          </div>
+        </div>
+        </div>
+        
+          
+
+    <div class="d-none d-sm-flex row header-links">
+      <div class="col-sm-6 col-md-3 col-lg-3 header-logo"><img src="img/Logo.svg">
       </div>
-      <div class="col-lg-8 offset-lg-1 d-flex flex-row justify-content-between align-items-center" >
+      <div class="col-sm-12 offset-md-0 col-md-9 col-lg-8 offset-lg-1 d-flex flex-row justify-content-between align-items-center" >
         <div class="menu-point-1"><p><a href="#explanation-container">How it works</a></p></div>
         <div class="menu-point-2"><p><a href="#team-container">Team</a></p></div>
         <div class="menu-point-3"><p><a href="#roadmap-container">Roadmap</a></p></div>
@@ -30,11 +56,18 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6 col-xl-5 d-flex flex-column">
-        <div class="header-slogan">
+      <div class="col-sm-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 col-xl-5 d-flex flex-column">
+        <div class="d-none d-sm-block header-slogan">
           <p>
             The First Global 
             Cryptofunding
+          </p>
+        </div>
+        <div class="d-sm-none  header-slogan">
+          <p>
+            The First
+            Cryptofunding
+            Platform
           </p>
         </div>
 
@@ -43,7 +76,7 @@
               your ideas</p>
         </div>
 
-        <div class="header-text">
+        <div class="header-text d-none d-sm-block">
           <p>No loans. No buzz.
               Sole money. </p>
         </div>
@@ -51,7 +84,7 @@
       </div>
 
 
-      <div class="col-lg-6 col-xl-5 offset-xl-2">
+      <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 offset-lg-0 col-lg-6 col-xl-5 offset-xl-2">
         <div class=" d-flex flex-column  align-items-center header-promo">
         <div class="promo-heading"><p>PRE-SALE COMING SOON</p></div>
         <div class="promo-upper-text"><p>BEST PRICE FOR WHITELIST</p></div>
@@ -61,21 +94,30 @@
         </div>
       </div>
     </div>
+    <div class="row d-sm-none">
+      <div class="col-12 text-center text-header-xs">
+        <p>NO BORDERS. NO FEES. NO DELAYS.</p>
+      </div>
+    </div>
+    <div class="d-flex flex-column text-center d-sm-none">
+      <div><button class="whitepaper-bttn">White Paper</button></div>
+      <div><button class="telegram-bttn">Chat</button></div>
+    </div>
     <div class="row header-reasons">
-      <div class="col-lg-4">
+      <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4">
         <div class="row d-flex align-items-center">
-        <div class="col-sm-4"><img src="img/3reasons.svg"></div>
-        <div class="col-sm-8 reasons-container">
+        <div class="col-3 col-sm-4"><img src="img/3reasons.svg"></div>
+        <div class="col-9 col-sm-8 reasons-container">
           <p>3 Reasons you need 
           Boomstarter Coin</p>
           <p><button type="button" data-toggle="modal" data-target="#ModalReasons">More</button></p>
         </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4">
         <div class="row d-flex align-items-baselime">
-        <div class="col-sm-3"><img src="img/5features.svg"></div>
-        <div class="col-sm-9 reasons-container">
+        <div class="col-3 col-sm-3"><img src="img/5features.svg"></div>
+        <div class="col-9 col-sm-9 reasons-container">
           <p> 
             5 innovate
             Boomstarter.Network
@@ -85,7 +127,7 @@
         </div>
         </div>
       </div>
-      <div class="col-lg-4 d-flex align-items-baseline justify-content-center">
+      <div class="d-none col-sm-12 col-lg-4 d-sm-flex align-items-baseline justify-content-center text-center">
         <div>
         <button class="whitepaper-bttn">White Paper</button>
         </div>
@@ -177,11 +219,11 @@
   </div>
 </div>
 
-      <div class="viget-telegram">
+      <div class="d-none d-sm-block viget-telegram">
         <img src="img/VIGET.svg">
       </div>
-   <div class="row header-social">
-      <div class=" col-lg-4 offset-lg-4 d-flex align-items-bottom justify-content-around">
+   <div class="d-none d-sm-block row header-social">
+      <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 d-flex align-items-bottom justify-content-around">
         
         <div class="social-icon"><a href=""><img src="img/Telega.svg"></a></div>
         <div class="social-icon"><a href=""><img src="img/Twitter.svg"></a></div>
@@ -198,7 +240,7 @@
 
     <div class="container-fluid negative-margin">
       <div class="row">
-        <div class="col-sm-6 users-container ">
+        <div class="col-sm-12 col-md-6 users-container ">
           <div class="row ">
           <div class="col-sm-12 offset-sm-0 col-xl-6 offset-xl-6 text-center">
             <div>
@@ -212,7 +254,7 @@ cryptofunding users</p>
           </div>
           <div class="row">
             <div class="col-sm-12 offset-sm-0 col-xl-7 offset-xl-5">            
-              <div class="d-flex flex-row justify-content-around">
+              <div class="d-flex flex-row justify-content-center justify-content-md-around">
               <div class="users-number"><p>500</p></div>
               <div class="users-unit d-flex align-items-center">
                 <div>
@@ -226,7 +268,7 @@ cryptofunding users</p>
         </div>
 
 
-        <div class="col-sm-6 market-container ">
+        <div class="col-sm-12 col-md-6 market-container ">
           <div class="row ">
           <div class="col-sm-12  col-xl-7  text-center">
             <div>
@@ -240,7 +282,7 @@ cryptofunding market</p>
           </div>
           <div class="row">
             <div class="col-sm-12  col-xl-8 ">            
-              <div class="d-flex flex-row justify-content-around">
+              <div class="d-flex flex-row justify-content-center justify-content-md-around">
               <div class="market-number"><p>500</p></div>
               <div class="market-unit d-flex align-items-center">
                 <div>
@@ -255,7 +297,7 @@ cryptofunding market</p>
       </div>
     </div>
 
-     <div class="container-fluid description-container">
+     <div id="description-container" class="container-fluid description-container">
        <div class="container">
         <div class="row">
           <div class="col-sm-7  text-left description-heading">
@@ -267,28 +309,36 @@ cryptofunding market</p>
            <p>The largest crowdfunding platform for technological and business projects in Eastern Europe established in 2012</p>
          </div>
        </div>
-       <div class="d-flex flex-row justify-content-between">
+       <div class="d-flex flex-column flex-sm-row justify-content-between">
+        <div class="d-flex flex-column flex-lg-row align-items-sm-center align-items-lg-baseline justify-content-sm-between justify-content-lg-around description-row">
          <div class="d-flex flex-column">
            <div class="feature-text"><p>Over</p></div>
            <div class="feature-number"><p>2000</p></div>
-           <div class="feature-name"><p>Successful projects</p></div>
-         </div>
+           <div class="feature-container d-flex justify-content-center">
+           <div class="feature-name text-left"><p>Successful projects</p></div>
+         </div></div>
          <div class="d-flex flex-column">
            <div class="feature-text"><p>Over</p></div>
            <div class="feature-number"><p>800</p></div>
-           <div class="feature-name"><p>Thousand registered
+           <div class="feature-container d-flex justify-content-center">
+           <div class="feature-name text-left"><p>Thousand registered
 users</p>
            </div>
          </div>
+         </div>
+         </div>
+         <div class="d-flex flex-column flex-lg-row align-items-sm-center align-items-lg-baseline justify-content-sm-between justify-content-lg-around description-row">
          <div class="d-flex flex-column">
            <div class="feature-text"><p>Over</p></div>
            <div class="feature-number"><p>250</p></div>
-           <div class="feature-name"><p>Thousand bankers
+           <div class="feature-container d-flex justify-content-center">
+           <div class="feature-name text-left"><p>Thousand bankers
 have supported
 the projects</p>
           </div>
+          </div>
          </div>
-         <div class="d-flex flex-column">
+         <div class="d-none d-sm-flex flex-column">
            <div class="feature-text"><p>Over</p></div>
            <div class="feature-number"><p>150</p></div>
            <div class="feature-name"><p>Social network
@@ -296,12 +346,13 @@ users</p>
             </div>
          </div>
        </div>
+       </div>
      </div>
    </div>
    <div id="explanation-container" class="container-fluid explanation-container">
      <div class="container">
        <div class="row">
-          <div class="col-sm-7  text-left explanation-heading">
+          <div class="col-sm-12  text-left explanation-heading">
             <p>How it works?</p>
           </div>
        </div>
@@ -310,14 +361,14 @@ users</p>
            <p>A multitude of computers put  their processing powers into a  single pool, which mines  cryptocurrency for one project</p>
          </div>
        </div>
-       <div class="d-flex justify-content-between ">
+       <div class="d-none d-lg-block d-lg-flex justify-content-between ">
         <div class="explain-icon d-flex align-items-center justify-content-center"><img src="img/explain-icon-1.svg"></div>
         <div class="explain-icon d-flex align-items-center justify-content-center"><img src="img/explain-icon-2.svg"></div>
         <div class="explain-icon d-flex align-items-center justify-content-center"><img src="img/explain-icon-3.svg"></div>
         <div class="explain-icon d-flex align-items-center justify-content-center"><img src="img/explain-icon-4.svg"></div>
          
        </div>
-       <div class="d-flex justify-content-between ">
+       <div class="d-none d-lg-block d-lg-flex justify-content-between ">
          <div class="explain-text text-center">
           <p>
             The user opens  
@@ -343,23 +394,68 @@ users</p>
       </div>
        </div>
 
+
+       <div class="row d-lg-none">
+         <div class="col-12 col-sm-4 offset-sm-1 col-md-3 offset-md-2 d-flex flex-row flex-sm-column" >
+           <div class="explain-icon-container-1"><img src="img/explain-icon-1.svg"></div>
+           <div class="md-explain-text text-center">
+            <p>
+            The user opens  
+            project’s page 
+            and starts mining
+            </p>
+          </div>
+         </div>
+         
+         <div class="col-12 col-sm-4 offset-sm-2 col-md-3 offset-md-2 d-flex flex-row-reverse flex-sm-column">
+           <div class="explain-icon-container-2"><img src="img/explain-icon-2.svg"></div>
+           <div class="md-explain-text text-center d-flex align-items-center">
+            <p>
+            The creator gets
+            the funds
+            </p>
+          </div>
+         </div>
+       </div>
+
+       <div class="row d-lg-none explain-row-md">
+         <div class="col-sm-4 offset-sm-1 col-md-3 offset-md-2 d-flex flex-row flex-sm-column" >
+           <div class="explain-icon-container-3"><img src="img/explain-icon-3.svg"></div>
+           <div class="md-explain-text text-center">
+            <p>
+            The miner gets cashback from the cryptocurrency he mined
+            </p>
+          </div>
+         </div>
+         
+         <div class="col-sm-4 offset-sm-2 col-md-3 offset-md-2 d-flex flex-row-reverse flex-sm-column">
+           <div class="explain-icon-container-3"><img src="img/explain-icon-4.svg"></div>
+           <div class="md-explain-text text-center">
+            <p>
+            The creator brings his project to life and makes the world a better place
+            </p>
+          </div>
+         </div>
+       </div>
+
+
      </div>
    </div>
-   <div class="container-fluid token-container">
+   <div id="token-container" class="container-fluid token-container">
      <div class="container">
        <div class="row">
-          <div class="col-sm-10  text-left token-heading">
+          <div class="col-sm-12  text-left token-heading">
             <p>Tokens application</p>
           </div>
        </div>
-       <div class="row token-main">
-         <div class="col-lg-2 d-flex align-items-center">
+       <div class="d-none d-md-flex row token-main">
+         <div class="col-md-3 col-lg-2 d-flex align-items-center">
            <img src="img/token-icon.svg">
          </div>
-         <div class="col-lg-2 d-flex align-items-center token-line">
+         <div class="d-none d-lg-block col-lg-2 d-lg-flex align-items-lg-center token-line">
            <img src="img/token-line.svg">
          </div>
-         <div class="col-lg-3 d-flex flex-column align-items-center">
+         <div class="col-md-3 col-lg-3 d-flex flex-column align-items-center">
            <div class="token-icons d-flex align-items-center flex-column">
             <img src="img/token-author.svg">
             <p>Author</p>
@@ -369,7 +465,7 @@ users</p>
             <p>Miner PRO</p>
            </div>
          </div>
-         <div class="col-lg-4 offset-lg-1  d-flex  flex-column align-items-center justify-content-center">
+         <div class="col-md-5 offset-md-1 col-lg-4 offset-lg-1  d-flex  flex-column align-items-center justify-content-center">
            <div class="token-text">
             <p>
              Creators pay for premium hosting
@@ -387,20 +483,109 @@ users</p>
          </div>
          </div>
        </div>
+       
+       <div class="row d-md-none">
+         <div class="col-12 d-flex flex-column text-center">
+          <div><button class="token-crt-bttn token-focused">Creator</button></div>
+           
+          <div><button class="token-mnr-bttn">Miner PRO</button></div>
+         </div>
+       </div>
+       <div class="token-author-div">
+       <div class="row d-flex flex-column d-md-none">
+        <div class="col-6 offset-3 col-sm-4 offset-sm-4">
+           <img src="img/token-icon.svg">
+         </div>
+         <div class="col-8 offset-2 col-sm-6 offset-sm-3">
+           <img src="img/token-hor-line.svg">
+         </div>
+       </div>
+       <div class="row token-icons-sm d-md-none">
+         
+           <div class="col-4 offset-1"><img src="img/token-miner-white.svg"></div>
+           <div class="col-4 offset-2"><img src="img/token-author.svg"></div>
+       </div>
+       <div class="row d-md-none">
+         <div class="col-10 offset-1 text-left token-text-sm">
+           <p>
+             Creators pay for premium hosting
+            on the platform and for additional options of project visibility among the others, platform consulting specialists etc.
+           </p>
+         </div>
+       </div>
+      </div>
+
+      <div class="token-miner-div">
+       <div class="row d-flex flex-column d-md-none">
+        <div class="col-6 offset-3 col-sm-4 offset-sm-4">
+           <img src="img/token-icon.svg">
+         </div>
+         <div class="col-8 offset-2  col-sm-6 offset-sm-3">
+           <img src="img/token-hor-line.svg">
+         </div>
+       </div>
+       <div class="row token-icons-sm d-md-none">
+         
+           <div class="col-4 offset-1"><img src="img/token-miner.svg"></div>
+           <div class="col-4 offset-2"><img src="img/token-author-white.svg"></div>
+       </div>
+       <div class="row d-md-none">
+         <div class="col-10 offset-1 text-left token-text-sm">
+          <p>
+            Miner PRO can:
+          </p>
+           <p>
+             Change the mining % for himself
+              Attempt to claim the TOP Miner reward (5% from the project’s mined pool)
+           </p>
+         </div>
+       </div>
+      </div>
+
 
      </div>
    </div>
-   <div class="container-fluid distribution-container">
+   <div id="distribution-container" class="container-fluid distribution-container">
      <div class="container">
+     
        <div class="row">
-         <div class="col-lg-4 d-flex flex-column">
+         <div class="col-md-12 col-lg-4 d-flex flex-column">
            <p class="distribution-heading">Distribution</p>
-           <p class="distribution-text">Base price</p>
-           <p class="distribution-number">1 BC = 2 $</p>
-           <p class="distribution-text">Total supply limit</p>
-           <p class="distribution-number">36 000 000 ВС</p>
+            <div class=" d-sm-none d-flex flex-row justify-content-around">
+        <div class="d-flex flex-column">
+          <div class="text-left dist-xs-text"><p>Token Sale</p></div>
+          <div class="text-left dist-xs-perst"><p>75%</p></div>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="text-left dist-xs-text"><p>Team</p></div>
+          <div class="text-left dist-xs-perst"><p>15%</p></div>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="text-left dist-xs-text"><p>Bounty</p></div>
+          <div class="text-left dist-xs-perst"><p>1%</p></div>
+        </div>
+      </div>
+       <div class=" d-sm-none d-flex flex-row justify-content-around">
+        
+        <div class="d-flex flex-column">
+          <div class="text-left dist-xs-text"><p>Partners<br> & Advisors</p></div>
+          <div class="text-left dist-xs-perst"><p>4%</p></div>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="text-left dist-xs-text"><p>Early<br> Investors</p></div>
+          <div class="text-left dist-xs-perst"><p>1%</p></div>
+        </div>
+      </div>
+           <div class="row">
+            <div class="col-sm-10 offset-sm-1 col-md-7 offset-md-3 col-lg-12 offset-lg-0">
+           <p class="distribution-text text-center text-sm-left">Base price</p>
+           <p class="distribution-number text-center text-sm-left">1 BC = 2 $</p>
+           <p class="distribution-text text-center text-sm-left">Total supply limit</p>
+           <p class="distribution-number text-center text-sm-left">36 000 000 ВС</p>
+           </div>
+           </div>
          </div>
-         <div class="col-lg-3 offset-lg-1">
+         <div class= "d-none d-sm-block col-sm-6 col-md-5 offset-md-1 col-lg-4 offset-lg-0 col-xl-3 offset-xl-1">
            <div class="distribution-svg-container">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352.391 352.391">
   <defs>
@@ -466,7 +651,7 @@ users</p>
 </div>
 
          </div>
-         <div class="col-lg-3 offset-lg-1">
+         <div class="d-none d-sm-block col-sm-6 col-md-5 offset-md-1 col-lg-4 offset-lg-0 col-xl-3 offset-xl-1">
            <div class="d-flex flex-column text-left">
              <div><button id="token-bttn" class="distribution-bttn active-bttn">Token Sale</button></div>
              <div><button id="team-bttn" class="distribution-bttn">Team</button></div>
@@ -479,8 +664,16 @@ users</p>
 
      </div>
    </div>
+   <div class="container-fluid d-sm-none buy-bttn-container">
+     <div class="row">
+          <div class="col-12 text-center">
+            <div class="promo-bttn"><button>JOIN WHITELIST</button></div>
+          </div>
+          
+        </div>
+   </div>
     <div id="team-container" class="container-fluid team-container">
-      <div class="row">
+      <div class="row d-none d-sm-block">
         
            <div class=" col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 join-bttn-container text-center d-flex flex-column">
             <div class="d-flex flex-row join-bttn-text align-items-center justify-content-center">
@@ -492,76 +685,101 @@ users</p>
          
        </div>
       <div class="container">
+        
 
         <div class="row">
           <div class="col-sm-9 text-left team-heading">
             <p>Meet our team</p>
           </div>
         </div>
-        <div class="d-flex flex-row justify-content-around align-items-baseline team-row">
+
+        <div class="d-flex flex-column flex-md-row  align-items-center justify-content-around align-items-md-baseline team-row">
 
           <div class=" d-flex flex-column justify-content-center team-member-container">
-            <div class="member-icon d-flex justify-content-center"><img src="img/team-icon-1.png">
+            <div class="d-flex flex-row flex-md-column">
+              <div class="member-icon d-flex justify-content-center align-items-center"><img class="member-icon-image" src="img/team-icon-1.png">
               <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
             </div>
-            <div class="text-center member-name"><p>Руслан Тугушев</p></div>
-            <div class="text-center member-post">
+            <div class="d-flex flex-column justify-content-center member-info-sm">
+              <div class="text-left text-md-center member-name"><p>Руслан Тугушев</p></div>
+            <div class="text-left text-md-center member-post">
               <p>
                 Co-founder, Early Investor
               </p>
             </div>
-          <div class="text-center member-text">
+            </div>
+            
+
+            </div>
+            
+          <div class="text-left text-md-center member-text">
             <p>
               Storiqa marketplace founder. Project’s ICO successfully raised $25 mln in 2018.
             </p>
           </div>
-
           </div>
+
            <div class=" d-flex flex-column justify-content-center team-member-container">
-            <div class="member-icon d-flex justify-content-center"><img src="img/team-icon-2.png">
+            <div class="d-flex flex-row flex-md-column">
+              <div class="member-icon d-flex justify-content-center align-items-center"><img class="member-icon-image" src="img/team-icon-2.png">
               <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
             </div>
-            <div class="text-center member-name"><p>Evgeny Gavrilin</p></div>
-            <div class="text-center member-post">
+            <div class="d-flex flex-column justify-content-center member-info-sm">
+              <div class="text-left text-md-center member-name">
+                <p>Evgeny Gavrilin</p>
+              </div>
+            <div class="text-left text-md-center member-post">
               <p>
                 Co-founder, Early Investor
               </p>
             </div>
-          <div class="text-center member-text">
+            </div>
+            
+
+            </div>
+            
+          <div class="text-left text-md-center member-text">
             <p>
               More than 15 years of marketing and international 
               sales experience
             </p>
           </div>
-
           </div>
+
            <div class=" d-flex flex-column justify-content-center team-member-container">
-            <div class="member-icon d-flex justify-content-center"><img src="img/team-icon-3.png">
+            <div class="d-flex flex-row flex-md-column">
+              <div class="member-icon d-flex justify-content-center align-items-center"><img class="member-icon-image" src="img/team-icon-3.png">
               <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
             </div>
-            <div class="text-center member-name"><p>Nadia Cherkasova</p></div>
-            <div class="text-center member-post">
+            <div class="d-flex flex-column justify-content-center member-info-sm">
+              <div class="text-left text-md-center member-name">
+                <p>Nadia Cherkasova</p>
+              </div>
+            <div class="text-left text-md-center member-post">
               <p>
                 Advisor, Early Investor
               </p>
             </div>
-          <div class="text-center member-text">
-            <p>
-              The member of Board of Directors of «Otkrytiye»  bank, Nadiya became one of the top-35 world’s  successful women in 2007 by World Business  Magazine
+            </div>
+            
+
+            </div>
+            
+          <div class="text-left text-md-center member-text">
+            <p>The member of Board of Directors of «Otkrytiye» bank, Nadiya became one of the top-35 world’s successful women in 2007 by World Business Magazine
             </p>
           </div>
-
           </div>
 
 
         </div>
 
 
-        <div class="row d-flex flex-row align-items-baseline team-row">
+        <div class="d-none d-md-flex row team-row">
 
-          <div class="col-lg-4 offset-lg-1 col-xl-3 offset-xl-2 d-flex flex-column justify-content-center team-member-container">
+          <div class="col-md-5 offset-md-0 col-lg-4 offset-lg-1 col-xl-3 offset-xl-2 ">
             <div class="member-icon d-flex justify-content-center"><img src="img/team-icon-4.png">
-              <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
+              <div class="LK-icon-2"><a href="#"><img src="img/LK_ico.svg"></a></div>
             </div>
             <div class="text-center member-name"><p>John Fitzpatrick</p></div>
             <div class="text-center member-post">
@@ -570,9 +788,9 @@ users</p>
               </p>
             </div>
           </div>
-           <div class="col-lg-4 offset-lg-2 col-xl-3 offset-xl-2 d-flex flex-column justify-content-center team-member-container">
+           <div class=" col-md-5 offset-md-2 col-lg-4 offset-lg-2 col-xl-3 offset-xl-2 ">
             <div class="member-icon d-flex justify-content-center"><img src="img/team-icon-5.png">
-              <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
+              <div class="LK-icon-2"><a href="#"><img src="img/LK_ico.svg"></a></div>
             </div>
             <div class="text-center member-name"><p>William Chilcott</p></div>
             <div class="text-center member-post">
@@ -581,9 +799,49 @@ users</p>
               </p>
             </div>
           </div>
-
-
         </div>
+
+        <div class="d-flex flex-column  align-items-center justify-content-around  team-row d-md-none">
+
+          <div class=" d-flex flex-column justify-content-center team-member-container">
+            <div class="d-flex flex-row ">
+              <div class="member-icon d-flex justify-content-center align-items-center"><img class="member-icon-image" src="img/team-icon-4.png">
+              <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
+            </div>
+            <div class="d-flex flex-column justify-content-center member-info-sm">
+              <div class="text-left member-name"><p>John Fitzpatrick</p></div>
+            <div class="text-left member-post">
+              <p>
+                Marketing Advisor
+              </p>
+            </div>
+            </div>
+            
+
+            </div>
+
+          </div>
+
+           <div class=" d-flex flex-column justify-content-center team-member-container">
+            <div class="d-flex flex-row ">
+              <div class="member-icon d-flex justify-content-center align-items-center"><img class="member-icon-image" src="img/team-icon-5.png">
+              <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
+            </div>
+            <div class="d-flex flex-column justify-content-center member-info-sm">
+              <div class="text-left member-name">
+                <p>William Chilcott</p>
+              </div>
+            <div class="text-left member-post">
+              <p>
+                Analytical Advisor
+              </p>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+
 
         <div class="d-flex justify-content-center team-bttn-div">
           <button class="show-team-bttn">See all team</button>
@@ -591,116 +849,160 @@ users</p>
 
 
         <div id="hidden-team" class="hidden-team">
-        <div class="d-flex flex-row justify-content-around align-items-baseline team-row">
+        <div class="d-flex flex-column flex-md-row  align-items-center justify-content-around align-items-md-baseline team-row">
 
           <div class=" d-flex flex-column justify-content-center team-member-container">
-            <div class="member-icon d-flex justify-content-center"><img src="img/team-icon-6.png">
+            <div class="d-flex flex-row flex-md-column">
+              <div class="member-icon d-flex justify-content-center align-items-center"><img class="member-icon-image" src="img/team-icon-6.png">
               <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
             </div>
-            <div class="text-center member-name"><p>Maria Dokshina</p></div>
-            <div class="text-center member-post">
+            <div class="d-flex flex-column justify-content-center member-info-sm">
+              <div class="text-left text-md-center member-name"><p>Maria Dokshina</p></div>
+            <div class="text-left text-md-center member-post">
               <p>
                 Chief Executive Officer (СЕО) 
               </p>
             </div>
-          <div class="text-center member-text">
+            </div>
+            
+
+            </div>
+            
+          <div class="text-left text-md-center member-text">
             <p>
-              Lead expert in crowdfunding technologies in 
-              Russia, more than 6 years of international fund 
-              raising experience
+              Lead expert in crowdfunding technologies in Russia, more than 6 years of international fund raising experience
             </p>
           </div>
-
           </div>
+
            <div class=" d-flex flex-column justify-content-center team-member-container">
-            <div class="member-icon d-flex justify-content-center"><img src="img/team-icon-7.png">
+            <div class="d-flex flex-row flex-md-column">
+              <div class="member-icon d-flex justify-content-center align-items-center"><img class="member-icon-image" src="img/team-icon-7.png">
               <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
             </div>
-            <div class="text-center member-name"><p>Mikhail Svinukhov</p></div>
-            <div class="text-center member-post">
+            <div class="d-flex flex-column justify-content-center member-info-sm">
+              <div class="text-left text-md-center member-name">
+                <p>Mikhail Svinukhov</p>
+              </div>
+            <div class="text-left text-md-center member-post">
               <p>
                 Project Manager
               </p>
             </div>
-          <div class="text-center member-text">
+            </div>
+            
+
+            </div>
+            
+          <div class="text-left text-md-center member-text">
             <p>
-              Launched more than 1000 crowdfunding  projects for more than 250 mil rub
+              Launched more than 1000 crowdfunding projects for more than 250 mil rub
             </p>
           </div>
-
           </div>
+
            <div class=" d-flex flex-column justify-content-center team-member-container">
-            <div class="member-icon d-flex justify-content-center"><img src="img/team-icon-8.png">
+            <div class="d-flex flex-row flex-md-column">
+              <div class="member-icon d-flex justify-content-center align-items-center"><img class="member-icon-image" src="img/team-icon-8.png">
               <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
             </div>
-            <div class="text-center member-name"><p>Vladimir Ovcharov</p></div>
-            <div class="text-center member-post">
+            <div class="d-flex flex-column justify-content-center member-info-sm">
+              <div class="text-left text-md-center member-name">
+                <p>Vladimir Ovcharov</p>
+              </div>
+            <div class="text-left text-md-center member-post">
               <p>
-                CTO 
+                CTO
               </p>
             </div>
-          <div class="text-center member-text">
-            <p>
-              Blockchain evangelist, Developer DApp,  Expert in information security.
+            </div>
+            
+
+            </div>
+            
+          <div class="text-left text-md-center member-text">
+            <p>Blockchain evangelist, Developer DApp, Expert in information security.
             </p>
           </div>
-
           </div>
 
 
         </div>
-        <div class="d-flex flex-row justify-content-around align-items-baseline team-row">
+        <div class="d-flex flex-column flex-md-row  align-items-center justify-content-around align-items-md-baseline team-row">
 
           <div class=" d-flex flex-column justify-content-center team-member-container">
-            <div class="member-icon d-flex justify-content-center"><img src="img/team-icon-9.png">
+            <div class="d-flex flex-row flex-md-column">
+              <div class="member-icon d-flex justify-content-center align-items-center"><img class="member-icon-image" src="img/team-icon-9.png">
               <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
             </div>
-            <div class="text-center member-name"><p>Alexander Pavlov</p></div>
-            <div class="text-center member-post">
+            <div class="d-flex flex-column justify-content-center member-info-sm">
+              <div class="text-left text-md-center member-name"><p>Alexander Pavlov</p></div>
+            <div class="text-left text-md-center member-post">
               <p>
                 Senior UX/UI Designer
               </p>
             </div>
-          <div class="text-center member-text">
+            </div>
+            
+
+            </div>
+            
+          <div class="text-left text-md-center member-text">
             <p>
               More than 8 years of programming and interface development and web-projects software experience
             </p>
           </div>
-
           </div>
+
            <div class=" d-flex flex-column justify-content-center team-member-container">
-            <div class="member-icon d-flex justify-content-center"><img src="img/team-icon-10.png">
+            <div class="d-flex flex-row flex-md-column">
+              <div class="member-icon d-flex justify-content-center align-items-center"><img class="member-icon-image" src="img/team-icon-10.png">
               <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
             </div>
-            <div class="text-center member-name"><p>Arthur Mass</p></div>
-            <div class="text-center member-post">
+            <div class="d-flex flex-column justify-content-center member-info-sm">
+              <div class="text-left text-md-center member-name">
+                <p>Arthur Mass</p>
+              </div>
+            <div class="text-left text-md-center member-post">
               <p>
                 Head of Community
               </p>
             </div>
-          <div class="text-center member-text">
+            </div>
+            
+
+            </div>
+            
+          <div class="text-left text-md-center member-text">
             <p>
               More than 10 years of international community management experience, provided community support for Cashbet and Cappasity ICOs
             </p>
           </div>
-
           </div>
+
            <div class=" d-flex flex-column justify-content-center team-member-container">
-            <div class="member-icon d-flex justify-content-center"><img src="img/team-icon-11.png">
+            <div class="d-flex flex-row flex-md-column">
+              <div class="member-icon d-flex justify-content-center align-items-center"><img class="member-icon-image" src="img/team-icon-11.png">
               <div class="LK-icon"><a href="#"><img src="img/LK_ico.svg"></a></div>
             </div>
-            <div class="text-center member-name"><p>Daria Averkieva</p></div>
-            <div class="text-center member-post">
+            <div class="d-flex flex-column justify-content-center member-info-sm">
+              <div class="text-left text-md-center member-name">
+                <p>Daria Averkieva</p>
+              </div>
+            <div class="text-left text-md-center member-post">
               <p>
                 Head of HR
               </p>
             </div>
-          <div class="text-center member-text">
-            <p>
-              More than 5 years of international team management experience
+            </div>
+            
+
+            </div>
+            
+          <div class="text-left text-md-center member-text">
+            <p>More than 5 years of international team management experience
             </p>
           </div>
-
           </div>
 
 
@@ -807,7 +1109,7 @@ users</p>
       }
       .hover{
         font-size: 18px !important;
-        transition: 1s;
+        transition: .7s;
       }
       
          
@@ -936,8 +1238,8 @@ users</p>
             <p>Smart Contract on Github</p>
           </div>
        </div>
-       <div class="row">
-         <div class="col-lg-10 offset-lg-1">
+       <div class="row"> 
+         <div class="col-sm-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
 
           <div class="contract-scroll">
            <div class="contract-block d-flex flex-row">
@@ -1381,10 +1683,10 @@ contract BoomstarterPresale is ArgumentsChecker, ReentrancyGuard, EthPriceDepend
      </div>
    </div>
 
-   <div class="container-fluid blockchain-container">
+   <div id="blockchain-container" class="container-fluid blockchain-container">
      <div class="container">
        <div class="row">
-          <div class="col-sm-7  text-left explanation-heading">
+          <div class="col-sm-12  text-left explanation-heading">
             <p>Why blockchain?</p>
           </div>
        </div>
@@ -1395,7 +1697,7 @@ contract BoomstarterPresale is ArgumentsChecker, ReentrancyGuard, EthPriceDepend
             </p>
          </div>
        </div>
-       <div class="d-flex justify-content-between ">
+       <div class="d-none d-lg-block d-lg-flex justify-content-between ">
         
         <div class="blockchain-icon d-flex align-items-center justify-content-center"><img src="img/block-icon-1.svg"></div>
         <div class="blockchain-icon d-flex align-items-center justify-content-center"><img src="img/block-icon-2.svg"></div>
@@ -1404,7 +1706,7 @@ contract BoomstarterPresale is ArgumentsChecker, ReentrancyGuard, EthPriceDepend
          
        </div>
 
-       <div class="d-flex justify-content-between ">
+       <div class="d-none d-lg-block d-lg-flex justify-content-between ">
          <div class="blockchain-head-text text-center">
           <p>
             Smart-contracts
@@ -1427,7 +1729,7 @@ contract BoomstarterPresale is ArgumentsChecker, ReentrancyGuard, EthPriceDepend
       </div>
        </div>
 
-       <div class="d-flex justify-content-between ">
+       <div class="d-none d-lg-block d-lg-flex justify-content-between ">
          <div class="blockchain-text text-center">
           <p>
             Guarantee that everyone gets their funds
@@ -1452,6 +1754,86 @@ contract BoomstarterPresale is ArgumentsChecker, ReentrancyGuard, EthPriceDepend
       </div>
        </div>
 
+<div class="row d-lg-none">
+         <div class="col-12 col-sm-4 offset-sm-1 col-md-3 offset-md-2 d-flex flex-row flex-sm-column" >
+           <div class="explain-icon-container-2"><img src="img/block-icon-1.svg"></div>
+           <div class="d-flex flex-column">
+              <div class="md-blockchain-head-text text-center">
+          <p>
+            Smart-contracts
+          </p>
+          </div>
+           <div class="md-blockchain-text text-center">
+            <p>
+            Guarantee that everyone gets their funds
+            </p>
+          </div>
+
+           </div>
+          
+          
+         </div>
+         
+         <div class="col-12 col-sm-4 offset-sm-2 col-md-3 offset-md-2 d-flex flex-row-reverse flex-sm-column">
+           <div class="blockchan-icon-container-2"><img src="img/block-icon-2.svg"></div>
+           <div class="d-flex flex-column">
+             <div class="md-blockchain-head-text text-center">
+          <p>
+            Instant transactions
+          </p>
+          </div>
+           <div class="md-blockchain-text text-center">
+            <p>
+            In average, Etherium
+            operations take a couple of minutes
+            </p>
+          </div>
+           </div>
+           
+          
+         </div>
+       </div>
+
+       <div class="row d-lg-none blockchain-row-md">
+         <div class="col-sm-4 offset-sm-1 col-md-3 offset-md-2 d-flex flex-row flex-sm-column" >
+           <div class="explain-icon-container-1"><img class="blockchain-img" src="img/block-icon-3.svg"></div>
+           <div class="d-flex flex-column">
+             <div class="md-blockchain-head-text text-center">
+          <p>
+            Crowdmining
+          </p>
+          </div>
+           <div class="md-blockchain-text text-center">
+            <p>
+            Crowdmining funds creator’s project and every miner gets his profit in cryptocurrency
+            </p>
+          </div>
+           </div>
+           
+          
+         </div>
+         
+         <div class="col-sm-4 offset-sm-2 col-md-3 offset-md-2 d-flex flex-row-reverse flex-sm-column">
+           <div class="explain-icon-container-2"><img src="img/block-icon-3.svg"></div>
+           <div class="d-flex flex-column">
+             <div class="md-blockchain-head-text text-center">
+          <p>
+            Global
+          </p>
+          </div>
+           <div class="md-blockchain-text text-center">
+            <p>
+            Remove international 
+            restrictions
+            </p>
+          </div>
+           </div>
+           
+          
+         </div>
+       </div>
+
+
      </div>
    </div>
    <div class="container-fluid buy-container">
@@ -1473,7 +1855,7 @@ contract BoomstarterPresale is ArgumentsChecker, ReentrancyGuard, EthPriceDepend
    <div class="container-fluid footer-container">
      <div class="container">
        <div class="row footer-social">
-      <div class=" col-lg-4 offset-lg-4 d-flex align-items-bottom justify-content-around">
+      <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 d-flex align-items-bottom justify-content-around">
         
         <div class="social-icon"><a href=""><img src="img/Telega.svg"></a></div>
         <div class="social-icon"><a href=""><img src="img/Twitter.svg"></a></div>

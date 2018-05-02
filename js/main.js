@@ -25,8 +25,8 @@ $('#token-bttn').on("click",function(){
 });
 
 $('#team-bttn').on("click",function(){
-	$('#diagram-text').html( " <h1>8<sup>%</sup></h1><p>Team</p> ");
-	$('#diagram-text').css({"left": "34%", "top" : "17%"});
+	$('#diagram-text').html( " <h1>15<sup>%</sup></h1><p>Team</p> ");
+	$('#diagram-text').css({"left": "30%", "top" : "17%"});
 	$('#Path_404').addClass('active');
 	$('#Path_402').removeClass('active');
 	$('#Path_403').removeClass('active');
@@ -40,7 +40,7 @@ $('#team-bttn').on("click",function(){
 });
 
 $('#partner-bttn').on("click",function(){
-	$('#diagram-text').html( " <h1>3<sup>%</sup></h1><p>Partners & Advisors</p> ");
+	$('#diagram-text').html( " <h1>4<sup>%</sup></h1><p>Partners & Advisors</p> ");
 	$('#diagram-text').css({"left": "29%", "top" : "8%"});
 	$('#Path_403').addClass('active');
 	$('#Path_402').removeClass('active');
@@ -56,7 +56,7 @@ $('#partner-bttn').on("click",function(){
 });
 
 $('#investor-bttn').on("click",function(){
-	$('#diagram-text').html( " <h1>3<sup>%</sup></h1><p>Early<br> Investors</p> ");
+	$('#diagram-text').html( " <h1>5<sup>%</sup></h1><p>Early<br> Investors</p> ");
 	$('#diagram-text').css({"left": "29%", "top" : "8%"});
 	$('#Path_402').addClass('active');
 	$('#Path_403').removeClass('active');
@@ -325,14 +325,56 @@ $(window).scroll(function(){
  			$('.contract-row-2').css('opacity','1');
  		});
 		$(window).off('scroll');
-  	}
- 
-	
-		  
+  	}	  
 });
-//$(".contract-scroll").niceScroll(".contract-row",{
-	//cursorcolor:"aquamarine"
-//});
+
+
+ $('.token-mnr-bttn').on('click', function(){
+ 	$('.token-author-div').fadeOut(0);
+ 	$('.token-miner-div').fadeIn(100);
+ 	$('.token-crt-bttn').removeClass('token-focused');
+ 	$('.token-mnr-bttn').addClass('token-focused');
+
+ });
+
+  $('.token-crt-bttn').on('click', function(){
+ 	$('.token-miner-div').fadeOut(0);
+ 	$('.token-author-div').fadeIn(100);
+ 	$('.token-crt-bttn').addClass('token-focused');
+ 	$('.token-mnr-bttn').removeClass('token-focused');
+
+ });
+  $(window).on('scroll',function(){
+  	
+  	$('.fixed-header').addClass('blue');
+  	$('.fixed-header').addClass('showed');
+  	$('.viget-telegram').removeClass('d-none');
+  	$('.header-tel-icon').addClass('d-none');
+  	$('.header-menu-icon').addClass('offset-4');
+  });
+  var menuCounter = 0;
+
+  $('.header-menu-icon').on('click',function(){
+  	if(menuCounter%2==0){
+  		$('.fixed-header').removeClass('blue');
+  	$('.hidden-menu').fadeIn(400);
+  	$('.header-menu-icon').html('<img src="img/Close.svg">');
+  	$('.fixed-header').addClass('bg-linear');
+  	menuCounter++;
+  }else{
+  	$('.hidden-menu').fadeOut(50);
+  	$('.header-menu-icon').html('<img src="img/menu-icon.svg">');
+  	$('.fixed-header').removeClass('bg-linear');
+  	menuCounter++;
+  }
+  });
+  $('.menu-button').on('click',function(){
+  	$('.hidden-menu').fadeOut(50);
+  	$('.header-menu-icon').html('<img src="img/menu-icon.svg">');
+  	$('.fixed-header').removeClass('bg-linear');
+  	menuCounter++;
+  });
+
  });
 	
 

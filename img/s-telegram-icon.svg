@@ -1,0 +1,27 @@
+<svg id="s-telegram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #01a0c6;
+      }
+
+      .cls-2 {
+        fill: #e5e5e5;
+      }
+
+      .cls-3 {
+        fill: #ccc;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="14" cy="14" r="14"/>
+  <path id="Path_1" data-name="Path 1" class="cls-2" d="M104.928,107.716a.475.475,0,0,0-.459-.038l-15.045,7a.748.748,0,0,0-.427.684.736.736,0,0,0,.443.656l13.869,6.043a.745.745,0,0,0,1.039-.629l.782-13.305A.462.462,0,0,0,104.928,107.716Z" transform="translate(-84.131 -101.75)"/>
+  <path id="Path_2" data-name="Path 2" class="cls-3" d="M171.6,118.517l.941,6.267L182.953,108.4Z" transform="translate(-162.216 -102.472)"/>
+  <path id="Path_3" data-name="Path 3" class="cls-4" d="M104.471,107.62l-15.045,7a.734.734,0,0,0,.016,1.34l4.08,1.777L104.87,107.62A.464.464,0,0,0,104.471,107.62Z" transform="translate(-84.133 -101.692)"/>
+  <path id="Path_4" data-name="Path 4" class="cls-2" d="M190.036,119.463l-1.236,5.321L199.213,108.4Z" transform="translate(-178.475 -102.472)"/>
+  <path id="Path_5" data-name="Path 5" class="cls-4" d="M220.637,108.533c-.022-.011-.038-.022-.06-.033L211.4,119.558l7.618,3.32a.745.745,0,0,0,1.039-.629l.782-13.305A.462.462,0,0,0,220.637,108.533Z" transform="translate(-199.839 -102.566)"/>
+</svg>
