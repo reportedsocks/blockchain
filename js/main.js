@@ -1,11 +1,11 @@
 $( document ).ready(function() {
-$("body").niceScroll({
-	zindex:'999999',
-	cursorcolor:"#FA940A",
-	cursorwidth:"15px",
-	background:"rgba(0,99,174,.6)",
-	cursorborder:"none"
-});
+//$("body").niceScroll({
+	//zindex:'999999',
+	////cursorcolor:"#FA940A",
+	//cursorwidth:"15px",
+	//background:"rgba(0,99,174,.6)",
+	//cursorborder:"none"
+//});
 
 
 $('#token-bttn').on("click",function(){
