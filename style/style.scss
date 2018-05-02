@@ -19,9 +19,7 @@ $font: 'Montserrat', sans-serif;
     @content;
   }
 }
-body{
-  overflow: hidden;
-}
+
 .header-container{
   background-image: url('../img/bg-header.png');
   
