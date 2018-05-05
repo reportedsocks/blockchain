@@ -14,8 +14,8 @@
       }
     </style>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#00c6f5"/>
-      <stop offset="1" stop-color="#0afa79"/>
+      <stop offset="0" stop-color="#f5cf00"/>
+      <stop offset="1" stop-color="#fa940a"/>
     </linearGradient>
   </defs>
   <g id="Group_243" data-name="Group 243" transform="translate(18.226 45.605)">

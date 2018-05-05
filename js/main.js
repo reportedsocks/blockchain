@@ -372,6 +372,7 @@ $(window).scroll(function(){
   	$('.hidden-menu').fadeOut(50);
   	$('.header-menu-icon').html('<img src="img/menu-icon.svg">');
   	$('.fixed-header').removeClass('bg-linear');
+  	$('.fixed-header').addClass('blue');
   	menuCounter++;
   });
 
