@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 237 1278.083">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #112a7c;
+        font-size: 16px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-family: SegoeUI-Bold, Montserrat;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 12px;
+        font-family: SegoeUI-Light, Segoe UI;
+        font-weight: 300;
+      }
+
+      .cls-4, .cls-6 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 5px;
+      }
+
+      .cls-4, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke: #fff;
+      }
+
+      .cls-4, .cls-6, .cls-7 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6 {
+        stroke-dasharray: 0 11;
+      }
+
+      .cls-7, .cls-8, .cls-9 {
+        stroke-width: 3.375px;
+      }
+
+      .cls-7, .cls-8 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-5);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00c6f5"/>
+      <stop offset="1" stop-color="#0afa79"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00d8ff"/>
+      <stop offset="1" stop-color="#035796"/>
+    </linearGradient>
+  </defs>
+  <g id="roadmap-sm-2" transform="translate(-37 -1320)">
+    <g id="Group_282" data-name="Group 282" transform="translate(-139 -3701)">
+      <text id="_2018_May_" data-name="2018 May
+" class="cls-1" transform="translate(358 5700)"><tspan x="-73.758" y="0">2018 May</tspan><tspan class="cls-2"><tspan x="0" y="21"></tspan></tspan></text>
+      <text id="The_start_of_smart_crowdfunding_system_development" data-name="The start of smart crowdfunding system development" class="cls-3" transform="translate(177 5710)"><tspan x="19.715" y="13">The start of smart crowdfunding </tspan><tspan x="77.383" y="29">system development</tspan></text>
+    </g>
+    <g id="Group_283" data-name="Group 283" transform="translate(-139 -3592)">
+      <text id="_2018_June" data-name="2018 June" class="cls-1" transform="translate(358 5700)"><tspan x="-76.367" y="0">2018 June</tspan></text>
+      <text id="Launch_of_token_Pre-Sale" data-name="Launch of token Pre-Sale" class="cls-3" transform="translate(270 5710)"><tspan x="7.586" y="13">Launch of token </tspan><tspan x="46.504" y="29">Pre-Sale</tspan></text>
+    </g>
+    <g id="Group_284" data-name="Group 284" transform="translate(-139 -3488)">
+      <text id="_2018_September" data-name="2018 September" class="cls-1" transform="translate(358 5700)"><tspan x="-123.195" y="0">2018 September</tspan></text>
+      <text id="Completion_of_the_main_token_Crowdsale" data-name="Completion of the main token Crowdsale" class="cls-3" transform="translate(228 5710)"><tspan x="11.236" y="13">Completion of the main </tspan></text>
+    </g>
+    <g id="Group_285" data-name="Group 285" transform="translate(-139 -3361)">
+      <text id="_2018_November" data-name="2018 November" class="cls-1" transform="translate(358 5700)"><tspan x="-120.422" y="0">2018 November</tspan></text>
+      <text id="Token_listing_on_the_exchanges" data-name="Token listing on the exchanges" class="cls-3" transform="translate(358 5722)"><tspan x="-152.525" y="0">Token listing on the exchanges</tspan></text>
+    </g>
+    <g id="Group_286" data-name="Group 286" transform="translate(-139 -3252)">
+      <text id="_2019_July" data-name="2019 July" class="cls-1" transform="translate(358 5700)"><tspan x="-71.188" y="0">2019 July</tspan></text>
+      <text id="Full-functionality_product._Implementation_of_AI_in_the_processes_of_moderation_and_ranking_of_projects." data-name="Full-functionality product. Implementation of AI in the processes of moderation and ranking of projects." class="cls-3" transform="translate(176 5710)"><tspan x="54.635" y="13">Full-functionality product. </tspan><tspan x="45.072" y="29">Implementation of AI in the </tspan><tspan x="36.313" y="45">processes of moderation and </tspan><tspan x="86.557" y="61">ranking of projects.</tspan></text>
+    </g>
+    <g id="Group_281" data-name="Group 281" transform="translate(240.938 1366.5)">
+      <g id="Group_261" data-name="Group 261" transform="translate(0.1 442.019)">
+        <g id="Group_260" data-name="Group 260" transform="translate(0 -334.019)">
+          <line id="Line_9" data-name="Line 9" class="cls-4" y2="1108.583" transform="translate(16.481)"/>
+          <g id="Group_259" data-name="Group 259" transform="translate(0 1094.006)">
+            <path id="Path_326" data-name="Path 326" class="cls-5" d="M.1,380.8l16.481,16.013L33.062,380.8v13.564L16.581,410.376.1,394.364Z" transform="translate(-0.1 -380.8)"/>
+          </g>
+        </g>
+      </g>
+      <line id="Line_10" data-name="Line 10" class="cls-6" y2="145.385" transform="translate(16.581 -44)"/>
+      <g id="Group_262" data-name="Group 262" transform="translate(3.008 173.126)">
+        <circle id="Ellipse_446" data-name="Ellipse 446" class="cls-7" cx="13.572" cy="13.572" r="13.572" transform="translate(0 -0.126)"/>
+        <path id="Path_327" data-name="Path 327" class="cls-8" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 112.874)"/>
+        <path id="Path_328" data-name="Path 328" class="cls-8" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 225.874)"/>
+        <path id="Path_329" data-name="Path 329" class="cls-8" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 338.874)"/>
+        <path id="Path_330" data-name="Path 330" class="cls-9" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 451.874)"/>
+        <path id="Path_331" data-name="Path 331" class="cls-9" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 564.874)"/>
+        <path id="Path_332" data-name="Path 332" class="cls-9" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 677.874)"/>
+        <path id="Path_333" data-name="Path 333" class="cls-9" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 790.874)"/>
+        <path id="Path_334" data-name="Path 334" class="cls-9" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 903.874)"/>
+      </g>
+    </g>
+    <g id="Group_342" data-name="Group 342" transform="translate(-139 -4152)">
+      <text id="_2017_November_" data-name="2017 November
+" class="cls-1" transform="translate(358 5683)"><tspan x="-120.422" y="0">2017 November</tspan><tspan class="cls-2"><tspan x="0" y="21"></tspan></tspan></text>
+      <text id="Market_and_solutions_research_for_smart_crowdfunding" data-name="Market and solutions research for smart crowdfunding" class="cls-3" transform="translate(186 5693)"><tspan x="4.938" y="13">Market and solutions research for </tspan><tspan x="71.113" y="29">smart crowdfunding</tspan></text>
+    </g>
+    <g id="Group_343" data-name="Group 343" transform="translate(-139 -4039)">
+      <text id="_2017_January" data-name="2017 January" class="cls-1" transform="translate(358 5687)"><tspan x="-100.391" y="0">2017 January</tspan></text>
+      <text id="Definition_of_the_concept_and_technology_of_smart_crowdfunding_and_the_start_of_product_development" data-name="Definition of the concept and technology of smart crowdfunding and the start of product development" class="cls-3" transform="translate(176 5697)"><tspan x="35.891" y="13">Definition of the concept and </tspan><tspan x="8.943" y="29">technology of smart crowdfunding </tspan><tspan x="62.609" y="45">and the start of product </tspan><tspan x="115.906" y="61">development</tspan></text>
+    </g>
+    <g id="Group_344" data-name="Group 344" transform="translate(-139 -3924)">
+      <text id="_2018_February" data-name="2018 February" class="cls-1" transform="translate(358 5699)"><tspan x="-108.445" y="0">2018 February</tspan></text>
+      <text id="Start_of_WhitePaper_creation" data-name="Start of WhitePaper creation" class="cls-3" transform="translate(358 5721)"><tspan x="-141.158" y="0">Start of WhitePaper creation</tspan></text>
+    </g>
+    <g id="Group_345" data-name="Group 345" transform="translate(-139 -3811)">
+      <text id="_2018_April_" data-name="2018 April
+" class="cls-1" transform="translate(358 5686)"><tspan x="-77.922" y="0">2018 April</tspan><tspan class="cls-2"><tspan x="0" y="21"></tspan></tspan></text>
+      <text id="Community_formation_around_the_project" data-name="Community formation
+around the project" class="cls-3" transform="translate(358 5708)"><tspan x="-110.438" y="0">Community formation</tspan><tspan x="-93.146" y="16">around the project</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -375,6 +375,27 @@ $(window).scroll(function(){
   	$('.fixed-header').addClass('blue');
   	menuCounter++;
   });
+  var emailPattern=/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
+  $('#join-wl').on('click', function(){
+  	var inputValue = $('#join-input').val();
+  	console.log(inputValue);
+  	if(emailPattern.test(inputValue)){
+  		$('.join-bttn').css({left: '0'});
+  		$('.email-send').removeClass('d-none');
+  		$('#join-input').val("");
+  	}else{
+  		$('#join-input').val("");
+  		$('#join-input').attr( 'placeholder', 'Incorrect e-mail');
+  	}
+  });
+	$('#roadmap-bttn').on('click',function(){
+		if($(window).width() <= '768'){
+			$('.roadmap-sm-container').html('<img src="img/roadmap-sm-2.svg">');
+			$('#roadmap-bttn').addClass('d-none');
+		}else{
+			return false;
+		}
+	});
 
  });
 	

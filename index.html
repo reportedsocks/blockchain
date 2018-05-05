@@ -82,11 +82,43 @@
 
       <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 offset-lg-0 col-lg-6 col-xl-5 offset-xl-2">
         <div class=" d-flex flex-column  align-items-center header-promo">
-        <div class="promo-heading"><p>PRE-SALE COMING SOON</p></div>
-        <div class="promo-upper-text"><p>BEST PRICE FOR WHITELIST</p></div>
-        <div class="promo-offer"><p>1 BC = 0,6$</p></div>
-        <div class="promo-bttn"><button>JOIN WHITELIST</button></div>
-        <div class="promo-lower-text"><p>1 BC = 10$ in 2019</p></div>
+        <div class="promo-heading"><p>PRE-SALE IS COMING SOON</p></div>
+        <div class="d-flex flex-row align-items-center justify-content-around">
+          <div class="timer-circle after-weeks"><p>04</p></div>
+          <div class="timer-points"><p>:</p></div>
+          <div class="timer-circle after-days"><p>05</p></div>
+          <div class="timer-points"><p>:</p></div>
+          <div class="timer-circle after-hours"><p>12</p></div>
+          <div class="timer-points"><p>:</p></div>
+          <div class="timer-circle after-seconds"><p>56</p></div>
+        </div>
+        <div class="d-flex flex-row header-promo-price justify-content-end ">
+          <div class="presale-price text-center">
+            <p class="pre-label">PRE-SALE PRICE</p>
+            <p>1 BC = 0.6 $</p>
+          </div>
+          <div class="text-center ico-price">
+            <p class="ico-label">ICO PRICE</p>
+            <p>1 BC = 0.8 $</p>
+          </div>
+        </div>
+        <div class="d-none d-sm-flex justify-content-center">
+          <div class="exchange-date"><p>Exchanges: November 2018</p></div>
+        </div>
+        <div class="label-input text-left align-self-start d-none d-sm-block"><p>Get best price</p></div>
+        <div class="col-12 d-none d-sm-block">
+          <form onsubmit="return false;">
+            <div class="header-form d-flex flex-row align-items-center">
+            <div class="join-input-div"><input type="text" id="join-input" class="join-input" placeholder="Your e-mail"></div>
+            <div><button type="submit" class="join-bttn" id="join-wl">Join Whitelist</button></div>
+            <div class="email-send d-none">Done!</div>
+            </div>
+          </form>
+        </div>
+        <div class="d-sm-none promo-bttn-header">
+          <button>Join Whitelist</button>
+        </div>
+        
         </div>
       </div>
     </div>
@@ -466,7 +498,7 @@ cryptofunding market</p>
        </div>
        <div class="token-author-div">
        <div class="row d-flex flex-column d-md-none">
-        <div class="col-6 offset-3 col-sm-4 offset-sm-4">
+        <div class="col-4 offset-4 col-sm-4 offset-sm-4">
            <img src="img/token-icon.svg">
          </div>
          <div class="col-8 offset-2 col-sm-6 offset-sm-3">
@@ -490,7 +522,7 @@ cryptofunding market</p>
 
       <div class="token-miner-div">
        <div class="row d-flex flex-column d-md-none">
-        <div class="col-6 offset-3 col-sm-4 offset-sm-4">
+        <div class="col-4 offset-4 col-sm-4 offset-sm-4">
            <img src="img/token-icon.svg">
          </div>
          <div class="col-8 offset-2  col-sm-6 offset-sm-3">
@@ -634,7 +666,7 @@ cryptofunding market</p>
            </div>
          </div>
        </div>
-        <div class="row">
+        <div class="row" id="team-container">
           <div class="col-sm-9 text-left team-heading">
             <p>Meet our team</p>
           </div>
@@ -1285,8 +1317,11 @@ cryptofunding market</p>
   </g>
 </svg>
 </div>
+
+<div class="d-md-none roadmap-sm-container"><img src="img/roadmap-sm-1.svg"></div>
+
               <div class="row">
-                <div class="col-12 text-center"><button class="roadmap-bttn">See more</button></div>
+                <div class="col-12 text-center"><button id="roadmap-bttn" class="roadmap-bttn">See more</button></div>
               </div>
 
        </div>
