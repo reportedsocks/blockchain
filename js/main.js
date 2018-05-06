@@ -348,15 +348,12 @@ $(window).scroll(function(){
   	
   	$('.fixed-header').addClass('blue');
   	$('.fixed-header').addClass('showed');
-  	$('.viget-telegram').removeClass('d-none');
-  	$('.header-tel-icon').addClass('d-none');
-  	$('.header-menu-icon').addClass('offset-4');
   });
   var menuCounter = 0;
 
   $('.header-menu-icon').on('click',function(){
   	if(menuCounter%2==0){
-  		$('.fixed-header').removeClass('blue');
+  	$('.fixed-header').removeClass('blue');
   	$('.hidden-menu').fadeIn(400);
   	$('.header-menu-icon').html('<img src="img/Close.svg">');
   	$('.fixed-header').addClass('bg-linear');
