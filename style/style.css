@@ -165,32 +165,44 @@
       font-size: 20px; } }
   .header-slogan p {
     margin-bottom: 0px; }
-  .header-slogan:after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 7px;
-    background-color: #F5AA00;
-    left: 15px; }
 
 .slogan-text {
   color: #fff;
   font-size: 55px;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  margin-bottom: 15px !important; }
+  margin-bottom: 0; }
   @media only screen and (max-width: 576px) {
     .slogan-text {
       color: #fff;
       font-size: 29px; } }
 
+.header-after-line:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #F5AA00;
+  left: 15px;
+  top: 76%; }
+  @media only screen and (max-width: 992px) {
+    .header-after-line:after {
+      top: 85%; } }
+  @media only screen and (max-width: 768px) {
+    .header-after-line:after {
+      top: 75%; } }
+  @media only screen and (max-width: 576px) {
+    .header-after-line:after {
+      display: none; } }
+
 .header-text {
   color: #fff;
-  font-size: 36px;
+  font-size: 30px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   padding-right: 60px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-left: 30px; }
   @media only screen and (max-width: 576px) {
     .header-text {
       font-size: 18px; } }
@@ -198,11 +210,12 @@
     margin: 0; }
 
 .header-promo {
-  background: -webkit-linear-gradient(300deg, #00D8FF, #035796);
-  background: -o-linear-gradient(300deg, #00D8FF, #035796);
-  background: linear-gradient(150deg, #00D8FF, #035796);
+  background: -webkit-linear-gradient(300deg, #01ABDB, #03609D);
+  background: -o-linear-gradient(300deg, #01ABDB, #03609D);
+  background: linear-gradient(150deg, #01ABDB, #03609D);
   border-radius: 30px;
-  padding: 30px 0px; }
+  padding: 30px 0px;
+  padding-bottom: 35px; }
   @media only screen and (max-width: 992px) {
     .header-promo {
       margin-top: 30px; } }
@@ -308,7 +321,7 @@
 
 .header-promo-price {
   background-color: #1280B6;
-  margin-top: 30px;
+  margin-top: 45px;
   padding: 5px 20px;
   border-radius: 40px;
   width: 90%;
@@ -333,9 +346,9 @@
   font-size: 28px;
   color: #fff;
   font-weight: 700;
-  background: -webkit-linear-gradient(210deg, #00D8FF, #035796);
-  background: -o-linear-gradient(210deg, #00D8FF, #035796);
-  background: linear-gradient(240deg, #00D8FF, #035796);
+  background: -webkit-linear-gradient(240deg, #01AEDC, #026FA9);
+  background: -o-linear-gradient(240deg, #01AEDC, #026FA9);
+  background: linear-gradient(210deg, #01AEDC, #026FA9);
   border-radius: 40px;
   padding: 5px 25px; }
   @media only screen and (max-width: 576px) {
@@ -364,7 +377,7 @@
   font-size: 14px;
   color: #fff;
   font-weight: 700;
-  margin-top: 25px;
+  margin-top: 5px;
   margin-left: 25px; }
   .label-input p {
     margin: 0; }
@@ -373,7 +386,7 @@
   position: relative;
   background-color: #fff;
   border-radius: 30px;
-  padding: 16px 0; }
+  padding: 15px 0; }
 
 .email-send {
   position: absolute;
@@ -513,9 +526,6 @@
     background-color: rgba(255, 255, 255, 0.3); }
   .whitepaper-bttn:focus, .whitepaper-bttn-menu:focus, .telegram-bttn:focus, .join-telegram-bttn:focus {
     outline: none; }
-  @media only screen and (max-width: 576px) {
-    .whitepaper-bttn, .whitepaper-bttn-menu, .telegram-bttn, .join-telegram-bttn {
-      padding: 12px 50px; } }
 
 .header-social, .footer-social {
   margin-top: 50px; }
@@ -640,7 +650,7 @@
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   padding-top: 90px;
-  padding-bottom: 160px;
+  padding-bottom: 190px;
   background-image: url("../img/bg-description.png");
   background-position: center;
   background-size: cover;
@@ -705,6 +715,9 @@
   font-weight: 900;
   color: #fff;
   white-space: pre-wrap; }
+  @media only screen and (max-width: 992px) {
+    .feature-name {
+      white-space: normal; } }
   @media only screen and (max-width: 576px) {
     .feature-name {
       width: 80%;
@@ -724,7 +737,8 @@
   color: #fff; }
 
 .explanation-text, .blockchain-header-text {
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 50px; }
 
 .explain-icon {
   width: 20%; }
@@ -803,6 +817,10 @@
     .token-container {
       padding-bottom: 160px; } }
 
+.margin-top {
+  margin-top: 40px;
+  margin-bottom: 0 !important; }
+
 .token-heading {
   color: #fff;
   margin-bottom: 80px; }
@@ -851,7 +869,7 @@
 
 .after-line {
   margin-bottom: 0;
-  margin-top: 20px; }
+  margin-top: 70px; }
   .after-line:before {
     display: none; }
   .after-line:after {
@@ -876,8 +894,8 @@
   width: 100%; }
 
 .token-main {
-  margin-top: 50px;
-  margin-bottom: 30px; }
+  margin-top: 0px;
+  margin-bottom: 0px; }
 
 .distribution-container {
   background-image: url("../img/bg-team.png");
@@ -1279,7 +1297,7 @@
   padding-bottom: 200px; }
 
 .contract-heading {
-  margin-top: 50px; }
+  margin-top: 100px; }
 
 .contract-scroll {
   width: 900px;

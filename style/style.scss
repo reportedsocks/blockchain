@@ -209,35 +209,48 @@ $font: 'Montserrat', sans-serif;
   p{
     margin-bottom: 0px;
   }
-  &:after{
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 7px;
-    background-color: #F5AA00;
-    left:15px;
-    
-  }
+  
 }
 .slogan-text{
   color:#fff;
   font-size: 55px;
   font-family: $font;
   font-weight: 900;
-  margin-bottom: 15px !important;
+  margin-bottom: 0;
   @include breakpoint-xs {
     color: #fff;
     font-size: 29px; 
   }
 
 }
+.header-after-line{
+  &:after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #F5AA00;
+    left:15px;
+    top: 76%;
+    @include breakpoint-md {
+      top: 85%;
+    }
+    @include breakpoint-sm {
+      top: 75%;
+    }
+    @include breakpoint-xs {
+      display: none;
+    }
+  }
+}
 .header-text{
   color: #fff;
-  font-size: 36px;
+  font-size: 30px;
   font-family: $font;
-  font-weight: 600;
+  font-weight: 400;
   padding-right: 60px;
   margin-top: 20px;
+  margin-left: 30px;
   @include breakpoint-xs {
     font-size: 18px; 
   }
@@ -247,9 +260,10 @@ $font: 'Montserrat', sans-serif;
  
 } 
 .header-promo{
-  background: linear-gradient(150deg, #00D8FF,#035796 );
+  background: linear-gradient(150deg, #01ABDB,#03609D );
   border-radius: 30px;
   padding:30px 0px;
+  padding-bottom: 35px;
   @include breakpoint-md {
     margin-top: 30px; 
   }
@@ -365,7 +379,7 @@ $font: 'Montserrat', sans-serif;
 .header-promo-price{
   
   background-color: #1280B6;
-  margin-top: 30px;
+  margin-top: 45px;
   padding: 5px 20px;
   border-radius: 40px;
   width: 90%;
@@ -395,7 +409,7 @@ $font: 'Montserrat', sans-serif;
   font-size: 28px;
   color: #fff;
   font-weight: 700;
-  background: linear-gradient(240deg, #00D8FF,#035796 );
+  background: linear-gradient(210deg,  #01AEDC,#026FA9);
   border-radius: 40px;
   padding:5px 25px;
   @include breakpoint-xs {
@@ -427,14 +441,14 @@ $font: 'Montserrat', sans-serif;
   p{
     margin:0;
   }
-  margin-top: 25px;
+  margin-top: 5px;
   margin-left: 25px;
 }
 .header-form{
   position: relative;
   background-color: #fff;
   border-radius: 30px;
-  padding: 16px 0;
+  padding: 15px 0;
 
 }
 .email-send{
@@ -595,9 +609,7 @@ $font: 'Montserrat', sans-serif;
   &:focus{
     outline: none;
   }
-  @include breakpoint-xs {
-    padding:12px 50px;
-  }
+  
 
 }
 .header-social{
@@ -746,7 +758,7 @@ $font: 'Montserrat', sans-serif;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   padding-top:90px;
-  padding-bottom: 160px;
+  padding-bottom: 190px;
   
   background-image: url('../img/bg-description.png');
   background-position: center;
@@ -818,7 +830,9 @@ $font: 'Montserrat', sans-serif;
   font-weight: 900;
   color: #fff;
   white-space: pre-wrap;
-
+@include breakpoint-md {
+    white-space: normal;
+  }
   @include breakpoint-xs {
     width: 80%;
     font-size: 22px;
@@ -843,6 +857,7 @@ $font: 'Montserrat', sans-serif;
 .explanation-text{
   @extend.description-text; 
   color: #fff;
+  margin-bottom: 50px;
 }
 .explain-icon{
   
@@ -916,6 +931,10 @@ $font: 'Montserrat', sans-serif;
     padding-bottom: 160px;
   }
 }
+.margin-top{
+  margin-top: 40px;
+  margin-bottom: 0 !important;
+}
 .token-heading{
   @extend .description-heading;
   color: #fff;
@@ -971,7 +990,7 @@ $font: 'Montserrat', sans-serif;
 }
 .after-line{
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 70px;
   &:before{
     display: none;
   }
@@ -1003,8 +1022,8 @@ $font: 'Montserrat', sans-serif;
   }
 }
 .token-main{
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .distribution-container{
   @extend .description-container;
@@ -1452,7 +1471,7 @@ $font: 'Montserrat', sans-serif;
 }
 .contract-heading{
   @extend .description-heading; 
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .contract-scroll{
  width: 900px;
