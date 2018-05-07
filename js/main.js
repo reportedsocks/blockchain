@@ -380,6 +380,7 @@ $(window).scroll(function(){
   		$('.join-bttn').css({left: '0'});
   		$('.email-send').removeClass('d-none');
   		$('#join-input').val("");
+  		$('#join-input').css({opacity:"0"});
   	}else{
   		$('#join-input').val("");
   		$('#join-input').attr( 'placeholder', 'Incorrect e-mail');
@@ -393,6 +394,22 @@ $(window).scroll(function(){
 			return false;
 		}
 	});
+
+	var secondsCounter = 59;
+	setInterval(function(){
+		if(secondsCounter==-1){
+			secondsCounter = 59;
+		}
+		$('.timer-seconds').text(secondsCounter);
+		secondsCounter--;
+
+	}, 1000,secondsCounter);
+
+  $(window).on('scroll',function(){
+  	
+  	$('.header-links-container').addClass('blue');
+  	
+  });
 
  });
 	

@@ -113,7 +113,7 @@ $font: 'Montserrat', sans-serif;
   }
 }
 .header{
-  padding-top: 20px; 
+  padding-top: 150px; 
   padding-bottom: 215px;
   @include breakpoint-xs {
     padding-bottom: 150px;
@@ -121,9 +121,12 @@ $font: 'Montserrat', sans-serif;
   }
 }
 .header-links{
-  margin-bottom: 100px;
+  top:5px;
+  max-width: 1140px;
+  margin:0 auto;
+  transition: .5s;
   @include breakpoint-md {
-    margin-bottom: 45px;
+   
   }
 }
 .header-logo{
@@ -281,6 +284,7 @@ $font: 'Montserrat', sans-serif;
   }
 }
 .timer-circle{
+  min-width: 83px;
   font-family: $font;
   font-size: 30px;
   color: #fff;
@@ -297,70 +301,23 @@ $font: 'Montserrat', sans-serif;
     border:3px solid rgba(255, 255, 255, 0.2);
   }
 }
-.after-weeks{
-  &:after{
-    content: "weeks";
-    font-family: $font;
+.unit-div{
+  width: 94%;
+  @include breakpoint-sm {
+    width: 100%;
+  }
+  @include breakpoint-xs {
+    width: 90%;
+  }
+}
+.timer-unit{
+  width: 25%;
+  font-family: $font;
     font-size: 10px;
     color: #fff;
     font-weight: 500;
-    position: absolute;
-    top: 170px;
-    @include breakpoint-md {
-      top: 200px
-    }@include breakpoint-xs {
-      top: 140px
-    }
-  }
 }
-.after-days{
-  &:after{
-    content: "days";
-    font-family: $font;
-    font-size: 10px;
-    color: #fff;
-    font-weight: 500;
-    position: absolute;
-    top: 170px;
-    @include breakpoint-md {
-      top: 200px
-    }@include breakpoint-xs {
-      top: 140px
-    }
-  }
-}
-.after-hours{
-  &:after{
-    content: "hours";
-    font-family: $font;
-    font-size: 10px;
-    color: #fff;
-    font-weight: 500;
-    position: absolute;
-    top: 170px;
-    @include breakpoint-md {
-      top: 200px
-    }@include breakpoint-xs {
-      top: 140px
-    }
-  }
-}
-.after-seconds{
-  &:after{
-    content: "seconds";
-    font-family: $font;
-    font-size: 10px;
-    color: #fff;
-    font-weight: 500;
-    position: absolute;
-    top: 170px;
-    @include breakpoint-md {
-      top: 200px
-    }@include breakpoint-xs {
-      top: 140px
-    }
-  }
-}
+
 
 .timer-points{
   font-family: $font;
@@ -379,7 +336,7 @@ $font: 'Montserrat', sans-serif;
 .header-promo-price{
   
   background-color: #1280B6;
-  margin-top: 45px;
+  margin-top: 15px;
   padding: 5px 20px;
   border-radius: 40px;
   width: 90%;
@@ -449,6 +406,7 @@ $font: 'Montserrat', sans-serif;
   background-color: #fff;
   border-radius: 30px;
   padding: 15px 0;
+  height: 66px;
 
 }
 .email-send{
@@ -470,7 +428,7 @@ $font: 'Montserrat', sans-serif;
   color: #fff;
   border:none;
   border-radius: 30px;
-  padding:20px 40px;
+  padding:21px 40px;
   transition:1s;
   background: linear-gradient(to right, #FC3D00,#F5AA00 );
 
@@ -1644,6 +1602,7 @@ $font: 'Montserrat', sans-serif;
   @extend .telegram-bttn;
   padding-right: 30px;
   padding-left: 55px;
+  margin:0;
   @include breakpoint-md {
     background-image: none;
     padding: 9px 15px;

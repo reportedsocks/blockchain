@@ -90,7 +90,7 @@
     outline: none; }
 
 .header {
-  padding-top: 20px;
+  padding-top: 150px;
   padding-bottom: 215px; }
   @media only screen and (max-width: 576px) {
     .header {
@@ -98,10 +98,12 @@
       padding-top: 80px; } }
 
 .header-links {
-  margin-bottom: 100px; }
-  @media only screen and (max-width: 992px) {
-    .header-links {
-      margin-bottom: 45px; } }
+  top: 5px;
+  max-width: 1140px;
+  margin: 0 auto;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
 
 @media only screen and (max-width: 768px) {
   .header-logo {
@@ -232,6 +234,7 @@
         margin-bottom: 5px; } }
 
 .timer-circle {
+  min-width: 83px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   color: #fff;
@@ -247,65 +250,21 @@
       padding: 5px 8px;
       border: 3px solid rgba(255, 255, 255, 0.2); } }
 
-.after-weeks:after {
-  content: "weeks";
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  color: #fff;
-  font-weight: 500;
-  position: absolute;
-  top: 170px; }
-  @media only screen and (max-width: 992px) {
-    .after-weeks:after {
-      top: 200px; } }
+.unit-div {
+  width: 94%; }
+  @media only screen and (max-width: 768px) {
+    .unit-div {
+      width: 100%; } }
   @media only screen and (max-width: 576px) {
-    .after-weeks:after {
-      top: 140px; } }
+    .unit-div {
+      width: 90%; } }
 
-.after-days:after {
-  content: "days";
+.timer-unit {
+  width: 25%;
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   color: #fff;
-  font-weight: 500;
-  position: absolute;
-  top: 170px; }
-  @media only screen and (max-width: 992px) {
-    .after-days:after {
-      top: 200px; } }
-  @media only screen and (max-width: 576px) {
-    .after-days:after {
-      top: 140px; } }
-
-.after-hours:after {
-  content: "hours";
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  color: #fff;
-  font-weight: 500;
-  position: absolute;
-  top: 170px; }
-  @media only screen and (max-width: 992px) {
-    .after-hours:after {
-      top: 200px; } }
-  @media only screen and (max-width: 576px) {
-    .after-hours:after {
-      top: 140px; } }
-
-.after-seconds:after {
-  content: "seconds";
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  color: #fff;
-  font-weight: 500;
-  position: absolute;
-  top: 170px; }
-  @media only screen and (max-width: 992px) {
-    .after-seconds:after {
-      top: 200px; } }
-  @media only screen and (max-width: 576px) {
-    .after-seconds:after {
-      top: 140px; } }
+  font-weight: 500; }
 
 .timer-points {
   font-family: "Montserrat", sans-serif;
@@ -321,7 +280,7 @@
 
 .header-promo-price {
   background-color: #1280B6;
-  margin-top: 45px;
+  margin-top: 15px;
   padding: 5px 20px;
   border-radius: 40px;
   width: 90%;
@@ -386,7 +345,8 @@
   position: relative;
   background-color: #fff;
   border-radius: 30px;
-  padding: 15px 0; }
+  padding: 15px 0;
+  height: 66px; }
 
 .email-send {
   position: absolute;
@@ -407,7 +367,7 @@
   color: #fff;
   border: none;
   border-radius: 30px;
-  padding: 20px 40px;
+  padding: 21px 40px;
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
@@ -1447,7 +1407,8 @@
 
 .join-telegram-bttn {
   padding-right: 30px;
-  padding-left: 55px; }
+  padding-left: 55px;
+  margin: 0; }
   @media only screen and (max-width: 992px) {
     .join-telegram-bttn {
       background-image: none;
