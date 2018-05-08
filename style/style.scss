@@ -383,8 +383,6 @@ $font: 'Montserrat', sans-serif;
   padding:5px 25px;
   @include breakpoint-sm {
   padding:5px 15px;
-  font-size: 16px; 
-  padding:5px 10px;
   }
   @include breakpoint-xs {
   font-size: 16px; 

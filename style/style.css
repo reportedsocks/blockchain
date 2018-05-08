@@ -317,9 +317,7 @@
   padding: 5px 25px; }
   @media only screen and (max-width: 768px) {
     .presale-price {
-      padding: 5px 15px;
-      font-size: 16px;
-      padding: 5px 10px; } }
+      padding: 5px 15px; } }
   @media only screen and (max-width: 576px) {
     .presale-price {
       font-size: 16px;
