@@ -15,7 +15,26 @@
     <title>Boomstarter</title>
   </head>
   <body>
-    <div class="container-fluid header-container">
+    <div class="container-fluid header-links-container  fixed-top">
+    <div class="d-none d-sm-flex row header-links">
+      <div class="col-sm-6 col-md-3 col-lg-3 header-logo">
+        <a href="#header-container"><img src="img/Logo.svg"></a>
+      </div>
+      <div class="col-sm-12 offset-md-0 col-md-9 col-lg-8 offset-lg-1 d-flex flex-row justify-content-between align-items-center" >
+        <div class="menu-point-1"><p><a href="#explanation-container">How it works</a></p></div>
+        <div class="menu-point-2"><p><a href="#team-container">Team</a></p></div>
+        <div class="menu-point-3"><p><a href="#roadmap-container">Roadmap</a></p></div>
+        <div class="menu-point-4"><p><a href="">Whitepaper</a></p></div>
+        <div class="menu-point">
+          <form action="">
+            <button class="join-telegram-bttn" type="submit">Join our Telegram</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    <div id="header-container" class="container-fluid header-container">
       <div class="container header">
         <div class="row d-sm-none fixed-top fixed-header">
           <div class="col-6"><img src="img/Logo.svg"></div>
@@ -35,26 +54,23 @@
             <div class="menu-button-div"><form action="#blockchain-container"><button type="submit" class="menu-button">Why blockchain?</button></form></div>
           </div>
           <div class="d-flex flex-column align-items-center">
-            <div class="promo-bttn-menu"><button>JOIN WHITELIST</button></div>
-            <div class="whitepaper-bttn-div"><button class="whitepaper-bttn-menu ">White Paper</button></div>
+            <div class="promo-bttn-menu">
+              <form action="">
+              <button type="submit">JOIN WHITELIST</button>
+              </form>
+            </div>
+            <div class="whitepaper-bttn-div">
+              <form action="">
+              <button type="submit" class="whitepaper-bttn-menu ">White Paper</button>
+              </form>
+            </div>
           </div>
         </div>
         </div>
         
           
-        <div class="container-fluid header-links-container">
-    <div class="d-none d-sm-flex row header-links fixed-top">
-      <div class="col-sm-6 col-md-3 col-lg-3 header-logo"><img src="img/Logo.svg">
-      </div>
-      <div class="col-sm-12 offset-md-0 col-md-9 col-lg-8 offset-lg-1 d-flex flex-row justify-content-between align-items-center" >
-        <div class="menu-point-1"><p><a href="#explanation-container">How it works</a></p></div>
-        <div class="menu-point-2"><p><a href="#team-container">Team</a></p></div>
-        <div class="menu-point-3"><p><a href="#roadmap-container">Roadmap</a></p></div>
-        <div class="menu-point-4"><p><a href="">Whitepaper</a></p></div>
-        <div class="menu-point"><button class="join-telegram-bttn">Join our Telegram</button></div>
+  
 
-      </div>
-    </div></div>
     <div class="row">
       <div class="col-sm-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 col-xl-5 d-flex flex-column">
         <div class="header-slogan">
@@ -84,13 +100,13 @@
         <div class=" d-flex flex-column  align-items-center header-promo">
         <div class="promo-heading"><p>PRE-SALE IS COMING SOON</p></div>
         <div class="d-flex flex-row align-items-center justify-content-around">
-          <div class="timer-circle "><p>04</p></div>
+          <div class="timer-circle "><p class="days">04</p></div>
           <div class="timer-points"><p>:</p></div>
-          <div class="timer-circle "><p>05</p></div>
+          <div class="timer-circle "><p class="hours">05</p></div>
           <div class="timer-points"><p>:</p></div>
-          <div class="timer-circle "><p>12</p></div>
+          <div class="timer-circle "><p class="minutes">12</p></div>
           <div class="timer-points"><p>:</p></div>
-          <div class="timer-circle "><p class="timer-seconds">59</p></div>
+          <div class="timer-circle "><p class="seconds">59</p></div>
         </div>
         <div class="d-flex flex-row unit-div justify-content-between">
           <div class="timer-unit text-center"><p>weeks</p></div>
@@ -1995,5 +2011,6 @@ contract BoomstarterPresale is ArgumentsChecker, ReentrancyGuard, EthPriceDepend
     <script src="js/main.js"></script>
     <script type="text/javascript" src="libraries/bootstrap/dist/js/bootstrap.min.js">
   </script>
+
   </body>
 </html>

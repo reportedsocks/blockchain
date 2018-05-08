@@ -1,13 +1,7 @@
 $( document ).ready(function() {
-//$("body").niceScroll({
-	//zindex:'999999',
-	////cursorcolor:"#FA940A",
-	//cursorwidth:"15px",
-	//background:"rgba(0,99,174,.6)",
-	//cursorborder:"none"
-//});
 
 
+//switch percantage in distribution block
 $('#token-bttn').on("click",function(){
 	$('#diagram-text').html( " <h1>75<sup>%</sup></h1><p>Token Sale</p> ");
 	$('#diagram-text').css({"left": "24%", "top" : "17%"});
@@ -89,7 +83,7 @@ $('.show-team-bttn').on("click", function(){
 	$('.team-bttn-div').addClass('hidden-bttn');
 	$("#hidden-team").fadeIn(500);
 });
-
+// start roadmap animation
 $(window).scroll(function(){
 	var offset = $('.roadmap-svg').offset();
 	var offsetTop =offset.top-600;
@@ -99,7 +93,7 @@ $(window).scroll(function(){
 });
 
 
-    	
+// roadmap animation function    	
     	function startAnimation() {
     	$('.roadmap-9').addClass('animated-dot');
   		$('.roadmap-9').animate({opacity: '1'},600,function(){
@@ -182,7 +176,7 @@ $(window).scroll(function(){
 	};
 
 
-
+// roadmap hovers
 	$( "#content-1" ).hover(
   function() {
   	
@@ -297,7 +291,7 @@ $(window).scroll(function(){
 
   }
   );
-
+// smart contract animation function
 	$.fn.animate_Text = function() {
   var string = this.text();
   return this.each(function(){
@@ -314,7 +308,7 @@ $(window).scroll(function(){
   });
 
  };
-
+// start smart contract animation
  $(window).scroll(function(){
 	var offset = $('.contract-block').offset();
 	var offsetTop =offset.top-600;
@@ -328,7 +322,7 @@ $(window).scroll(function(){
   	}	  
 });
 
-
+// mobile switch for tokens block
  $('.token-mnr-bttn').on('click', function(){
  	$('.token-author-div').fadeOut(0);
  	$('.token-miner-div').fadeIn(100);
@@ -344,6 +338,7 @@ $(window).scroll(function(){
  	$('.token-mnr-bttn').removeClass('token-focused');
 
  });
+  // mobile header
   $(window).on('scroll',function(){
   	
   	$('.fixed-header').addClass('blue');
@@ -372,6 +367,7 @@ $(window).scroll(function(){
   	$('.fixed-header').addClass('blue');
   	menuCounter++;
   });
+  // verify email
   var emailPattern=/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
   $('#join-wl').on('click', function(){
   	var inputValue = $('#join-input').val();
@@ -395,16 +391,8 @@ $(window).scroll(function(){
 		}
 	});
 
-	var secondsCounter = 59;
-	setInterval(function(){
-		if(secondsCounter==-1){
-			secondsCounter = 59;
-		}
-		$('.timer-seconds').text(secondsCounter);
-		secondsCounter--;
-
-	}, 1000,secondsCounter);
-
+	
+// web header
   $(window).on('scroll',function(){
   	
   	$('.header-links-container').addClass('blue');

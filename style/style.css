@@ -58,6 +58,7 @@
   display: flex; }
 
 .blue {
+  top: 0 !important;
   background-color: #0674B2; }
 
 .bg-linear {
@@ -97,13 +98,16 @@
       padding-bottom: 150px;
       padding-top: 80px; } }
 
-.header-links {
+.header-links-container {
   top: 5px;
-  max-width: 1140px;
-  margin: 0 auto;
+  padding: 5px 0;
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s; }
+
+.header-links {
+  max-width: 1140px;
+  margin: 0 auto; }
 
 @media only screen and (max-width: 768px) {
   .header-logo {
@@ -246,6 +250,7 @@
     margin: 0; }
   @media only screen and (max-width: 576px) {
     .timer-circle {
+      min-width: 50px;
       font-size: 24px;
       padding: 5px 8px;
       border: 3px solid rgba(255, 255, 255, 0.2); } }
@@ -310,6 +315,11 @@
   background: linear-gradient(210deg, #01AEDC, #026FA9);
   border-radius: 40px;
   padding: 5px 25px; }
+  @media only screen and (max-width: 768px) {
+    .presale-price {
+      padding: 5px 15px;
+      font-size: 16px;
+      padding: 5px 10px; } }
   @media only screen and (max-width: 576px) {
     .presale-price {
       font-size: 16px;
@@ -386,7 +396,7 @@
 
 .join-input-div {
   width: 55%;
-  margin-left: 10px; }
+  margin-left: 5px; }
 
 .join-input {
   height: 100%;
@@ -1357,7 +1367,7 @@
   color: #fff;
   font-weight: 700;
   margin-top: 50px;
-  padding: 10px 91px;
+  padding: 10px 90px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px; }
   .token-crt-bttn:hover, .token-mnr-bttn:hover {
