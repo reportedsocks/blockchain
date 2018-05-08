@@ -1559,8 +1559,9 @@ $font: 'Montserrat', sans-serif;
   font-size: 16px;
   color:#fff;
   font-weight: 700;
+  width: 70%;
   margin-top: 50px;
-  padding: 10px 90px;
+  padding: 10px 0;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   &:hover{
@@ -1587,7 +1588,7 @@ $font: 'Montserrat', sans-serif;
   border-top-right-radius: 0;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  padding: 10px 77px;
+  padding: 10px 0;
    margin-bottom: 30px;
 }
 .token-icons-sm{
