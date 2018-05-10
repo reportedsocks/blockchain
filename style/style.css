@@ -1,3 +1,6 @@
+button {
+  cursor: pointer; }
+
 .header-container {
   background-image: url("../img/bg-header.png");
   background-repeat: no-repeat; }
@@ -786,8 +789,12 @@
       padding-bottom: 160px; } }
 
 .margin-top {
-  margin-top: 40px;
+  padding-top: 15px;
+  margin-top: 30px;
   margin-bottom: 0 !important; }
+
+.token-author-text {
+  padding: 0 20px; }
 
 .token-heading {
   color: #fff;
@@ -801,21 +808,18 @@
   @media only screen and (max-width: 1200px) {
     .token-heading {
       margin-bottom: 40px; } }
-  @media only screen and (max-width: 992px) {
-    .token-heading {
-      margin-bottom: 0px; } }
 
 .token-icons {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
 
 .token-text {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   color: #fff; }
   .token-text:before {
     content: '';
@@ -823,7 +827,7 @@
     width: 80px;
     height: 2px;
     background-color: #fff;
-    top: 30%;
+    top: 15%;
     left: -100px; }
   @media only screen and (max-width: 992px) {
     .token-text:before {
@@ -832,7 +836,7 @@
       width: 40px;
       height: 2px;
       background-color: #fff;
-      top: 30%;
+      top: 10%;
       left: -60px; } }
 
 .after-line {
@@ -846,7 +850,7 @@
     width: 80px;
     height: 2px;
     background-color: #fff;
-    top: 65%;
+    top: 70%;
     left: -100px; }
   @media only screen and (max-width: 992px) {
     .after-line:after {
@@ -926,12 +930,16 @@
   font-weight: 300;
   color: #fff;
   margin-top: 50px;
+  margin-left: 20px;
   padding: 0; }
   .distribution-bttn:hover {
     outline: none;
     font-weight: 400; }
   .distribution-bttn:focus {
     outline: none; }
+  @media only screen and (max-width: 992px) {
+    .distribution-bttn {
+      margin-left: -3px; } }
 
 .active-bttn {
   outline: none;
@@ -946,12 +954,12 @@
 
 .distribution-svg-container {
   position: relative;
-  top: 25%; }
+  top: 15%; }
 
 .diagram-text {
   position: absolute;
-  top: 17%;
-  left: 24%; }
+  top: 25%;
+  left: 30%; }
   .diagram-text h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 100px;
@@ -969,6 +977,10 @@
     font-weight: 300;
     color: #fff;
     margin: 0; }
+  @media only screen and (max-width: 1200px) {
+    .diagram-text {
+      top: 20%;
+      left: 25%; } }
 
 .join-bttn-container {
   background: -webkit-gradient(linear, left bottom, left top, from(#035796), to(#00D8FF));
@@ -1132,7 +1144,10 @@
   background: -webkit-linear-gradient(bottom, #39F0CF, #0063AE);
   background: -o-linear-gradient(bottom, #39F0CF, #0063AE);
   background: linear-gradient(to top, #39F0CF, #0063AE);
-  padding-bottom: 190px; }
+  padding-bottom: 130px; }
+  @media only screen and (max-width: 768px) {
+    .roadmap-container {
+      padding-bottom: 180px; } }
 
 .roadmap-heading {
   position: absolute;
@@ -1349,8 +1364,29 @@
 .contract-list li {
   list-style-type: none; }
 
-.span-red {
+.contract-row-2:nth-child(1) {
   color: red; }
+
+.span-red {
+  color: #b80b43; }
+
+.span-prpl {
+  color: #655daa; }
+
+.span-yellow {
+  color: #dbcc7b; }
+
+.span-orange {
+  color: #d59029; }
+
+.span-green {
+  color: #b5cd43; }
+
+.span-blue {
+  color: #83c6ff; }
+
+.span-gray {
+  color: #4f4c4c; }
 
 .Github-bttn {
   margin-top: 50px; }

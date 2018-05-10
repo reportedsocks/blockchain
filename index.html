@@ -153,8 +153,16 @@
       </div>
     </div>
     <div class="d-flex flex-column text-center d-sm-none">
-      <div><button class="whitepaper-bttn">White Paper</button></div>
-      <div><button class="telegram-bttn">Chat</button></div>
+      <div>
+        <form action="">
+        <button type="submit" class="whitepaper-bttn">White Paper</button>
+        </form>
+      </div>
+      <div>
+        <form action="">
+        <button type="submit" class="telegram-bttn">Chat</button>
+        </form>
+      </div>
     </div>
     <div class="row header-reasons">
       <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4">
@@ -179,7 +187,9 @@
       </div>
       <div class="d-none col-sm-12 col-lg-4 d-sm-flex align-items-center justify-content-center text-center">
         <div>
-        <button class="whitepaper-bttn">White Paper</button>
+        <form action="">
+          <button type="submit" class="whitepaper-bttn">White Paper</button>
+        </form>
         </div>
       </div>
     </div>
@@ -486,11 +496,15 @@ cryptofunding market</p>
          </div>
          <div class="col-md-3 col-lg-3 d-flex flex-column align-items-center">
            <div class="token-icons d-flex align-items-center flex-column">
+            <div class="w-100">
             <img src="img/token-author.svg">
-            <p>Author</p>
+            </div>
+            <p class="token-author-text">Author</p>
           </div>
            <div class="token-icons d-flex align-items-center flex-column margin-top">
-             <img src="img/token-miner.svg">
+             <div class="w-100">
+              <img src="img/token-miner.svg">
+              </div>
             <p>Miner PRO</p>
            </div>
          </div>
@@ -616,7 +630,7 @@ cryptofunding market</p>
            </div>
            </div>
          </div>
-         <div class= "d-none d-sm-block col-sm-6 col-md-5 offset-md-1 col-lg-4 offset-lg-0 col-xl-3 offset-xl-1">
+         <div class= "d-none d-sm-block col-sm-6 col-md-5 offset-md-1 col-lg-4 offset-lg-0">
            <div class="distribution-svg-container">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352.391 352.391">
   <defs>
@@ -655,6 +669,9 @@ cryptofunding market</p>
       .active{
         stroke-width:20px;
       }
+      .hidden-diagram-bar{
+        display: none;
+      }
     </style>
   </defs>
   <g id="distribution-diagram" transform="translate(7 7)">
@@ -667,11 +684,12 @@ cryptofunding market</p>
     <g id="Group_348" data-name="Group 348" transform="translate(3 34.857)">
       <path id="Path_404" data-name="Path 404" class="cls-3" d="M3,145.638C3,90.368,26.8,43.541,71.7,11.3" transform="translate(-3 -11.3)"/>
     </g>
-    <g id="Group_349" data-name="Group 349" transform="translate(3 3)">
-      <path id="Path_405" data-name="Path 405" class="cls-4 active" d="M169.2,3c91.734,0,166.2,74.462,166.2,166.2s-74.462,166.2-166.2,166.2S3,260.929,3,169.2" transform="translate(-3 -3)"/>
-    </g>
+    
     <g id="Group_350" data-name="Group 350" transform="translate(157.681 3)">
       <path id="Path_406" data-name="Path 406" class="cls-5" d="M43.3,3.384C47.138,3,51.36,3,54.815,3" transform="translate(-43.3 -3)"/>
+    </g>
+    <g id="Group_349" data-name="Group 349" transform="translate(3 3)">
+      <path id="Path_405" data-name="Path 405" class="cls-4 active" d="M169.2,3c91.734,0,166.2,74.462,166.2,166.2s-74.462,166.2-166.2,166.2S3,260.929,3,169.2" transform="translate(-3 -3)"/>
     </g>
   </g>
 </svg>
@@ -682,7 +700,7 @@ cryptofunding market</p>
 </div>
 
          </div>
-         <div class="d-none d-sm-block col-sm-6 col-md-5 offset-md-1 col-lg-4 offset-lg-0 col-xl-3 offset-xl-1">
+         <div class="d-none d-sm-block col-sm-6 col-md-5 offset-md-1 col-lg-4 offset-lg-0">
            <div class="d-flex flex-column text-left">
              <div><button id="token-bttn" class="distribution-bttn active-bttn">Token Sale</button></div>
              <div><button id="team-bttn" class="distribution-bttn">Team</button></div>
@@ -1350,7 +1368,7 @@ raising experience
 <div class="d-md-none roadmap-sm-container"><img src="img/roadmap-sm-1.svg"></div>
 
               <div class="row">
-                <div class="col-12 text-center"><button id="roadmap-bttn" class="roadmap-bttn">See more</button></div>
+                <div class="d-md-none col-12 text-center"><button id="roadmap-bttn" class="roadmap-bttn">See more</button></div>
               </div>
 
        </div>
@@ -1746,191 +1764,191 @@ contract BoomstarterPresale is ArgumentsChecker, ReentrancyGuard, EthPriceDepend
             
 </div>
 <div class="contract-row-2">
-    modifier onlyIfSaleIsActive() {
-        require(m_active == true);
-        _;
+    <span class="span-red">modifier</span> <span class="span-green">onlyIfSaleIsActive</span>() {
+        <span class="span-red">require</span>(m_active <span class="span-red">==</span> <span class="span-prpl">true</span>);
+       <span class="span-red"> _</span>;
     }
-
+<span class="span-gray">
     /**
      *  @dev checks that finish date is not reached yet
      *       (and potentially start date, but not needed for presale)
      *       AND also that the limits for the sale are not met
      *       AND that current price is non-zero (updated)
-     */
-    modifier checkLimitsAndDates() {
-        require((c_dateTo >= getTime()) &&
-                (m_currentTokensSold < c_maximumTokensSold) &&
-                (m_ETHPriceInCents > 0));
-        _;
+     */</span>
+    <span class="span-red">modifier</span> <span class="span-green">checkLimitsAndDates</span>() {
+        <span class="span-red">require</span>((c_dateTo <span class="span-red">>=</span> <span class="span-blue">getTime()</span>) <span class="span-red">&&</span>
+                (m_currentTokensSold <span class="span-red"><</span> c_maximumTokensSold) <span class="span-red">&&</span>
+                (m_ETHPriceInCents <span class="span-red">></span> 0));
+        <span class="span-red">_</span>;
     }
-
+<span class="span-gray">
     /**
      * @dev constructor, payable to fund oraclize calls
      * @param _owners Addresses to do administrative actions
      * @param _token Address of token being sold in this presale
      * @param _beneficiary Address of the wallet, receiving all the collected ether
      * @param _production False if you use testrpc, true if mainnet and most testnets
-     */
-    function BoomstarterPresale(address[] _owners, address _token,
-                                address _beneficiary, bool _production)
-        public
-        payable
-        EthPriceDependent(_owners, 2, _production)
-        validAddress(_token)
-        validAddress(_beneficiary)
+     */</span>
+    <span class="span-red">function</span> <span class="span-green">BoomstarterPresale</span>(<span class="span-prpl">address</span>[] <span class="span-orange">_owners</span>, <span class="span-red">address</span> <span class="span-orange">_token</span>,
+                                <span class="span-red">address</span> <span class="span-orange">_beneficiary</span>, <span class="span-red">bool</span> <span class="span-orange">_production</span>)
+        <span class="span-red">public
+        payable</span>
+        <span class="span-blue">EthPriceDependent</span>(_owners, <span class="span-prpl">2</span>, _production)
+        <span class="span-blue">validAddress</span>(_token)
+        <span class="span-blue">validAddress</span>(_beneficiary)
     {
-        m_token = IBoomstarterToken(_token);
-        m_beneficiary = _beneficiary;
-        m_active = true;
+        m_token <span class="span-red">=</span> <span class="span-blue">IBoomstarterToken</span>(_token);
+        m_beneficiary <span class="span-red">=</span> _beneficiary;
+        m_active <span class="span-red">=</span> <span class="span-prpl">true</span>;
     }
 
-
+<span class="span-gray">
     // PUBLIC interface: payments
 
-    // fallback function as a shortcut
-    function() payable {
-        require(0 == msg.data.length);
-        buy();  // only internal call here!
+    // fallback function as a shortcut</span>
+    <span class="span-red">function</span>() <span class="span-red">payable</span> {
+        <span class="span-red">require</span>(<span class="span-prpl">0</span> <span class="span-red">==</span> <span class="span-prpl">msg</span>.<span class="span-prpl">data</span>.<span class="span-blue">length</span>);
+        <span class="span-blue">buy</span>();  <span class="span-gray">// only internal call here!</span>
     }
-
+<span class="span-gray">
     /**
      * @notice presale participation. Can buy tokens only in batches by one price
      *         if price changes mid-transaction, you'll get only the amount for initial price
      *         and the rest will be refunded
-     */
-    function buy()
-        public
-        payable
+     */</span>
+    <span class="span-red">function</span> <span class="span-gree">buy</span>()
+        <span class="span-red">public
+        payable</span>
         nonReentrant
         onlyIfSaleIsActive
         checkLimitsAndDates
     {
-        address investor = msg.sender;
-        uint256 payment = msg.value;
-        require((payment.mul(m_ETHPriceInCents)).div(1 ether) >= c_MinInvestmentInCents);
-
+        <span class="span-prpl">address</span> investor = <span class="span-prpl">msg</span>.<span class="span-prpl">sender</span>;
+        <span class="span-prpl">uint256</span> payment = <span class="span-prpl">msg</span>.<span class="span-prpl">value</span>;
+        <span class="span-red">require</span>((payment.<span class="span-blue">mul</span>(m_ETHPriceInCents)<span class="span-blue">).div</span>(<span class="span-prpl">1</span> <span class="span-red">ether</span>) <span class="span-red">>=</span> c_MinInvestmentInCents);
+<span class="span-gray">
         /**
          * calculate amount based on ETH/USD rate
          * for example 2e17 * 36900 / 30 = 246 * 1e18
          * 0.2 eth buys 246 tokens if Ether price is $369 and token price is 30 cents
-         */
-        uint tokenAmount;
-        // either hard cap or the amount where prices change
-        uint cap;
-        // price of the batch of token bought
-        uint centsPerToken;
-        if (m_currentTokensSold < c_priceRiseTokenAmount) {
-            centsPerToken = c_centsPerTokenFirst;
-            // don't let price rise happen during this transaction - cap at price change value
-            cap = c_priceRiseTokenAmount;
-        } else {
-            centsPerToken = c_centsPerTokenSecond;
-            // capped by the presale cap itself
-            cap = c_maximumTokensSold;
+         */</span>
+        <span class="span-prpl">uint</span> tokenAmount;
+        <span class="span-gray">// either hard cap or the amount where prices change</span>
+        <span class="span-prpl">uint</span> cap;
+        <span class="span-gray">// price of the batch of token bought</span>
+        <span class="span-prpl">uint</span> centsPerToken;
+        <span class="span-red">if</span> (m_currentTokensSold <span class="span-red"><</span> c_priceRiseTokenAmount) {
+            centsPerToken <span class="span-red">=</span> c_centsPerTokenFirst;
+            <span class="span-gray">// don't let price rise happen during this transaction - cap at price change value</span>
+            cap <span class="span-red">=</span> c_priceRiseTokenAmount;
+        } <span class="span-red">else</span> {
+            centsPerToken <span class="span-red">=</span> c_centsPerTokenSecond;
+            <span class="span-gray">// capped by the presale cap itself</span>
+            cap <span class="span-red">=</span> c_maximumTokensSold;
+        }
+<span class="span-gray">
+        // amount that can be bought depending on the price</span>
+        tokenAmount <span class="span-red">=</span> payment.<span class="span-blue">mul</span>(m_ETHPriceInCents).<span class="span-blue">div</span>(centsPerToken);
+
+        <span class="span-gray">// number of tokens available before the cap is reached</span>
+        <span class="span-prpl">uint</span> maxTokensAllowed = cap.<span class="span-blue">sub</span>(m_currentTokensSold);
+
+        <span class="span-gray">// if amount of tokens we can buy is more than the amount available</span>
+        <span class="span-red">if</span> (tokenAmount <span class="span-red">></span> maxTokensAllowed) {
+            <span class="span-gray">// price of 1 full token in ether-wei
+            // example 30 * 1e18 / 36900 = 0.081 * 1e18 = 0.081 eth</span>
+            <span class="span-prpl">uint</span> ethPerToken = centsPerToken.<span class="span-blue">mul</span>(<span class="span-prpl">1</span> <span class="span-red">ether</span>)<span class="span-blue">.div</span>(m_ETHPriceInCents);
+            <span class="span-gray">// change amount to maximum allowed</span>
+            tokenAmount <span class="span-red">=</span> maxTokensAllowed;
+            payment <span class="span-red">=</span> ethPerToken.<span class="span-blue">mul</span>(tokenAmount).<span class="span-blue">div</span>(<span class="span-prpl">1</span> <span class="span-red">ether</span>);
         }
 
-        // amount that can be bought depending on the price
-        tokenAmount = payment.mul(m_ETHPriceInCents).div(centsPerToken);
+        m_currentTokensSold <span class="span-red">=</span> m_currentTokensSold.<span class="span-blue">add</span>(tokenAmount);
 
-        // number of tokens available before the cap is reached
-        uint maxTokensAllowed = cap.sub(m_currentTokensSold);
+        <span class="span-gray">// send ether to external wallet</span>
+        m_beneficiary.<span class="span-blue">transfer</span>(payment);
 
-        // if amount of tokens we can buy is more than the amount available
-        if (tokenAmount > maxTokensAllowed) {
-            // price of 1 full token in ether-wei
-            // example 30 * 1e18 / 36900 = 0.081 * 1e18 = 0.081 eth
-            uint ethPerToken = centsPerToken.mul(1 ether).div(m_ETHPriceInCents);
-            // change amount to maximum allowed
-            tokenAmount = maxTokensAllowed;
-            payment = ethPerToken.mul(tokenAmount).div(1 ether);
-        }
+        m_token.<span class="span-blue">transfer</span>(investor, tokenAmount);
 
-        m_currentTokensSold = m_currentTokensSold.add(tokenAmount);
+        <span class="span-prpl">uint</span> change;
+        change = <span class="span-prpl">msg</span>.<span class="span-prpl">value</span>.<span class="span-blue">sub</span>(payment);
+        <span class="span-red">if</span> (change <span class="span-red">></span> <span class="span-prpl">0</span>)
+            investor.<span class="span-blue">transfer</span>(change);
 
-        // send ether to external wallet
-        m_beneficiary.transfer(payment);
-
-        m_token.transfer(investor, tokenAmount);
-
-        uint change;
-        change = msg.value.sub(payment);
-        if (change > 0)
-            investor.transfer(change);
-
-        FundTransfer(investor, payment, true);
+        <span class="span-blue">FundTransfer</span>(investor, payment, <span class="span-prpl">true</span>);
     }
 
-
+<span class="span-gray">
     /**
      * @notice stop accepting ether, transfer remaining tokens to the next sale and
      *         give new sale permissions to transfer frozen funds and revoke own ones
      *         Can be called anytime, even before the set finish date
-     */
-    function finishSale()
-        external
+     */</span>
+    <span class="span-red">function</span> <span class="span-green">finishSale</span>()
+        <span class="span-red">external</span>
         onlyIfSaleIsActive
-        onlymanyowners(keccak256(msg.data))
+        <span class="span-blue">onlymanyowners</span>(<span class="span-prpl">keccak256(msg.data)</span>)
     {
-        // next sale should be set using setNextSale
-        require( m_nextSale != address(0) );
-        // cannot accept ether anymore
-        m_active = false;
-        // send remaining oraclize ether to the next sale - we don't need oraclize anymore
-        EthPriceDependent next = EthPriceDependent(m_nextSale);
-        next.topUp.value(this.balance)();
-        // transfer all remaining tokens to the next sale account
-        m_token.transfer(m_nextSale, m_token.balanceOf(this));
-        // mark next sale as a valid sale account, unmark self as valid sale account
-        m_token.switchToNextSale(m_nextSale);
+        <span class="span-gray">// next sale should be set using setNextSale</span>
+        <span class="span-red">require</span>( m_nextSale <span class="span-red">!=</span> <span class="span-blue">address</span>(<span class="span-prpl">0</span>) );
+        <span class="span-gray">// cannot accept ether anymore</span>
+        m_active <span class="span-red">=</span> <span class="span-prpl">false</span>;
+        <span class="span-gray">// send remaining oraclize ether to the next sale - we don't need oraclize anymore</span>
+        EthPriceDependent next <span class="span-red">=</span> <span class="span-blue">EthPriceDependent</span>(m_nextSale);
+        next.topUp.<span class="span-blue">value</span>(<span class="span-red">this</span>.balance)();
+        <span class="span-gray">// transfer all remaining tokens to the next sale account</span>
+        m_token.<span class="span-blue">transfer</span>(m_nextSale, m_token.<span class="span-blue">balanceOf</span>(<span class="span-red">this</span>));
+        <span class="span-gray">// mark next sale as a valid sale account, unmark self as valid sale account</span>
+        m_token.<span class="span-blue">switchToNextSale</span>(m_nextSale);
     }
-
+<span class="span-gray">
     /**
      * @notice set address of a sale that will be next one after the current sale is finished
      * @param _sale address of the sale contract
-     */
-    function setNextSale(address _sale)
-        external
-        validAddress(_sale)
-        onlymanyowners(keccak256(msg.data))
+     */</span>
+    <span class="span-red">function</span> <span class="span-green">setNextSale</span>(<span class="span-prpl">address</span> <span class="span-orange">_sale</span>)
+        <span class="span-red">external</span>
+        <span class="span-blue">validAddress</span>(_sale)
+        <span class="span-blue">onlymanyowners</span>(<span class="span-prpl">keccak256(msg.data)</span>)
     {
-        m_nextSale = _sale;
+        m_nextSale<span class="span-red"> =</span> _sale;
     }
 
 
-    // FIELDS
+    <span class="span-gray">// FIELDS
 
-    /// @notice minimum investment in cents
-    uint public c_MinInvestmentInCents = 3000000; // $30k
+    /// @notice minimum investment in cents</span>
+    <span class="span-prpl">uint</span> <span class="span-red">public</span> c_MinInvestmentInCents = <span class="span-prpl">3000000</span>; // $30k
 
-    /// @dev contract responsible for token accounting
-    IBoomstarterToken public m_token;
+    <span class="span-gray">/// @dev contract responsible for token accounting</span>
+    IBoomstarterToken <span class="span-red">public</span> m_token;
 
-    /// @dev address receiving all the ether, no intentions to refund
-    address public m_beneficiary;
+    <span class="span-gray">/// @dev address receiving all the ether, no intentions to refund</span>
+    <span class="span-prpl">address</span> <span class="span-red">public</span> m_beneficiary;
 
-    /// @dev next sale to receive remaining tokens after this one finishes
-    address public m_nextSale;
+    <span class="span-gray">/// @dev next sale to receive remaining tokens after this one finishes</span>
+    <span class="span-prpl">address</span> <span class="span-red">public</span> m_nextSale;
 
-    /// @dev active sale can accept ether, inactive - cannot
-    bool public m_active;
+    <span class="span-gray">/// @dev active sale can accept ether, inactive - cannot</span>
+    <span class="span-prpl">bool</span> <span class="span-red">public</span> m_active;
 
-    /**
+    <span class="span-gray">/**
      *  @dev unix timestamp that sets presale finish date, which means that after that date
      *       you cannot buy anything, but finish can happen before, if owners decide to do so
-     */
-    uint public c_dateTo = 1529064000; // 15-Jun-18 12:00:00 UTC
+     */</span>
+    <span class="span-prpl">uint</span> <span class="span-red">public</span> c_dateTo = <span class="span-prpl">1529064000</span>; <span class="span-gray">// 15-Jun-18 12:00:00 UTC</span>
 
-    /// @dev current amount of tokens sold
-    uint public m_currentTokensSold = 0;
-    /// @dev limit of tokens to be sold during presale
-    uint public c_maximumTokensSold = uint(1500000) * uint(10) ** uint(18); // 1.5 million tokens
+    <span class="span-gray">/// @dev current amount of tokens sold</span>
+    <span class="span-prpl">uint</span> public m_currentTokensSold = <span class="span-prpl">0</span>;
+    <span class="span-gray">/// @dev limit of tokens to be sold during presale</span>
+    <span class="span-prpl">uint</span> public c_maximumTokensSold = <span class="span-blue">uint</span>(<span class="span-prpl">1500000</span>) <span class="span-blue">* uint</span>(<span class="span-prpl">10</span>) <span class="span-blue">** uint</span>(<span class="span-prpl">18</span>); <span class="span-gray">// 1.5 million tokens</span>
 
-    /// @notice first step, usd price of BoomstarterToken in cents 
-    uint public c_centsPerTokenFirst = 30; // $0.3
-    /// @notice second step, usd price of BoomstarterToken in cents
-    uint public c_centsPerTokenSecond = 40; // $0.4
-    /// @notice amount of tokens sold at which price switch should happen
-    uint public c_priceRiseTokenAmount = uint(666668) * uint(10) ** uint(18);
+    <span class="span-gray">/// @notice first step, usd price of BoomstarterToken in cents </span>
+    <span class="span-prpl">uint</span> <span class="span-red">public</span> c_centsPerTokenFirst = <span class="span-prpl">30</span>; /<span class="span-gray">/ $0.3</span>
+    <span class="span-gray">/// @notice second step, usd price of BoomstarterToken in cents</span>
+    <span class="span-prpl">uint</span> <span class="span-red">public</span> c_centsPerTokenSecond = <span class="span-prpl">40</span>; <span class="span-gray">// $0.4</span>
+    <span class="span-gray">/// @notice amount of tokens sold at which price switch should happen</span>
+    <span class="span-prpl">uint</span> <span class="span-red">public</span> c_priceRiseTokenAmount = <span class="span-blue">uint</span>(<span class="span-prpl">666668</span>) <span class="span-blue">* uint</span>(<span class="span-prpl">10</span>) <span class="span-blue">** uint</span>(<span class="span-prpl">18</span>);
 }  
 </div>
 </div>
@@ -1957,7 +1975,11 @@ contract BoomstarterPresale is ArgumentsChecker, ReentrancyGuard, EthPriceDepend
        </div>
        <div class="row">
          <div class="col-12 text-center">
-           <div class="promo-bttn"><button>JOIN WHITELIST</button></div>
+           <div class="promo-bttn">
+            <form action="">
+            <button type="submit">JOIN WHITELIST</button>
+            </form>
+          </div>
          </div>
        </div>
 

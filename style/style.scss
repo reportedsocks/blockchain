@@ -19,7 +19,9 @@ $font: 'Montserrat', sans-serif;
     @content;
   }
 }
-
+button{
+  cursor: pointer;
+}
 .header-container{
   background-image: url('../img/bg-header.png');
   
@@ -905,8 +907,12 @@ $font: 'Montserrat', sans-serif;
   }
 }
 .margin-top{
-  margin-top: 40px;
+  padding-top: 15px;
+  margin-top: 30px;
   margin-bottom: 0 !important;
+}
+.token-author-text{
+  padding: 0 20px;
 }
 .token-heading{
   @extend .description-heading;
@@ -922,21 +928,19 @@ $font: 'Montserrat', sans-serif;
   @include breakpoint-lg {
     margin-bottom: 40px;
   }
-  @include breakpoint-md {
-    margin-bottom: 0px;
-  }
+  
 }
 .token-icons{
   font-family: $font;
   font-size: 28px;
   font-weight: 700;
   color: #fff; 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .token-text{
   font-family: $font;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   color: #fff; 
   
   &:before{
@@ -945,7 +949,7 @@ $font: 'Montserrat', sans-serif;
     width: 80px;
     height: 2px;
     background-color: #fff;
-    top:30%;
+    top:15%;
     left: -100px;
 
   }
@@ -956,7 +960,7 @@ $font: 'Montserrat', sans-serif;
     width: 40px;
     height: 2px;
     background-color: #fff;
-    top:30%;
+    top:10%;
     left: -60px;
   }
 }
@@ -973,7 +977,7 @@ $font: 'Montserrat', sans-serif;
     width: 80px;
     height: 2px;
     background-color: #fff;
-    top:65%;
+    top:70%;
     left: -100px;
   }
   @include breakpoint-md {
@@ -1064,6 +1068,7 @@ $font: 'Montserrat', sans-serif;
   font-weight: 300;
   color: #fff; 
   margin-top: 50px;
+  margin-left: 20px;
   padding: 0;
   &:hover{
     outline: none;
@@ -1071,6 +1076,9 @@ $font: 'Montserrat', sans-serif;
   }
   &:focus{
     outline: none;
+  }
+  @include breakpoint-md {
+  margin-left: -3px;
   }
 }
 .active-bttn{
@@ -1087,12 +1095,12 @@ $font: 'Montserrat', sans-serif;
 }
 .distribution-svg-container{
   position: relative;
-  top: 25%;
+  top: 15%;
 }
 .diagram-text{
   position: absolute;
-  top: 17%;
-  left: 24%;
+  top: 25%;
+  left: 30%;
   h1{
     font-family: $font;
     font-size: 100px;
@@ -1113,8 +1121,13 @@ $font: 'Montserrat', sans-serif;
     color: #fff;
     margin:0;
   }
+  @include breakpoint-lg {
+  top: 20%;
+  left: 25%;
+  }
   
 }
+
 .join-bttn-container{
   background: linear-gradient(to top, #035796, #00D8FF);
   padding: 10px 0;
@@ -1286,7 +1299,10 @@ $font: 'Montserrat', sans-serif;
   @extend .explanation-container;
   z-index: 7;
   background: linear-gradient(to top, #39F0CF,#0063AE);
-  padding-bottom: 190px;
+  padding-bottom: 130px;
+  @include breakpoint-sm {
+    padding-bottom: 180px;
+  }
 }
 .roadmap-heading{
   @extend .explanation-heading;
@@ -1541,8 +1557,31 @@ $font: 'Montserrat', sans-serif;
   }
   
 }
+.contract-row-2{
+  &:nth-child(1){
+      color: red;
+  }
+}
 .span-red{
-  color: red;
+  color: #b80b43;
+}
+.span-prpl{
+  color: #655daa;
+}
+.span-yellow{
+  color: #dbcc7b;
+}
+.span-orange{
+  color: #d59029;
+}
+.span-green{
+  color: #b5cd43;
+}
+.span-blue{
+  color: #83c6ff;
+}
+.span-gray{
+  color: #4f4c4c;
 }
 .Github-bttn{
   @extend .promo-bttn;
