@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 975.572 1056.332">
+  <defs>
+    <style>
+      .r-more-1, .r-more-4 {
+        fill: #fff;
+      }
+
+      .r-more-2 {
+        fill: none;
+        stroke-width: 5px;
+      }
+
+      .r-more-2, .r-more-6 {
+        stroke: #fff;
+      }
+
+      .r-more-3 {
+        fill: #112a7c;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .r-more-3, .r-more-4 {
+        font-size: 16px;
+      }
+
+      .r-more-4 {
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .r-more-5 {
+        font-family: SegoeUI, Montserrat;
+      }
+
+      .r-more-6 {
+        stroke-width: 3.375px;
+        fill: url(#linear-gradient);
+      }
+
+      .r-more-7 {
+        font-family: SegoeUI-Bold, Montserrat;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00d8ff"/>
+      <stop offset="1" stop-color="#035796"/>
+    </linearGradient>
+  </defs>
+  <g id="r-more-more" transform="translate(-445.428 -8274.034)">
+    <g id="block-20" transform="translate(937.419 8285.5)">
+      <path id="end-pointer-2" class="r-more-1" d="M.1,380.8l16.481,13.339L33.062,380.8v11.3L16.581,405.439.1,392.1Z" transform="translate(0 639.428)"/>
+      <line id="s-line-20" class="r-more-2" x1="0.5" y2="106" transform="translate(16.581 926.534)"/>
+    </g>
+    <g id="block-19" transform="translate(0.428 1021)">
+      <g id="content-19">
+        <text id="heading-19" class="r-more-3" transform="translate(739 8158)"><tspan x="67.813" y="17">2019 July</tspan></text>
+        <text id="text-19" class="r-more-4" transform="translate(563 8183)"><tspan x="21.125" y="17">Marketing campaign to attract users from </tspan><tspan x="157.375" y="38">North America launch.</tspan><tspan x="68.797" y="59">-AI: automated ranking of projects.</tspan><tspan class="r-more-5"><tspan x="315" y="80"></tspan></tspan></text>
+      </g>
+      <g id="graphic-19">
+        <path id="circle-19" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8173.034)"/>
+        <line id="s-line-19" class="r-more-2" y2="95" transform="translate(954 8080.034)"/>
+      </g>
+    </g>
+    <g id="block-18" transform="translate(-0.428 821)">
+      <g id="content-18">
+        <text id="heading-18" class="r-more-3" transform="translate(1034 8270)"><tspan x="0" y="0">2019 June</tspan><tspan class="r-more-7"><tspan x="0" y="21"></tspan></tspan></text>
+        <text id="text-18" class="r-more-4" transform="translate(1034 8280)"><tspan x="0" y="17">Marketing campaign to attract users from South </tspan><tspan x="0" y="38">American countries launch.</tspan><tspan x="0" y="59">AI: automated moderation of projects.</tspan><tspan class="r-more-5"><tspan x="0" y="80"></tspan></tspan></text>
+      </g>
+      <g id="graphic-18">
+        <line id="s-line-18" class="r-more-2" y2="95" transform="translate(954 8185.034)"/>
+        <path id="circle-18" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8266.033)"/>
+      </g>
+    </g>
+    <g id="block-17" transform="translate(0.428 807)">
+      <g id="content-17">
+        <text id="heading-17" class="r-more-3" transform="translate(739 8158)"><tspan x="65.242" y="17">2019 May</tspan></text>
+        <text id="text-17" class="r-more-4" transform="translate(578 8183)"><tspan x="6.125" y="17">Marketing campaign to attract users from </tspan><tspan x="138.125" y="38">Asian countries launch.</tspan><tspan x="147.922" y="59">Localization of JP/CH.</tspan><tspan class="r-more-5"><tspan x="300" y="80"></tspan></tspan></text>
+      </g>
+      <g id="graphic-17">
+        <path id="circle-17" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8173.034)"/>
+        <line id="s-line-17" class="r-more-2" y2="95" transform="translate(954 8080.034)"/>
+      </g>
+    </g>
+    <g id="block-16" transform="translate(0 607)">
+      <g id="content-16">
+        <text id="heading-16" class="r-more-3" transform="translate(1034 8270)"><tspan x="0" y="0">2019 April</tspan><tspan class="r-more-7"><tspan x="0" y="21"></tspan></tspan></text>
+        <text id="text-16" class="r-more-4" transform="translate(1034 8280)"><tspan x="0" y="17">Mobile application launch.</tspan><tspan x="0" y="38">Marketing campaign to attract users from European </tspan><tspan x="0" y="59">countries launch.</tspan><tspan x="0" y="80">Localization of ESP/GER/FRA/ITA.</tspan><tspan class="r-more-5"><tspan x="0" y="101"></tspan></tspan></text>
+      </g>
+      <g id="graphic-16">
+        <line id="s-line-16" class="r-more-2" y2="95" transform="translate(954 8185.034)"/>
+        <path id="circle-16" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8266.033)"/>
+      </g>
+    </g>
+    <g id="block-15" transform="translate(0.428 593)">
+      <g id="content-15">
+        <text id="heading-15" class="r-more-3" transform="translate(739 8158)"><tspan x="50.234" y="17">2019 March</tspan></text>
+        <text id="text-15" class="r-more-4" transform="translate(445 8183)"><tspan x="26.289" y="17">Solution of legal issues for entering international markets.</tspan><tspan x="295" y="38">Localization EN/RU.</tspan><tspan x="9.805" y="59">Working version of the smart crowdfunding platform launch </tspan><tspan x="3.953" y="80">and tests in collaboration with users from Russia and the CIS.</tspan></text>
+      </g>
+      <g id="graphic-15">
+        <path id="circle-15" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8173.034)"/>
+        <line id="s-line-15" class="r-more-2" y2="95" transform="translate(954 8080.034)"/>
+      </g>
+    </g>
+    <g id="block-14" transform="translate(-0.428 401)">
+      <g id="content-14">
+        <text id="heading-14" class="r-more-3" transform="translate(1034 8270)"><tspan x="0" y="0">2019 February</tspan></text>
+        <text id="text-14" class="r-more-4" transform="translate(1034 8280)"><tspan x="0" y="17">Internal cryptocurrency/fiat exchange module.</tspan><tspan x="0" y="38">The architecture of smart contracts for distribution of </tspan><tspan x="0" y="59">the extracted/sponsored cryptocurrency.</tspan><tspan x="0" y="80">Start of marketing campaign to attract the first users </tspan><tspan x="0" y="101">to test the system from Russia and the CIS.</tspan></text>
+      </g>
+      <g id="graphic-14">
+        <line id="s-line-14" class="r-more-2" y2="95" transform="translate(954 8185.034)"/>
+        <path id="circle-14" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8266.033)"/>
+      </g>
+    </g>
+    <g id="block-13" transform="translate(0.428 393)">
+      <g id="content-13">
+        <text id="heading-13" class="r-more-3" transform="translate(739 8158)"><tspan x="38.609" y="17">2019 January</tspan></text>
+        <text id="text-13" class="r-more-4" transform="translate(537 8183)"><tspan x="35.875" y="17">Tminers cryptocurrency converting module.</tspan><tspan x="36.922" y="38">Backers cryptocurrency converting module.</tspan></text>
+      </g>
+      <g id="graphic-13">
+        <path id="circle-13" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8173.034)"/>
+        <line id="s-line-13" class="r-more-2" y2="95" transform="translate(954 8080.034)"/>
+      </g>
+    </g>
+    <g id="block-12" transform="translate(0 196)">
+      <g id="content-12">
+        <text id="heading-12" class="r-more-3" transform="translate(1034 8270)"><tspan x="0" y="0">2018 December</tspan><tspan class="r-more-7"><tspan x="0" y="21"></tspan></tspan></text>
+        <text id="text-12" class="r-more-4" transform="translate(1034 8280)"><tspan x="0" y="17">Web-platform and tools for projects </tspan><tspan x="0" y="38">placement and design.</tspan><tspan x="0" y="59">Multicurrency wallet and payment module.</tspan><tspan x="0" y="80">Multilanguage support module.</tspan><tspan x="0" y="101">User profile module.</tspan></text>
+      </g>
+      <g id="graphic-12">
+        <line id="s-line-12" class="r-more-2" y2="95" transform="translate(954 8185.034)"/>
+        <path id="circle-12" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8266.033)"/>
+      </g>
+    </g>
+    <g id="block-11" transform="translate(0.428 194)">
+      <g id="content-11">
+        <text id="heading-11" class="r-more-3" transform="translate(739 8158)"><tspan x="18.578" y="17">2018 November</tspan></text>
+        <text id="text-11" class="r-more-4" transform="translate(578 8183)"><tspan x="79.914" y="17">Token listing on the exchanges.</tspan><tspan x="22.617" y="38">Completion of browser mining module.</tspan></text>
+      </g>
+      <g id="graphic-11">
+        <path id="circle-11" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8173.034)"/>
+        <line id="s-line-11" class="r-more-2" y2="95" transform="translate(954 8080.034)"/>
+      </g>
+    </g>
+  </g>
+</svg>

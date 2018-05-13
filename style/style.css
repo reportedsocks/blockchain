@@ -1,3 +1,6 @@
+body {
+  font-family: "Montserrat", sans-serif !important; }
+
 button {
   cursor: pointer; }
 
@@ -46,11 +49,12 @@ button {
   width: 90%; }
 
 .fixed-header {
-  z-index: 99999999;
+  z-index: 14;
   padding: 10px 15px;
   -webkit-transition: .5s;
   -o-transition: .5s;
-  transition: .5s; }
+  transition: .5s;
+  background-color: rgba(5, 3, 38, 0.7); }
 
 .not-showed {
   display: none; }
@@ -61,8 +65,7 @@ button {
   display: flex; }
 
 .blue {
-  top: 0 !important;
-  background-color: #0674B2; }
+  background-color: rgba(5, 3, 38, 0.8) !important; }
 
 .bg-linear {
   background: -webkit-gradient(linear, left top, left bottom, from(#19584C), to(#052741));
@@ -102,8 +105,9 @@ button {
       padding-top: 80px; } }
 
 .header-links-container {
-  top: 5px;
+  top: 0;
   padding: 5px 0;
+  background-color: rgba(5, 3, 38, 0.7);
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s; }
@@ -114,7 +118,7 @@ button {
 
 @media only screen and (max-width: 768px) {
   .header-logo {
-    margin-bottom: 20px; } }
+    margin: 5px 0; } }
 
 .menu-point-1, .menu-point-2, .menu-point-3, .menu-point-4 {
   font-family: "Montserrat", sans-serif;
@@ -228,6 +232,10 @@ button {
   @media only screen and (max-width: 992px) {
     .header-promo {
       margin-top: 30px; } }
+  @media only screen and (max-width: 576px) {
+    .header-promo {
+      max-width: 320px;
+      margin: 0 auto; } }
 
 .promo-heading {
   color: #fff;
@@ -241,21 +249,21 @@ button {
         margin-bottom: 5px; } }
 
 .timer-circle {
-  min-width: 83px;
+  width: 83px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   color: #fff;
   font-weight: 500;
   border-radius: 50%;
   border: 5px solid rgba(255, 255, 255, 0.2);
-  padding: 15px 20px; }
+  padding: 15px 0; }
   .timer-circle p {
     margin: 0; }
   @media only screen and (max-width: 576px) {
     .timer-circle {
-      min-width: 50px;
+      width: 50px;
       font-size: 24px;
-      padding: 5px 8px;
+      padding: 5px 0;
       border: 3px solid rgba(255, 255, 255, 0.2); } }
 
 .unit-div {
@@ -346,7 +354,7 @@ button {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 5px;
   margin-left: 25px; }
   .label-input p {
@@ -370,14 +378,14 @@ button {
 
 .join-bttn {
   position: absolute;
-  left: 219px;
+  left: 225px;
   top: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   border: none;
-  border-radius: 30px;
+  border-radius: 29px;
   padding: 21px 40px;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -390,10 +398,10 @@ button {
     outline: none; }
   @media only screen and (max-width: 1200px) {
     .join-bttn {
-      left: 224px; } }
+      left: 230px; } }
   @media only screen and (max-width: 768px) {
     .join-bttn {
-      left: 193px; } }
+      left: 200px; } }
 
 .join-input-div {
   width: 55%;
@@ -403,24 +411,24 @@ button {
   height: 100%;
   width: 100%;
   border: none;
-  padding: 5px 0; }
+  padding: 5px 15px; }
   .join-input:focus {
     outline: none; }
   .join-input::-webkit-input-placeholder {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: #6A6A6A; }
+    color: #CDCDCD; }
   .join-input::-moz-placeholder {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: #6A6A6A; }
+    color: #CDCDCD; }
   .join-input:-ms-input-placeholder {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: #6A6A6A; }
+    color: #CDCDCD; }
 
 .promo-bttn button, .promo-bttn-menu button, .promo-bttn-header button, .Github-bttn button {
   font-family: "Montserrat", sans-serif;
@@ -484,6 +492,12 @@ button {
     .reasons-container {
       font-size: 16px; } }
 
+.reasons-icon {
+  max-width: 93px; }
+  @media only screen and (max-width: 768px) {
+    .reasons-icon {
+      max-width: 80px; } }
+
 .whitepaper-bttn, .whitepaper-bttn-menu, .telegram-bttn, .join-telegram-bttn {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -497,6 +511,18 @@ button {
     background-color: rgba(255, 255, 255, 0.3); }
   .whitepaper-bttn:focus, .whitepaper-bttn-menu:focus, .telegram-bttn:focus, .join-telegram-bttn:focus {
     outline: none; }
+
+.adoptive-width {
+  padding: 12px 90px; }
+  @media only screen and (max-width: 1200px) {
+    .adoptive-width {
+      padding: 12px 80px; } }
+  @media only screen and (max-width: 992px) {
+    .adoptive-width {
+      margin-top: 40px; } }
+  @media only screen and (max-width: 992px) {
+    .adoptive-width {
+      margin-top: 20px; } }
 
 .header-social, .footer-social {
   margin-top: 50px; }
@@ -788,11 +814,6 @@ button {
     .token-container {
       padding-bottom: 160px; } }
 
-.margin-top {
-  padding-top: 15px;
-  margin-top: 30px;
-  margin-bottom: 0 !important; }
-
 .token-author-text {
   padding: 0 20px; }
 
@@ -814,7 +835,18 @@ button {
   font-size: 28px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 30px; }
+  margin-bottom: 0px; }
+  @media only screen and (max-width: 992px) {
+    .token-icons {
+      font-size: 26px; } }
+
+.token-icons-column {
+  padding-top: 20px; }
+
+.margin-top {
+  padding-top: 60px;
+  margin-top: 35px;
+  margin-bottom: 0 !important; }
 
 .token-text {
   font-family: "Montserrat", sans-serif;
@@ -827,8 +859,11 @@ button {
     width: 80px;
     height: 2px;
     background-color: #fff;
-    top: 15%;
+    top: 19%;
     left: -100px; }
+  @media only screen and (max-width: 1200px) {
+    .token-text:before {
+      top: 25%; } }
   @media only screen and (max-width: 992px) {
     .token-text:before {
       content: '';
@@ -836,7 +871,7 @@ button {
       width: 40px;
       height: 2px;
       background-color: #fff;
-      top: 10%;
+      top: 18%;
       left: -60px; } }
 
 .after-line {
@@ -850,8 +885,11 @@ button {
     width: 80px;
     height: 2px;
     background-color: #fff;
-    top: 70%;
+    top: 79%;
     left: -100px; }
+  @media only screen and (max-width: 1200px) {
+    .after-line:after {
+      top: 74%; } }
   @media only screen and (max-width: 992px) {
     .after-line:after {
       content: '';
@@ -859,7 +897,7 @@ button {
       width: 40px;
       height: 2px;
       background-color: #fff;
-      top: 65%;
+      top: 78%;
       left: -60px; } }
 
 .token-line img {
@@ -1144,7 +1182,7 @@ button {
   background: -webkit-linear-gradient(bottom, #39F0CF, #0063AE);
   background: -o-linear-gradient(bottom, #39F0CF, #0063AE);
   background: linear-gradient(to top, #39F0CF, #0063AE);
-  padding-bottom: 130px; }
+  padding-bottom: 190px; }
   @media only screen and (max-width: 768px) {
     .roadmap-container {
       padding-bottom: 180px; } }
@@ -1168,6 +1206,18 @@ button {
   position: relative;
   top: -83px;
   left: 5%; }
+  @media only screen and (max-width: 992px) {
+    .roadmap-svg {
+      top: -75px; } }
+
+.roadmap-svg-2 {
+  position: relative;
+  top: -250px;
+  left: -9.8%;
+  width: 115%; }
+  @media only screen and (max-width: 992px) {
+    .roadmap-svg-2 {
+      top: -185px; } }
 
 .roadmap-bttn {
   background-color: transparent;

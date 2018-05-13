@@ -146,6 +146,7 @@ $(window).scroll(function(){
   	if ($(this).scrollTop() > offsetTop ) {
   		startAnimation();
   	}
+  	$(window).off('scroll');
 });
 
 
@@ -231,6 +232,94 @@ $(window).scroll(function(){
   		});
 	};
 
+
+$('#roadmap-bttn').on('click',function(){
+		if($(window).width() <= '768'){
+			$('.roadmap-sm-container').html('<img src="img/roadmap-sm-2.svg">');
+			$('#roadmap-bttn').addClass('d-none');
+		}else{
+			$('#end-pointer').animate({opacity: '0'},0,);
+			$('.roadmap-svg-2').removeClass('d-none');
+
+			$('#heading-11').attr('transform', 'scale(1) translate(739 8158)');
+  			$('#text-11').attr('transform', 'scale(1) translate(578 8183)');
+			$('#heading-11').animate({fontSize: '16px'},1000);
+			$('#text-11').animate({fontSize: '16px'},1000);
+			$('#line-11').animate({opacity: '1'},1000);
+			$('#line-11').addClass('animated');
+			$('#circle-11').animate({opacity: '1'},500,function(){
+				$('#heading-12').attr('transform', 'scale(1) translate(1034 8270)');
+  				$('#text-12').attr('transform', 'scale(1) translate(1034 8280)');
+				$('#heading-12').animate({fontSize: '16px'},1000);
+				$('#text-12').animate({fontSize: '16px'},1000);
+				$('#s-line-12').animate({opacity: '1'},1000);
+				$('#s-line-12').addClass('animated');
+				$('#circle-12').animate({opacity: '1'},500,function(){
+					$('#heading-13').attr('transform', 'scale(1) translate(739 8158)');
+  					$('#text-13').attr('transform', 'scale(1) translate(537 8183)');
+					$('#heading-13').animate({fontSize: '16px'},1000);
+					$('#text-13').animate({fontSize: '16px'},1000);
+					$('#s-line-13').animate({opacity: '1'},1000);
+					$('#s-line-13').addClass('animated');
+					$('#circle-13').animate({opacity: '1'},500,function(){
+						$('#heading-14').attr('transform', 'scale(1) translate(1034 8270)');
+  						$('#text-14').attr('transform', 'scale(1) translate(1034 8280)');
+						$('#heading-14').animate({fontSize: '16px'},1000);
+						$('#text-14').animate({fontSize: '16px'},1000);
+						$('#s-line-14').animate({opacity: '1'},1000);
+						$('#s-line-14').addClass('animated');
+						$('#circle-14').animate({opacity: '1'},500,function(){
+							$('#heading-15').attr('transform', 'scale(1) translate(739 8158)');
+  							$('#text-15').attr('transform', 'scale(1) translate(445 8183)');
+							$('#heading-15').animate({fontSize: '16px'},1000);
+							$('#text-15').animate({fontSize: '16px'},1000);
+							$('#s-line-15').animate({opacity: '1'},1000);
+							$('#s-line-15').addClass('animated');
+							$('#circle-15').animate({opacity: '1'},500,function(){
+								$('#heading-16').attr('transform', 'scale(1) translate(1034 8270)');
+  								$('#text-16').attr('transform', 'scale(1) translate(1034 8280)');
+								$('#heading-16').animate({fontSize: '16px'},1000);
+								$('#text-16').animate({fontSize: '16px'},1000);
+								$('#s-line-16').animate({opacity: '1'},1000);
+								$('#s-line-16').addClass('animated');
+								$('#circle-16').animate({opacity: '1'},500,function(){
+									$('#heading-17').attr('transform', 'scale(1) translate(739 8158)');
+  									$('#text-17').attr('transform', 'scale(1) translate(578 8183)');
+									$('#heading-17').animate({fontSize: '16px'},1000);
+									$('#text-17').animate({fontSize: '16px'},1000);
+									$('#s-line-17').animate({opacity: '1'},1000);
+									$('#s-line-17').addClass('animated');
+									$('#circle-17').animate({opacity: '1'},500,function(){
+										$('#heading-18').attr('transform', 'scale(1) translate(1034 8270)');
+  										$('#text-18').attr('transform', 'scale(1) translate(1034 8280)');
+										$('#heading-18').animate({fontSize: '16px'},1000);
+										$('#text-18').animate({fontSize: '16px'},1000);
+										$('#s-line-18').animate({opacity: '1'},1000);
+										$('#s-line-18').addClass('animated');
+										$('#circle-18').animate({opacity: '1'},500,function(){
+											$('#heading-19').attr('transform', 'scale(1) translate(739 8158)');
+  											$('#text-19').attr('transform', 'scale(1) translate(563 8183)');
+											$('#heading-19').animate({fontSize: '16px'},1000);
+											$('#text-19').animate({fontSize: '16px'},1000);
+											$('#s-line-19').animate({opacity: '1'},1000);
+											$('#s-line-19').addClass('animated');
+											$('#circle-19').animate({opacity: '1'},500,function(){
+												$('#s-line-20').animate({opacity: '1'},1000);
+												$('#s-line-20').addClass('animated');
+												$('#end-pointer-2').animate({opacity: '1'},800,);
+											});
+										});
+									});
+								});
+							});
+						});
+					});
+				});
+			});
+			$('#roadmap-bttn').addClass('d-none');
+			$('.roadmap-container').css({paddingBottom: "10px"});
+		}
+	});
 
 // roadmap hovers
 	$( "#content-1" ).hover(
@@ -336,14 +425,102 @@ $(window).scroll(function(){
 
   }
   );
-						$( "#content-1" ).hover(
+	$( "#content-11" ).hover(
   function() {
   	
-    $('#heading-1').addClass( "hover" );
-    $('#text-1').addClass( "hover" );
+    $('#heading-11').addClass( "hover" );
+    $('#text-11').addClass( "hover" );
   }, function() {
-    $('#heading-1').removeClass( "hover" );
-    $('#text-1').removeClass( "hover" );
+    $('#heading-11').removeClass( "hover" );
+    $('#text-11').removeClass( "hover" );
+
+  }
+  );
+	$( "#content-12" ).hover(
+  function() {
+  	
+    $('#heading-12').addClass( "hover" );
+    $('#text-12').addClass( "hover" );
+  }, function() {
+    $('#heading-12').removeClass( "hover" );
+    $('#text-12').removeClass( "hover" );
+
+  }
+  );
+	$( "#content-13" ).hover(
+  function() {
+  	
+    $('#heading-13').addClass( "hover" );
+    $('#text-13').addClass( "hover" );
+  }, function() {
+    $('#heading-13').removeClass( "hover" );
+    $('#text-13').removeClass( "hover" );
+
+  }
+  );
+	$( "#content-14" ).hover(
+  function() {
+  	
+    $('#heading-14').addClass( "hover" );
+    $('#text-14').addClass( "hover" );
+  }, function() {
+    $('#heading-14').removeClass( "hover" );
+    $('#text-14').removeClass( "hover" );
+
+  }
+  );
+	$( "#content-15" ).hover(
+  function() {
+  	
+    $('#heading-15').addClass( "hover" );
+    $('#text-15').addClass( "hover" );
+  }, function() {
+    $('#heading-15').removeClass( "hover" );
+    $('#text-15').removeClass( "hover" );
+
+  }
+  );
+	$( "#content-16" ).hover(
+  function() {
+  	
+    $('#heading-16').addClass( "hover" );
+    $('#text-16').addClass( "hover" );
+  }, function() {
+    $('#heading-16').removeClass( "hover" );
+    $('#text-16').removeClass( "hover" );
+
+  }
+  );
+	$( "#content-17" ).hover(
+  function() {
+  	
+    $('#heading-17').addClass( "hover" );
+    $('#text-17').addClass( "hover" );
+  }, function() {
+    $('#heading-17').removeClass( "hover" );
+    $('#text-17').removeClass( "hover" );
+
+  }
+  );
+	$( "#content-18" ).hover(
+  function() {
+  	
+    $('#heading-18').addClass( "hover" );
+    $('#text-18').addClass( "hover" );
+  }, function() {
+    $('#heading-18').removeClass( "hover" );
+    $('#text-18').removeClass( "hover" );
+
+  }
+  );
+	$( "#content-19" ).hover(
+  function() {
+  	
+    $('#heading-19').addClass( "hover" );
+    $('#text-19').addClass( "hover" );
+  }, function() {
+    $('#heading-19').removeClass( "hover" );
+    $('#text-19').removeClass( "hover" );
 
   }
   );
@@ -939,7 +1116,7 @@ $(window).scroll(function(){
   $(window).on('scroll',function(){
   	
   	$('.fixed-header').addClass('blue');
-  	$('.fixed-header').addClass('showed');
+  	
   });
   var menuCounter = 0;
 
@@ -979,14 +1156,8 @@ $(window).scroll(function(){
   		$('#join-input').attr( 'placeholder', 'Incorrect e-mail');
   	}
   });
-	$('#roadmap-bttn').on('click',function(){
-		if($(window).width() <= '768'){
-			$('.roadmap-sm-container').html('<img src="img/roadmap-sm-2.svg">');
-			$('#roadmap-bttn').addClass('d-none');
-		}else{
-			return false;
-		}
-	});
+  
+	
 
 	
 // web header
@@ -999,6 +1170,7 @@ $(window).scroll(function(){
    var headerOffset = $('.header-links-container').offset();
  if (headerOffset.top> 70) {
  	$('.header-links-container').addClass('blue');
+ 	$('.fixed-header').addClass('blue');
  }
 
 

@@ -19,6 +19,9 @@ $font: 'Montserrat', sans-serif;
     @content;
   }
 }
+body{
+  font-family: $font !important;
+}
 button{
   cursor: pointer;
 }
@@ -74,9 +77,10 @@ button{
 }
 .fixed-header{
   
-  z-index: 99999999;
+  z-index: 14;
   padding: 10px 15px;
   transition:.5s;
+  background-color: rgba(5,3,38,0.7);
 }
 .not-showed{
   display: none;
@@ -85,8 +89,7 @@ button{
   display: flex;
 }
 .blue{
-  top: 0 !important;
-  background-color: #0674B2;
+  background-color: rgba(5,3,38,0.8) !important;
 }
 .bg-linear{
   background: linear-gradient(to bottom,#19584C,#052741)
@@ -124,9 +127,9 @@ button{
   }
 }
 .header-links-container{
-  top:5px;
+  top:0;
   padding: 5px 0;
-  
+  background-color: rgba(5,3,38,0.7);
 
   transition: .5s;
   @include breakpoint-md {
@@ -144,7 +147,7 @@ button{
 }
 .header-logo{
    @include breakpoint-sm {
-    margin-bottom: 20px;
+    margin: 5px 0;
   }
 }
 .menu-point-1{
@@ -283,6 +286,10 @@ button{
   @include breakpoint-md {
     margin-top: 30px; 
   }
+  @include breakpoint-xs {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 .promo-heading{
   color: #fff;
@@ -297,21 +304,21 @@ button{
   }
 }
 .timer-circle{
-  min-width: 83px;
+  width: 83px;
   font-family: $font;
   font-size: 30px;
   color: #fff;
   font-weight: 500;
   border-radius: 50%;
   border:5px solid rgba(255, 255, 255, 0.2);
-  padding:15px 20px;
+  padding:15px 0;
   p{
     margin:0;
   } 
   @include breakpoint-xs {
-    min-width: 50px;
+    width: 50px;
     font-size: 24px; 
-    padding:5px 8px;
+    padding:5px 0;
     border:3px solid rgba(255, 255, 255, 0.2);
   }
 }
@@ -411,7 +418,7 @@ button{
   font-family: $font;
   font-size: 14px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
   p{
     margin:0;
   }
@@ -437,14 +444,14 @@ button{
 }
 .join-bttn{
   position: absolute;
-  left:219px;
+  left:225px;
   top: 0;
   font-family: $font;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   border:none;
-  border-radius: 30px;
+  border-radius: 29px;
   padding:21px 40px;
   transition:1s;
   background: linear-gradient(to right, #FC3D00,#F5AA00 );
@@ -453,10 +460,10 @@ button{
     outline: none;
   }
   @include breakpoint-lg {
-  left:224px;
+  left:230px;
   }
   @include breakpoint-sm {
-  left:193px;
+  left:200px;
   }
 }
 .join-input-div{
@@ -467,7 +474,7 @@ button{
   height: 100%;
   width: 100%;
   border:none;
-  padding: 5px 0;
+  padding: 5px 15px;
   &:focus{
     outline: none;
   }
@@ -475,19 +482,19 @@ button{
     font-family: $font;
     font-size: 14px;
     font-weight: 500;
-    color: #6A6A6A;
+    color: #CDCDCD;
   }
   &::-moz-placeholder{
     font-family: $font;
     font-size: 14px;
     font-weight: 500;
-    color: #6A6A6A;
+    color: #CDCDCD;
   }
   &:-ms-input-placeholder{
     font-family: $font;
     font-size: 14px;
     font-weight: 500;
-    color: #6A6A6A;
+    color: #CDCDCD;
   }
   
 }
@@ -566,6 +573,12 @@ button{
     font-size: 16px;
   }
 }
+.reasons-icon{
+  max-width: 93px;
+  @include breakpoint-sm {
+    max-width: 80px;
+  }
+}
 .whitepaper-bttn{
   
   font-family: $font;
@@ -584,8 +597,18 @@ button{
   &:focus{
     outline: none;
   }
-  
-
+}
+.adoptive-width{
+  padding:12px 90px; 
+  @include breakpoint-lg {
+    padding:12px 80px; 
+  }
+  @include breakpoint-md {
+    margin-top: 40px;
+  }
+  @include breakpoint-md {
+    margin-top: 20px;
+  }
 }
 .header-social{
   margin-top: 50px;
@@ -906,11 +929,7 @@ button{
     padding-bottom: 160px;
   }
 }
-.margin-top{
-  padding-top: 15px;
-  margin-top: 30px;
-  margin-bottom: 0 !important;
-}
+
 .token-author-text{
   padding: 0 20px;
 }
@@ -935,7 +954,18 @@ button{
   font-size: 28px;
   font-weight: 700;
   color: #fff; 
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+  @include breakpoint-md {
+    font-size: 26px;
+  }
+}
+.token-icons-column{
+  padding-top: 20px;
+}
+.margin-top{
+  padding-top: 60px;
+  margin-top: 35px;
+  margin-bottom: 0 !important;
 }
 .token-text{
   font-family: $font;
@@ -949,10 +979,18 @@ button{
     width: 80px;
     height: 2px;
     background-color: #fff;
-    top:15%;
+    top:19%;
     left: -100px;
 
   }
+    @include breakpoint-lg {
+    &:before{
+    
+    top:25%;
+    
+  }
+}
+
   @include breakpoint-md {
     &:before{
     content: '';
@@ -960,7 +998,7 @@ button{
     width: 40px;
     height: 2px;
     background-color: #fff;
-    top:10%;
+    top:18%;
     left: -60px;
   }
 }
@@ -977,9 +1015,14 @@ button{
     width: 80px;
     height: 2px;
     background-color: #fff;
-    top:70%;
+    top:79%;
     left: -100px;
   }
+  @include breakpoint-lg {
+    &:after{
+    top:74%;
+  }
+}
   @include breakpoint-md {
     &:after{
     content: '';
@@ -987,7 +1030,7 @@ button{
     width: 40px;
     height: 2px;
     background-color: #fff;
-    top:65%;
+    top:78%;
     left: -60px;
   }
 }
@@ -1299,7 +1342,7 @@ button{
   @extend .explanation-container;
   z-index: 7;
   background: linear-gradient(to top, #39F0CF,#0063AE);
-  padding-bottom: 130px;
+  padding-bottom: 190px;
   @include breakpoint-sm {
     padding-bottom: 180px;
   }
@@ -1326,6 +1369,20 @@ button{
   position: relative;
   top: -83px;
   left: 5%;
+  @include breakpoint-md {
+    top: -75px;
+  }
+
+}
+.roadmap-svg-2{
+  position: relative;
+  top: -250px;
+  left: -9.8%;
+  width: 115%;
+  @include breakpoint-md {
+    top: -185px;
+  }
+
 }
 .roadmap-bttn{
   background-color: transparent;

@@ -15,17 +15,17 @@
     <title>Boomstarter</title>
   </head>
   <body>
-    <div class="container-fluid header-links-container  fixed-top">
+    <div class="d-none d-sm-block container-fluid header-links-container  fixed-top">
     <div class="d-none d-sm-flex row header-links">
-      <div class="col-sm-6 col-md-3 col-lg-3 header-logo">
+      <div class="col-sm-3 col-md-3 col-lg-3 header-logo">
         <a href="#header-container"><img src="img/Logo.svg"></a>
       </div>
-      <div class="col-sm-12 offset-md-0 col-md-9 col-lg-8 offset-lg-1 d-flex flex-row justify-content-between align-items-center" >
+      <div class="col-sm-9 offset-md-0 col-md-9 col-lg-8 offset-lg-1 d-flex flex-row justify-content-between align-items-center" >
         <div class="menu-point-1"><p><a href="#explanation-container">How it works</a></p></div>
         <div class="menu-point-2"><p><a href="#team-container">Team</a></p></div>
         <div class="menu-point-3"><p><a href="#roadmap-container">Roadmap</a></p></div>
         <div class="menu-point-4"><p><a href="">Whitepaper</a></p></div>
-        <div class="menu-point">
+        <div class="menu-point d-none d-md-block">
           <form action="">
             <button class="join-telegram-bttn" type="submit">Join our Telegram</button>
           </form>
@@ -101,13 +101,13 @@
         <div class=" d-flex flex-column  align-items-center header-promo">
         <div class="promo-heading"><p>PRE-SALE IS COMING SOON</p></div>
         <div class="d-flex flex-row align-items-center justify-content-around">
-          <div class="timer-circle "><p class="days">04</p></div>
+          <div class="timer-circle text-center"><p class="days">04</p></div>
           <div class="timer-points"><p>:</p></div>
-          <div class="timer-circle "><p class="hours">05</p></div>
+          <div class="timer-circle text-center"><p class="hours">05</p></div>
           <div class="timer-points"><p>:</p></div>
-          <div class="timer-circle "><p class="minutes">12</p></div>
+          <div class="timer-circle text-center"><p class="minutes">12</p></div>
           <div class="timer-points"><p>:</p></div>
-          <div class="timer-circle "><p class="seconds">59</p></div>
+          <div class="timer-circle text-center"><p class="seconds">59</p></div>
         </div>
         <div class="d-flex flex-row unit-div justify-content-between">
           <div class="timer-unit text-center"><p>weeks</p></div>
@@ -165,12 +165,12 @@
       </div>
     </div>
     <div class="row header-reasons">
-      <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4">
+      <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 d-sm-flex align-items-sm-end">
         <div class="row d-flex align-items-start">
-        <div class="col-3 col-sm-4"><img src="img/3reasons.svg"></div>
-        <div class="col-9 col-sm-8 reasons-container">
+        <div class="col-3 col-sm-4"><img class="reasons-icon" src="img/3reasons.svg"></div>
+        <div class="col-9 col-sm-8 reasons-container align-self-center align-self-md-start">
           
-          <p><button type="button" data-toggle="modal" data-target="#ModalReasons">3 Reasons you need 
+          <p><button type="button" data-toggle="modal" data-target="#ModalReasons" class="text-left">3 Reasons you need 
           Boomstarter Coin</button></p>
         </div>
         </div>
@@ -178,9 +178,9 @@
       <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4">
         <div class="row d-flex align-items-start">
         <div class="col-3 col-sm-4"><img src="img/5features.svg"></div>
-        <div class="col-9 col-sm-8 reasons-container">
+        <div class="col-9 col-sm-8 reasons-container align-self-center">
           
-          <p><button type="button" data-toggle="modal" data-target="#ModalFeatures">5 innovate
+          <p><button type="button" data-toggle="modal" data-target="#ModalFeatures" class="text-left">5 innovate
             Boomstarter features</button></p>
         </div>
         </div>
@@ -188,7 +188,7 @@
       <div class="d-none col-sm-12 col-lg-4 d-sm-flex align-items-center justify-content-center text-center">
         <div>
         <form action="">
-          <button type="submit" class="whitepaper-bttn">White Paper</button>
+          <button type="submit" class="whitepaper-bttn adoptive-width">White Paper</button>
         </form>
         </div>
       </div>
@@ -311,7 +311,7 @@ cryptofunding users</p>
 
           </div>
           <div class="row">
-            <div class="col-sm-12 offset-sm-0 col-xl-7 offset-xl-5">            
+            <div class="col-sm-12 offset-sm-0 col-lg-9 offset-lg-3 col-xl-6 offset-xl-6">            
               <div class="d-flex flex-row justify-content-center justify-content-md-around">
               <div class="users-number"><p>500</p></div>
               <div class="users-unit d-flex align-items-center">
@@ -494,7 +494,7 @@ cryptofunding market</p>
          <div class="d-none d-lg-block col-lg-2 d-lg-flex align-items-lg-center token-line">
            <img src="img/token-line.svg">
          </div>
-         <div class="col-md-3 col-lg-3 d-flex flex-column align-items-center">
+         <div class="col-md-3 col-lg-3 d-flex flex-column align-items-center token-icons-column">
            <div class="token-icons d-flex align-items-center flex-column">
             <div class="w-100">
             <img src="img/token-author.svg">
@@ -1158,7 +1158,7 @@ raising experience
           </div>
 
           <div class="roadmap-svg d-none d-md-block">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 832 1116.105">
+           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 832 1116.105">
   <defs>
     <style>
       .roadmap-1, .roadmap-4 {
@@ -1170,7 +1170,7 @@ raising experience
         stroke-width: 5px;
       }
 
-      .roadmap-2, .roadmap-5, .roadmap-6, .roadmap-8, .roadmap-9 {
+      .roadmap-2, .roadmap-5, .roadmap-6, .roadmap-8, .roadmap-9, .roadmap-7 {
         stroke: #fff;
         stroke-linecap: round;
       }
@@ -1189,16 +1189,16 @@ raising experience
         font-family: SegoeUI, Segoe UI;
       }
 
-      .roadmap-5, .roadmap-6, .roadmap-8 {
+      .roadmap-5, .roadmap-6, .roadmap-8, .roadmap-7 {
         stroke-width: 3.375px;
       }
 
-      .roadmap-5 {
-        fill: url(#linear-gradient);
+      .roadmap-7 {
+        fill: url(#linear-gradient-4);
       }
 
       .roadmap-6, .roadmap-8 {
-        fill: url(#linear-gradient-4);
+        fill: url(#linear-gradient);
       }
 
       .roadmap-7 {
@@ -1227,7 +1227,7 @@ raising experience
             
             }
       }  
-      .roadmap-6, .roadmap-5, .roadmap-8, .roadmap-2{
+      .roadmap-6, .roadmap-5, .roadmap-8, .roadmap-2, .roadmap-7{
         opacity: 0;
       }
       .roadmap-2{
@@ -1248,13 +1248,10 @@ raising experience
         opacity: 0;
       }
       .hover{
-        font-size: 18px !important;
+        font-size: 17px !important;
         transition: .7s;
       }
       
-         
-
-
     </style>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#00d8ff"/>
@@ -1272,42 +1269,42 @@ raising experience
     </g>
     <g id="block-9">
       <g id="content-9">
-        <text id="heading-9" class="roadmap-3" transform="translate(1034 8270)"><tspan x="0" y="0">2018 July</tspan></text>
-        <text id="text-9" class="roadmap-4" transform="translate(1034 8280)"><tspan x="0" y="17">Launch of main token Crowdsale</tspan></text>
+        <text id="heading-9" class="roadmap-3" transform="translate(1034 8270)"><tspan x="0" y="0">2018 September</tspan><tspan class="roadmap-4"><tspan x="0" y="21"></tspan></tspan></text>
+        <text id="text-9" class="roadmap-4" transform="translate(1034 8280)"><tspan x="0" y="17">Completion of the main token Crowdsale</tspan></text>
       </g>
       <g id="graphic-9">
         <line id="s-line-9" class="roadmap-2" y2="95" transform="translate(954 8185.034)"/>
-        <path id="circle-9" class="roadmap-5" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8266.033)"/>
+        <path id="circle-9" class="roadmap-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8266.033)"/>
       </g>
     </g>
     <g id="block-8">
       <g id="content-8">
-        <text id="heading-8" class="roadmap-3" transform="translate(739 8158)"><tspan x="62.633" y="17">2018 June</tspan></text>
-        <text id="text-8" class="roadmap-4" transform="translate(578 8183)"><tspan x="123.898" y="17">Launch of token Pre-Sale</tspan></text>
+        <text id="heading-8" class="roadmap-3" transform="translate(739 8158)"><tspan x="67.813" y="17">2018 July</tspan></text>
+        <text id="text-8" class="roadmap-4" transform="translate(578 8183)"><tspan x="69.836" y="17">Launch of main token Crowdsale</tspan></text>
       </g>
       <g id="graphic-8">
         <line id="s-line-8" class="roadmap-2" y2="95" transform="translate(954 8080.034)"/>
-        <path id="circle-8" class="roadmap-5" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8173.034)"/>
+        <path id="circle-8" class="roadmap-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8173.034)"/>
       </g>
     </g>
     <g id="block-7">
       <g id="content-7">
-        <text id="heading-7" class="roadmap-3" transform="translate(1034 8066)"><tspan x="0" y="0">2018 May</tspan></text>
-        <text id="text-7" class="roadmap-4" transform="translate(1034 8076)"><tspan x="0" y="17">The start of smart crowdfunding system </tspan><tspan x="0" y="38">development</tspan></text>
+        <text id="heading-7" class="roadmap-3" transform="translate(1034 8066)"><tspan x="0" y="0">2018 June</tspan></text>
+        <text id="text-7" class="roadmap-4" transform="translate(1034 8076)"><tspan x="0" y="17">Launch of token Pre-Sale</tspan></text>
       </g>
       <g id="graphic-7">
         <line id="s-line-7" class="roadmap-2" y2="95" transform="translate(954 7995.034)"/>
-        <path id="circle-7" class="roadmap-5" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8081.034)"/>
+        <path id="circle-7" class="roadmap-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8081.034)"/>
       </g>
     </g>
     <g id="block-6">
       <g id="content-6">
-        <text id="heading-6" class="roadmap-3" transform="translate(739 7981)"><tspan x="30.555" y="17">2018 February</tspan></text>
-        <text id="text-6" class="roadmap-4" transform="translate(578 8006)"><tspan x="101.195" y="17">Start of WhitePaper creation</tspan></text>
+        <text id="heading-6" class="roadmap-3" transform="translate(739 7981)"><tspan x="65.242" y="17">2018 May</tspan></text>
+        <text id="text-6" class="roadmap-4" transform="translate(578 8006)"><tspan x="19.773" y="17">The start of smart crowdfunding system </tspan><tspan x="206.898" y="38">development</tspan></text>
       </g>
       <g id="graphic-6">
         <line id="s-line-6" class="roadmap-2" y2="95" transform="translate(954 7900.034)"/>
-        <path id="circle-6" class="roadmap-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 7988.034)"/>
+        <path id="circle-6" class="roadmap-7" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 7988.034)"/>
       </g>
     </g>
     <g id="block-5">
@@ -1317,7 +1314,7 @@ raising experience
       </g>
       <g id="graphic-5">
         <line id="s-line-5" class="roadmap-2" y2="95" transform="translate(954 7805.034)"/>
-        <path id="circle-5" class="roadmap-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 7896.034)"/>
+        <path id="circle-5" class="roadmap-7" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 7896.034)"/>
       </g>
     </g>
     <g id="block-4">
@@ -1327,139 +1324,213 @@ raising experience
       </g>
       <g id="graphic-4">
         <line id="s-line-4" class="roadmap-2" y2="95" transform="translate(954 7726.034)"/>
-        <path id="circle-4" class="roadmap-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 7803.034)"/>
+        <path id="circle-4" class="roadmap-7" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 7803.034)"/>
       </g>
     </g>
     <g id="block-3">
       <g id="content-3">
-        <text id="heading-3" class="roadmap-3" transform="translate(1034 7692)"><tspan x="0" y="0">2018 January</tspan><tspan class="roadmap-7"><tspan x="0" y="21"></tspan></tspan></text>
+        <text id="heading-3" class="roadmap-3" transform="translate(1034 7692)"><tspan x="0" y="0">2018 January</tspan><tspan class="roadmap-4"><tspan x="0" y="21"></tspan></tspan></text>
         <text id="text-3" class="roadmap-4" transform="translate(1034 7702)"><tspan x="0" y="17">Definition of the concept and technology of </tspan><tspan x="0" y="38">smart crowdfunding and the start of product </tspan></text>
       </g>
       <g id="graphic-3">
         <line id="s-line-3" class="roadmap-2" y2="95" transform="translate(954 7631.034)"/>
-        <path id="circle-3" class="roadmap-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 7711.034)"/>
+        <path id="circle-3" class="roadmap-7" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 7711.034)"/>
       </g>
     </g>
     <g id="block-2">
       <g id="content-2">
-        <text id="heading-2" class="roadmap-3" transform="translate(878 7607)"><tspan x="-120.422" y="0">2017 November</tspan><tspan class="roadmap-7"><tspan x="0" y="21"></tspan></tspan></text>
+        <text id="heading-2" class="roadmap-3" transform="translate(878 7607)"><tspan x="-120.422" y="0">2017 November</tspan><tspan class="roadmap-4"><tspan x="0" y="21"></tspan></tspan></text>
         <text id="text-2" class="roadmap-4" transform="translate(578 7617)"><tspan x="19.172" y="17">Market and solutions research for smart </tspan><tspan x="201.797" y="38">crowdfunding</tspan></text>
       </g>
       <g id="graphic-2">
         <line id="s-line-2" class="roadmap-2" y2="95" transform="translate(954 7536.034)"/>
-        <path id="circle-2" class="roadmap-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 7618.034)"/>
+        <path id="circle-2" class="roadmap-7" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 7618.034)"/>
       </g>
     </g>
     <g id="block-1">
       <g id="content-1">
-        <text id="heading-1" class="roadmap-3" transform="translate(1034 7517)"><tspan x="0" y="0">2012 August</tspan><tspan class="roadmap-7"><tspan x="0" y="21"></tspan></tspan></text>
+        <text id="heading-1" class="roadmap-3" transform="translate(1034 7517)"><tspan x="0" y="0">2012 August</tspan><tspan class="roadmap-4"><tspan x="0" y="21"></tspan></tspan></text>
         <text id="text-1" class="roadmap-4" transform="translate(1034 7527)"><tspan x="0" y="17">Boomstarter technological crowdfunding </tspan><tspan x="0" y="38">platform launch in Russia </tspan></text>
       </g>
       <g id="graphic-1">
         <line id="line-1" class="roadmap-2" x2="0.5" y2="67" transform="translate(954 7461.034)"/>
-        <circle id="circle-1" class="roadmap-8 content-hidden" cx="13.572" cy="13.572" r="13.572" transform="translate(940.428 7525.034)"/>
+        <circle id="circle-1" class="roadmap-7" cx="13.572" cy="13.572" r="13.572" transform="translate(940.428 7525.034)"/>
       </g>
     </g>
     <path id="dotted-line" class="roadmap-9" d="M0-24.739V145.385" transform="translate(954 7308.5)"/>
   </g>
 </svg>
-</div>
 
-<div class="d-md-none roadmap-sm-container"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 237 657.083">
+</div>
+<div class="roadmap-svg-2 d-none">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 975.572 1056.332">
   <defs>
     <style>
-      .class-sm-1 {
+      .r-more-1, .r-more-4 {
+        fill: #fff;
+      }
+
+      .r-more-2 {
+        fill: none;
+        stroke-width: 5px;
+      }
+
+      .r-more-2, .r-more-6 {
+        stroke: #fff;
+      }
+
+      .r-more-3 {
         fill: #112a7c;
-        font-size: 16px;
         font-family: SegoeUI-Bold, Segoe UI;
         font-weight: 700;
       }
 
-      .class-sm-2 {
+      .r-more-3, .r-more-4 {
+        font-size: 0px;
+      }
+
+      .r-more-4 {
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .r-more-5 {
+        font-family: SegoeUI, Montserrat;
+      }
+
+      .r-more-6 {
+        stroke-width: 3.375px;
+        fill: url(#linear-gradient);
+      }
+
+      .r-more-7 {
         font-family: SegoeUI-Bold, Montserrat;
       }
-
-      .class-sm-3, .class-sm-5 {
-        fill: #fff;
+      .r-more-6, .r-more-5, .r-more-8, .r-more-2, .r-more-1{
+        opacity: 0;
       }
-
-      .class-sm-3 {
-        font-size: 12px;
-        font-family: SegoeUI-Light, Segoe UI;
-        font-weight: 300;
-      }
-
-      .class-sm-4, .class-sm-6 {
-        fill: none;
+      .r-more-2{
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
         stroke-linecap: round;
-        stroke-width: 5px;
-      }
-
-      .class-sm-4, .class-sm-6, .class-sm-7, .class-sm-8 {
-        stroke: #fff;
-      }
-
-      .class-sm-4, .class-sm-6, .class-sm-7 {
-        stroke-miterlimit: 10;
-      }
-
-      .class-sm-6 {
-        stroke-dasharray: 0 11;
-      }
-
-      .class-sm-7, .class-sm-8 {
-        stroke-width: 3.375px;
-        fill: url(#linear-gradient-sm);
       }
     </style>
-    <linearGradient id="linear-gradient-sm" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#00c6f5"/>
-      <stop offset="1" stop-color="#0afa79"/>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00d8ff"/>
+      <stop offset="1" stop-color="#035796"/>
     </linearGradient>
   </defs>
-  <g id="roadmap-sm-1" transform="translate(-37 -1364)">
-    <g id="Group_282" data-name="Group 282" transform="translate(-139 -4153)">
-      <text id="_2017_November_" data-name="2017 November
-" class="class-sm-1" transform="translate(358 5683)"><tspan x="-120.422" y="0">2017 November</tspan><tspan class="class-sm-2"><tspan x="0" y="21"></tspan></tspan></text>
-      <text id="Market_and_solutions_research_for_smart_crowdfunding" data-name="Market and solutions research for smart crowdfunding" class="class-sm-3" transform="translate(186 5693)"><tspan x="4.938" y="13">Market and solutions research for </tspan><tspan x="71.113" y="29">smart crowdfunding</tspan></text>
+  <g id="r-more-more" transform="translate(-445.428 -8274.034)">
+    <g id="block-20" transform="translate(937.419 8285.5)">
+      <path id="end-pointer-2" class="r-more-1" d="M.1,380.8l16.481,13.339L33.062,380.8v11.3L16.581,405.439.1,392.1Z" transform="translate(0 639.428)"/>
+      <line id="s-line-20" class="r-more-2" x1="0.5" y2="106" transform="translate(16.581 926.534)"/>
     </g>
-    <g id="Group_282-2" data-name="Group 282" transform="translate(-139 -4040)">
-      <text id="_2017_January" data-name="2017 January" class="class-sm-1" transform="translate(358 5687)"><tspan x="-100.391" y="0">2017 January</tspan></text>
-      <text id="Definition_of_the_concept_and_technology_of_smart_crowdfunding_and_the_start_of_product_development" data-name="Definition of the concept and technology of smart crowdfunding and the start of product development" class="class-sm-3" transform="translate(176 5697)"><tspan x="35.891" y="13">Definition of the concept and </tspan><tspan x="8.943" y="29">technology of smart crowdfunding </tspan><tspan x="62.609" y="45">and the start of product </tspan><tspan x="115.906" y="61">development</tspan></text>
-    </g>
-    <g id="Group_282-3" data-name="Group 282" transform="translate(-139 -3925)">
-      <text id="_2018_February" data-name="2018 February" class="class-sm-1" transform="translate(358 5699)"><tspan x="-108.445" y="0">2018 February</tspan></text>
-      <text id="Start_of_WhitePaper_creation" data-name="Start of WhitePaper creation" class="class-sm-3" transform="translate(358 5721)"><tspan x="-141.158" y="0">Start of WhitePaper creation</tspan></text>
-    </g>
-    <g id="Group_282-4" data-name="Group 282" transform="translate(-139 -3812)">
-      <text id="_2018_April_" data-name="2018 April
-" class="class-sm-1" transform="translate(358 5686)"><tspan x="-77.922" y="0">2018 April</tspan><tspan class="class-sm-2"><tspan x="0" y="21"></tspan></tspan></text>
-      <text id="Community_formation_around_the_project" data-name="Community formation
-around the project" class="class-sm-3" transform="translate(358 5708)"><tspan x="-110.438" y="0">Community formation</tspan><tspan x="-93.146" y="16">around the project</tspan></text>
-    </g>
-    <g id="Group_281" data-name="Group 281" transform="translate(240.938 1366.5)">
-      <g id="Group_261" data-name="Group 261" transform="translate(0.1 442.019)">
-        <g id="Group_260" data-name="Group 260" transform="translate(0 -334.019)">
-          <line id="Line_9" data-name="Line 9" class="class-sm-4" y2="532" transform="translate(16.481)"/>
-          <g id="Group_259" data-name="Group 259" transform="translate(0 517.006)">
-            <path id="Path_326" data-name="Path 326" class="class-sm-5" d="M.1,380.8l16.481,16.013L33.062,380.8v13.564L16.581,410.376.1,394.364Z" transform="translate(-0.1 -380.8)"/>
-          </g>
-        </g>
+    <g id="block-19" transform="translate(0.428 1021)">
+      <g id="content-19">
+        <text id="heading-19" class="r-more-3" transform="translate(739 8158)"><tspan x="67.813" y="17">2019 July</tspan></text>
+        <text id="text-19" class="r-more-4" transform="translate(563 8183)"><tspan x="21.125" y="17">Marketing campaign to attract users from </tspan><tspan x="157.375" y="38">North America launch.</tspan><tspan x="68.797" y="59">AI: automated ranking of projects.</tspan><tspan class="r-more-5"><tspan x="315" y="80"></tspan></tspan></text>
       </g>
-      <line id="Line_10" data-name="Line 10" class="class-sm-6" y2="101.385" transform="translate(16.581)"/>
-      <g id="Group_262" data-name="Group 262" transform="translate(3.008 173.126)">
-        <circle id="Ellipse_446" data-name="Ellipse 446" class="class-sm-7" cx="13.572" cy="13.572" r="13.572" transform="translate(0 -0.126)"/>
-        <path id="Path_327" data-name="Path 327" class="class-sm-8" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 112.874)"/>
-        <path id="Path_328" data-name="Path 328" class="class-sm-8" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 225.874)"/>
-        <path id="Path_329" data-name="Path 329" class="class-sm-8" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(0 338.874)"/>
+      <g id="graphic-19">
+        
+        <line id="s-line-19" class="r-more-2" y2="95" transform="translate(954 8080.034)"/>
+        <path id="circle-19" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8173.034)"/>
+      </g>
+    </g>
+    <g id="block-18" transform="translate(-0.428 821)">
+      <g id="content-18">
+        <text id="heading-18" class="r-more-3" transform="translate(1034 8270)"><tspan x="0" y="0">2019 June</tspan><tspan class="r-more-7"><tspan x="0" y="21"></tspan></tspan></text>
+        <text id="text-18" class="r-more-4" transform="translate(1034 8280)"><tspan x="0" y="17">Marketing campaign to attract users from South </tspan><tspan x="0" y="38">American countries launch.</tspan><tspan x="0" y="59">AI: automated moderation of projects.</tspan><tspan class="r-more-5"><tspan x="0" y="80"></tspan></tspan></text>
+      </g>
+      <g id="graphic-18">
+        <line id="s-line-18" class="r-more-2" y2="95" transform="translate(954 8185.034)"/>
+        <path id="circle-18" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8266.033)"/>
+      </g>
+    </g>
+    <g id="block-17" transform="translate(0.428 807)">
+      <g id="content-17">
+        <text id="heading-17" class="r-more-3" transform="translate(739 8158)"><tspan x="65.242" y="17">2019 May</tspan></text>
+        <text id="text-17" class="r-more-4" transform="translate(578 8183)"><tspan x="6.125" y="17">Marketing campaign to attract users from </tspan><tspan x="138.125" y="38">Asian countries launch.</tspan><tspan x="147.922" y="59">Localization of JP/CH.</tspan><tspan class="r-more-5"><tspan x="300" y="80"></tspan></tspan></text>
+      </g>
+      <g id="graphic-17">
+        
+        <line id="s-line-17" class="r-more-2" y2="95" transform="translate(954 8080.034)"/>
+        <path id="circle-17" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8173.034)"/>
+      </g>
+    </g>
+    <g id="block-16" transform="translate(0 607)">
+      <g id="content-16">
+        <text id="heading-16" class="r-more-3" transform="translate(1034 8270)"><tspan x="0" y="0">2019 April</tspan><tspan class="r-more-7"><tspan x="0" y="21"></tspan></tspan></text>
+        <text id="text-16" class="r-more-4" transform="translate(1034 8280)"><tspan x="0" y="17">Mobile application launch.</tspan><tspan x="0" y="38">Marketing campaign to attract users from European </tspan><tspan x="0" y="59">countries launch.</tspan><tspan x="0" y="80">Localization of ESP/GER/FRA/ITA.</tspan><tspan class="r-more-5"><tspan x="0" y="101"></tspan></tspan></text>
+      </g>
+      <g id="graphic-16">
+        <line id="s-line-16" class="r-more-2" y2="95" transform="translate(954 8185.034)"/>
+        <path id="circle-16" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8266.033)"/>
+      </g>
+    </g>
+    <g id="block-15" transform="translate(0.428 593)">
+      <g id="content-15">
+        <text id="heading-15" class="r-more-3" transform="translate(739 8158)"><tspan x="50.234" y="17">2019 March</tspan></text>
+        <text id="text-15" class="r-more-4" transform="translate(445 8183)"><tspan x="26.289" y="17">Solution of legal issues for entering international markets.</tspan><tspan x="295" y="38">Localization EN/RU.</tspan><tspan x="9.805" y="59">Working version of the smart crowdfunding platform launch </tspan><tspan x="3.953" y="80">and tests in collaboration with users from Russia and the CIS.</tspan></text>
+      </g>
+      <g id="graphic-15">
+        
+        <line id="s-line-15" class="r-more-2" y2="95" transform="translate(954 8080.034)"/>
+        <path id="circle-15" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8173.034)"/>
+      </g>
+    </g>
+    <g id="block-14" transform="translate(-0.428 401)">
+      <g id="content-14">
+        <text id="heading-14" class="r-more-3" transform="translate(1034 8270)"><tspan x="0" y="0">2019 February</tspan></text>
+        <text id="text-14" class="r-more-4" transform="translate(1034 8280)"><tspan x="0" y="17">Internal cryptocurrency/fiat exchange module.</tspan><tspan x="0" y="38">The architecture of smart contracts for distribution of </tspan><tspan x="0" y="59">the extracted/sponsored cryptocurrency.</tspan><tspan x="0" y="80">Start of marketing campaign to attract the first users </tspan><tspan x="0" y="101">to test the system from Russia and the CIS.</tspan></text>
+      </g>
+      <g id="graphic-14">
+        <line id="s-line-14" class="r-more-2" y2="95" transform="translate(954 8185.034)"/>
+        <path id="circle-14" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8266.033)"/>
+      </g>
+    </g>
+    <g id="block-13" transform="translate(0.428 393)">
+      <g id="content-13">
+        <text id="heading-13" class="r-more-3" transform="translate(739 8158)"><tspan x="38.609" y="17">2019 January</tspan></text>
+        <text id="text-13" class="r-more-4" transform="translate(537 8183)"><tspan x="35.875" y="17">Miners cryptocurrency converting module.</tspan><tspan x="36.922" y="38">Backers cryptocurrency converting module.</tspan></text>
+      </g>
+      <g id="graphic-13">
+        
+        <line id="s-line-13" class="r-more-2" y2="95" transform="translate(954 8080.034)"/>
+        <path id="circle-13" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8173.034)"/>
+      </g>
+    </g>
+    <g id="block-12" transform="translate(0 196)">
+      <g id="content-12">
+        <text id="heading-12" class="r-more-3" transform="translate(1034 8270)"><tspan x="0" y="0">2018 December</tspan><tspan class="r-more-7"><tspan x="0" y="21"></tspan></tspan></text>
+        <text id="text-12" class="r-more-4" transform="translate(1034 8280)"><tspan x="0" y="17">Web-platform and tools for projects </tspan><tspan x="0" y="38">placement and design.</tspan><tspan x="0" y="59">Multicurrency wallet and payment module.</tspan><tspan x="0" y="80">Multilanguage support module.</tspan><tspan x="0" y="101">User profile module.</tspan></text>
+      </g>
+      <g id="graphic-12">
+        <line id="s-line-12" class="r-more-2" y2="95" transform="translate(954 8185.034)"/>
+        <path id="circle-12" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8266.033)"/>
+      </g>
+    </g>
+    <g id="block-11" transform="translate(0.428 194)">
+      <g id="content-11">
+        <text id="heading-11" class="r-more-3" transform="translate(739 8158)"><tspan x="18.578" y="17">2018 November</tspan></text>
+        <text id="text-11" class="r-more-4" transform="translate(578 8183)"><tspan x="79.914" y="17">Token listing on the exchanges.</tspan><tspan x="22.617" y="38">Completion of browser mining module.</tspan></text>
+      </g>
+      <g id="graphic-11">
+        <path id="circle-11" class="r-more-6" d="M13.572,0A13.572,13.572,0,1,1,0,13.572,13.572,13.572,0,0,1,13.572,0Z" transform="translate(940.428 8173.034)"/>
+        <line id="s-line-11" class="r-more-2" y2="95" transform="translate(954 8080.034)"/>
       </g>
     </g>
   </g>
 </svg>
+
+</div>
+
+
+
+<div class="d-md-none roadmap-sm-container">
+<img src="img/roadmap-sm-1.svg">
 </div>
 
               <div class="row">
-                <div class="d-md-none col-12 text-center"><button id="roadmap-bttn" class="roadmap-bttn">See more</button></div>
+                <div class="col-12 text-center"><button id="roadmap-bttn" class="roadmap-bttn">See more</button></div>
               </div>
 
        </div>
