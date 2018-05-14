@@ -62,7 +62,7 @@ button{
   margin-top: 30px;
   width: 90%;
   button{
-    padding: 10px 0 !important;
+    padding: 13px 0 !important;
     width: 100%;
   }
 }
@@ -80,7 +80,7 @@ button{
   z-index: 14;
   padding: 10px 15px;
   transition:.5s;
-  background-color: rgba(5,3,38,0.7);
+  background-color: rgba(1,53,99,0.7);
 }
 .not-showed{
   display: none;
@@ -89,7 +89,7 @@ button{
   display: flex;
 }
 .blue{
-  background-color: rgba(5,3,38,0.8) !important;
+  background-color: rgba(1,53,99,0.85) !important;
 }
 .bg-linear{
   background: linear-gradient(to bottom,#19584C,#052741)
@@ -129,7 +129,7 @@ button{
 .header-links-container{
   top:0;
   padding: 5px 0;
-  background-color: rgba(5,3,38,0.7);
+  background-color: rgba(1,53,99,0.7);
 
   transition: .5s;
   @include breakpoint-md {
@@ -520,6 +520,14 @@ button{
   @include breakpoint-xs {
   font-size: 17px; 
   margin-bottom: 15px;
+  padding: 13px 55px;
+  
+  background: #F69F00;
+  background-image: url('../img/join-wl-icon.png');
+  background-image: url('../img/join-wl-icon.png'),linear-gradient(to right,#FA5B00,#F5AA00 );
+  background-repeat: no-repeat;
+  background-position-y:center;
+  background-position-x:90%;
   }
   }
 }
@@ -544,17 +552,29 @@ button{
   @include breakpoint-sm {
     margin-top: 45px;
   }
+  div.col-12:nth-child(2){
+    @include breakpoint-sm {
+    margin-top: 20px;
+  }
+  }
+}
+.feature-icon{
+  max-width: 85px;
+  max-height: 87px;
 }
 .reasons-container{
   color: #fff;
   font-size: 21px;
   font-family: $font;
   font-weight: 700;
+  p{
+    margin:0;
+  }
   button{
     background-color: transparent;
     border:none;
     color: #112A7C;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     padding: 0;
     outline: none;
@@ -571,6 +591,15 @@ button{
   }
   @include breakpoint-sm {
     font-size: 16px;
+  }
+}
+.bs-features{
+  margin-left: -20px;
+  @include breakpoint-sm {
+    margin-left:-10px;
+  }
+  @include breakpoint-xs {
+    margin-left:-1px;
   }
 }
 .reasons-icon{
@@ -599,9 +628,9 @@ button{
   }
 }
 .adoptive-width{
-  padding:12px 90px; 
+  padding:12px 115px; 
   @include breakpoint-lg {
-    padding:12px 80px; 
+    padding:12px 90px; 
   }
   @include breakpoint-md {
     margin-top: 40px;
@@ -612,10 +641,32 @@ button{
 }
 .header-social{
   margin-top: 50px;
+  div.col-sm-8{
+    div:nth-child(5){
+      width: 53px;
+      height: 53px;
+      a{
+        img{
+          width: 53px;
+          height: 53px;
+        }
+      }
+    }
+  }
 }
 .social-icon{
   width: 45px;
+  height: 45px;
   opacity: .5;
+  a{
+    img{
+    width: 45px;
+    height: 45px;
+  }
+  }
+  &:hover{
+    opacity:1;
+  }
 
 }
 .close{
@@ -658,7 +709,7 @@ button{
 .users-container{
    
   background-image: url("../img/Users_bg.png");
-  padding:50px 80px 135px 0;
+  padding:50px 80px 165px 0;
   font-weight: 500;
   font-family: $font;
   color:#fff;
@@ -689,6 +740,7 @@ button{
   font-size: 120px;
   font-weight: 900;
   line-height: 1;
+
   @include breakpoint-xs {
     font-size: 73px;
   }
@@ -697,6 +749,10 @@ button{
   font-size: 36px;
   font-weight: 900;
   max-width: 260px;
+  margin-left: 30px;
+  @include breakpoint-md {
+    margin-left: 10px;
+  }
   @include breakpoint-sm {
     max-width: 135px;
   }
@@ -738,6 +794,7 @@ button{
 }
 .market-number{
   @extend .users-number;
+  margin-left: 30px;
 }
 .market-unit{
   @extend .users-unit;
@@ -813,7 +870,7 @@ button{
 
 .feature-number{
   font-family: $font;
-  font-size: 90px;
+  font-size: 95px;
   font-weight: 900;
   color: #fff;
   white-space: pre;
@@ -824,10 +881,11 @@ button{
 }
 .feature-name{
   font-family: $font;
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 900;
   color: #fff;
   white-space: pre-wrap;
+  line-height: 1;
 @include breakpoint-md {
     white-space: normal;
   }
@@ -914,7 +972,7 @@ button{
   }
 }
 .explain-row-md{
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .token-container{
@@ -1225,6 +1283,31 @@ button{
 }
 .member-icon{
   position: relative;
+  div{
+    &:nth-child(3){
+      bottom: 40%;
+      right:6% ;
+  @include breakpoint-md {
+    right: -22%;
+  }
+  @include breakpoint-sm {
+    right: -8%;
+  }
+  @include breakpoint-xs {
+    right: -10px;
+    width:25px;
+    height:25px;
+    bottom: 35px;
+    a{
+    img{
+      width:25px;
+      height:25px;
+    }
+  }
+  }
+  }
+  }
+  
 }
 .LK-icon{
   position: absolute;
@@ -1232,6 +1315,12 @@ button{
   right:12% ;
   width:37px;
   height:37px;
+  a{
+    img{
+      width:37px;
+      height:37px;
+    }
+  }
   @include breakpoint-md {
     right: -12%;
   }
@@ -1239,9 +1328,47 @@ button{
     right: 0;
   }
   @include breakpoint-xs {
-    right: -7;
+    right: -3px;
     width:25px;
     height:25px;
+    bottom: 9px;
+    a{
+    img{
+      width:25px;
+      height:25px;
+    }
+  }
+  }
+}
+.FB-icon{
+position: absolute;
+  bottom: 18%;
+  right:12% ;
+  width:37px;
+  height:37px;
+  a{
+    img{
+      width:37px;
+      height:37px;
+    }
+  }
+  @include breakpoint-md {
+    right: -12%;
+  }
+  @include breakpoint-sm {
+    right: 0;
+  }
+  @include breakpoint-xs {
+    right: -3px;
+    bottom: 9px;
+    width:25px;
+    height:25px;
+    a{
+    img{
+      width:25px;
+      height:25px;
+    }
+  }
   }
 }
 .LK-icon-2{
@@ -1343,6 +1470,7 @@ button{
   z-index: 7;
   background: linear-gradient(to top, #39F0CF,#0063AE);
   padding-bottom: 190px;
+  overflow: hidden;
   @include breakpoint-sm {
     padding-bottom: 180px;
   }
@@ -1452,7 +1580,10 @@ button{
     max-width: 130px;
   }
 }
-
+.blockchain-img{
+  min-width: 120px;
+    max-width: 130px;
+}
 
 .md-blockchain-head-text{
   @extend .blockchain-head-text;
@@ -1464,6 +1595,11 @@ button{
 }
 .blockchain-row-md{
   @extend .explain-row-md;
+  @include breakpoint-sm {
+    div.col-sm-4:nth-child(2){
+      margin-top: 30px;
+    }
+  }
 }
 .buy-container{
   padding-top: 100px;
@@ -1498,9 +1634,23 @@ button{
   @extend .header-social;
   margin-bottom: 30px;
   div{
-    opacity: 1;
+    &:nth-child(5){
+      &:hover{
+          box-shadow:0 0 25px rgba(255,255,255,0.9);
+          border-radius: 30%;
+          background-color: rgba(255,255,255,0.4);
+        }
+    }
   }
 }
+.footer-icon{
+    &:hover{
+          box-shadow:0 0 30px rgba(255,255,255,1);
+          border-radius: 50%;
+          background-color: rgba(255,255,255,0.2);
+        }
+    opacity: 1;
+ }
 .footer-text{
   font-family: $font;
   font-weight: 300;

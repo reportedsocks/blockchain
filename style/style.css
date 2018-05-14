@@ -37,7 +37,7 @@ button {
   margin-top: 30px;
   width: 90%; }
   .promo-bttn-menu button {
-    padding: 10px 0 !important;
+    padding: 13px 0 !important;
     width: 100%; }
 
 .whitepaper-bttn-menu {
@@ -54,7 +54,7 @@ button {
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-  background-color: rgba(5, 3, 38, 0.7); }
+  background-color: rgba(1, 53, 99, 0.7); }
 
 .not-showed {
   display: none; }
@@ -65,7 +65,7 @@ button {
   display: flex; }
 
 .blue {
-  background-color: rgba(5, 3, 38, 0.8) !important; }
+  background-color: rgba(1, 53, 99, 0.85) !important; }
 
 .bg-linear {
   background: -webkit-gradient(linear, left top, left bottom, from(#19584C), to(#052741));
@@ -107,7 +107,7 @@ button {
 .header-links-container {
   top: 0;
   padding: 5px 0;
-  background-color: rgba(5, 3, 38, 0.7);
+  background-color: rgba(1, 53, 99, 0.7);
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s; }
@@ -448,7 +448,17 @@ button {
   @media only screen and (max-width: 576px) {
     .promo-bttn button, .promo-bttn-menu button, .promo-bttn-header button, .Github-bttn button {
       font-size: 17px;
-      margin-bottom: 15px; } }
+      margin-bottom: 15px;
+      padding: 13px 55px;
+      background: #F69F00;
+      background-image: url("../img/join-wl-icon.png");
+      background-image: url("../img/join-wl-icon.png"), -webkit-gradient(linear, left top, right top, from(#FA5B00), to(#F5AA00));
+      background-image: url("../img/join-wl-icon.png"), -webkit-linear-gradient(left, #FA5B00, #F5AA00);
+      background-image: url("../img/join-wl-icon.png"), -o-linear-gradient(left, #FA5B00, #F5AA00);
+      background-image: url("../img/join-wl-icon.png"), linear-gradient(to right, #FA5B00, #F5AA00);
+      background-repeat: no-repeat;
+      background-position-y: center;
+      background-position-x: 90%; } }
 
 .promo-bttn-header button {
   margin-bottom: 0;
@@ -466,17 +476,26 @@ button {
   @media only screen and (max-width: 768px) {
     .header-reasons {
       margin-top: 45px; } }
+  @media only screen and (max-width: 768px) {
+    .header-reasons div.col-12:nth-child(2) {
+      margin-top: 20px; } }
+
+.feature-icon {
+  max-width: 85px;
+  max-height: 87px; }
 
 .reasons-container {
   color: #fff;
   font-size: 21px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700; }
+  .reasons-container p {
+    margin: 0; }
   .reasons-container button {
     background-color: transparent;
     border: none;
     color: #112A7C;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     padding: 0;
     outline: none; }
@@ -491,6 +510,15 @@ button {
   @media only screen and (max-width: 768px) {
     .reasons-container {
       font-size: 16px; } }
+
+.bs-features {
+  margin-left: -20px; }
+  @media only screen and (max-width: 768px) {
+    .bs-features {
+      margin-left: -10px; } }
+  @media only screen and (max-width: 576px) {
+    .bs-features {
+      margin-left: -1px; } }
 
 .reasons-icon {
   max-width: 93px; }
@@ -513,10 +541,10 @@ button {
     outline: none; }
 
 .adoptive-width {
-  padding: 12px 90px; }
+  padding: 12px 115px; }
   @media only screen and (max-width: 1200px) {
     .adoptive-width {
-      padding: 12px 80px; } }
+      padding: 12px 90px; } }
   @media only screen and (max-width: 992px) {
     .adoptive-width {
       margin-top: 40px; } }
@@ -526,10 +554,22 @@ button {
 
 .header-social, .footer-social {
   margin-top: 50px; }
+  .header-social div.col-sm-8 div:nth-child(5), .footer-social div.col-sm-8 div:nth-child(5) {
+    width: 53px;
+    height: 53px; }
+    .header-social div.col-sm-8 div:nth-child(5) a img, .footer-social div.col-sm-8 div:nth-child(5) a img {
+      width: 53px;
+      height: 53px; }
 
 .social-icon {
   width: 45px;
+  height: 45px;
   opacity: .5; }
+  .social-icon a img {
+    width: 45px;
+    height: 45px; }
+  .social-icon:hover {
+    opacity: 1; }
 
 .close {
   font-size: 2.5rem; }
@@ -562,7 +602,7 @@ button {
 
 .users-container, .market-container {
   background-image: url("../img/Users_bg.png");
-  padding: 50px 80px 135px 0;
+  padding: 50px 80px 165px 0;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -598,7 +638,11 @@ button {
 .users-unit, .market-unit {
   font-size: 36px;
   font-weight: 900;
-  max-width: 260px; }
+  max-width: 260px;
+  margin-left: 30px; }
+  @media only screen and (max-width: 992px) {
+    .users-unit, .market-unit {
+      margin-left: 10px; } }
   @media only screen and (max-width: 768px) {
     .users-unit, .market-unit {
       max-width: 135px; } }
@@ -633,6 +677,9 @@ button {
     .market-container {
       border-top-left-radius: 40px;
       border-top-right-radius: 40px; } }
+
+.market-number {
+  margin-left: 30px; }
 
 .market-unit {
   line-height: 1; }
@@ -697,7 +744,7 @@ button {
 
 .feature-number {
   font-family: "Montserrat", sans-serif;
-  font-size: 90px;
+  font-size: 95px;
   font-weight: 900;
   color: #fff;
   white-space: pre;
@@ -708,10 +755,11 @@ button {
 
 .feature-name {
   font-family: "Montserrat", sans-serif;
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 900;
   color: #fff;
-  white-space: pre-wrap; }
+  white-space: pre-wrap;
+  line-height: 1; }
   @media only screen and (max-width: 992px) {
     .feature-name {
       white-space: normal; } }
@@ -801,7 +849,7 @@ button {
       margin-top: 10px; } }
 
 .explain-row-md, .blockchain-row-md {
-  margin-top: 40px; }
+  margin-top: 30px; }
 
 .token-container {
   margin-top: -125px;
@@ -1071,6 +1119,24 @@ button {
 
 .member-icon {
   position: relative; }
+  .member-icon div:nth-child(3) {
+    bottom: 40%;
+    right: 6%; }
+    @media only screen and (max-width: 992px) {
+      .member-icon div:nth-child(3) {
+        right: -22%; } }
+    @media only screen and (max-width: 768px) {
+      .member-icon div:nth-child(3) {
+        right: -8%; } }
+    @media only screen and (max-width: 576px) {
+      .member-icon div:nth-child(3) {
+        right: -10px;
+        width: 25px;
+        height: 25px;
+        bottom: 35px; }
+        .member-icon div:nth-child(3) a img {
+          width: 25px;
+          height: 25px; } }
 
 .LK-icon {
   position: absolute;
@@ -1078,6 +1144,9 @@ button {
   right: 12%;
   width: 37px;
   height: 37px; }
+  .LK-icon a img {
+    width: 37px;
+    height: 37px; }
   @media only screen and (max-width: 992px) {
     .LK-icon {
       right: -12%; } }
@@ -1086,9 +1155,38 @@ button {
       right: 0; } }
   @media only screen and (max-width: 576px) {
     .LK-icon {
-      right: -7;
+      right: -3px;
       width: 25px;
-      height: 25px; } }
+      height: 25px;
+      bottom: 9px; }
+      .LK-icon a img {
+        width: 25px;
+        height: 25px; } }
+
+.FB-icon {
+  position: absolute;
+  bottom: 18%;
+  right: 12%;
+  width: 37px;
+  height: 37px; }
+  .FB-icon a img {
+    width: 37px;
+    height: 37px; }
+  @media only screen and (max-width: 992px) {
+    .FB-icon {
+      right: -12%; } }
+  @media only screen and (max-width: 768px) {
+    .FB-icon {
+      right: 0; } }
+  @media only screen and (max-width: 576px) {
+    .FB-icon {
+      right: -3px;
+      bottom: 9px;
+      width: 25px;
+      height: 25px; }
+      .FB-icon a img {
+        width: 25px;
+        height: 25px; } }
 
 .LK-icon-2 {
   position: absolute;
@@ -1182,7 +1280,8 @@ button {
   background: -webkit-linear-gradient(bottom, #39F0CF, #0063AE);
   background: -o-linear-gradient(bottom, #39F0CF, #0063AE);
   background: linear-gradient(to top, #39F0CF, #0063AE);
-  padding-bottom: 190px; }
+  padding-bottom: 190px;
+  overflow: hidden; }
   @media only screen and (max-width: 768px) {
     .roadmap-container {
       padding-bottom: 180px; } }
@@ -1278,11 +1377,19 @@ button {
       min-width: 120px;
       max-width: 130px; } }
 
+.blockchain-img {
+  min-width: 120px;
+  max-width: 130px; }
+
 .md-blockchain-head-text {
   width: auto; }
 
 .md-blockchain-text {
   width: auto; }
+
+@media only screen and (max-width: 768px) {
+  .blockchain-row-md div.col-sm-4:nth-child(2) {
+    margin-top: 30px; } }
 
 .buy-container {
   padding-top: 100px;
@@ -1314,8 +1421,19 @@ button {
 
 .footer-social {
   margin-bottom: 30px; }
-  .footer-social div {
-    opacity: 1; }
+  .footer-social div:nth-child(5):hover {
+    -webkit-box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+    border-radius: 30%;
+    background-color: rgba(255, 255, 255, 0.4); }
+
+.footer-icon {
+  opacity: 1; }
+  .footer-icon:hover {
+    -webkit-box-shadow: 0 0 30px white;
+    box-shadow: 0 0 30px white;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2); }
 
 .footer-text {
   font-family: "Montserrat", sans-serif;

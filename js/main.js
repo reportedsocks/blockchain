@@ -145,8 +145,9 @@ $(window).scroll(function(){
 	var offsetTop =offset.top-600;
   	if ($(this).scrollTop() > offsetTop ) {
   		startAnimation();
+  		$(window).off('scroll');
   	}
-  	$(window).off('scroll');
+  	
 });
 
 
@@ -542,11 +543,15 @@ $('#roadmap-bttn').on('click',function(){
 
  };
 // start smart contract animation
- $(window).scroll(function(){
+var scrollOff =false;
+ window.onscroll=function(){
+ 	if(scrollOff){return 0;};
 	var offset = $('.contract-block').offset();
 	var offsetTop =offset.top-600;
+	console.log(offset,"   ",offsetTop);
+	console.log($(this).scrollTop());
   	if ($(this).scrollTop() > offsetTop ) {
- 	$('.contract-row').show();
+		$('.contract-row').show();
  		$('.contract-row').animate_Text();
  		$('.contract-row').animate({opacity: '1'},9000,function(){
  			$('.contract-row-2').css('opacity','1');
@@ -1092,9 +1097,9 @@ $('#roadmap-bttn').on('click',function(){
 
  		
 
-		$(window).off('scroll');
+		scrollOff=true;
   	}	  
-});
+};
 
 // mobile switch for tokens block
  $('.token-mnr-bttn').on('click', function(){
