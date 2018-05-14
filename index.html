@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" type="text/css" href="style/style.css">
     
-    
+    <link rel="shortcut icon" href="img/favico.ico" type="image/x-icon">
 
     <title>Boomstarter</title>
   </head>
@@ -140,9 +140,21 @@
             </div>
           </form>
         </div>
-        <div class="d-sm-none promo-bttn-header">
-          <button>Join Whitelist</button>
+        <div class="d-sm-none ">
+          <form onsubmit="return false;">
+            <div>
+              <input type="text" id="mob-input" class="mob-input" placeholder="E-mail">
+            </div>
+            <div class="promo-bttn-header">
+              <button type="submit" id="mob-join-bttn">Join Whitelist</button>
+            </div>
+          </form>
+          <div class="mob-form-success d-none text-center">
+            <h3>Yay!</h3>
+            <p>Check your email!</p>
+          </div>
         </div>
+        
         
         </div>
       </div>
@@ -283,11 +295,11 @@
    <div class="d-none d-sm-block row header-social">
       <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 d-flex align-items-center justify-content-around">
         
-        <div class="social-icon"><a href=""><img src="img/Telega.svg"></a></div>
-        <div class="social-icon"><a href=""><img src="img/Twitter.svg"></a></div>
-        <div class="social-icon"><a href=""><img src="img/Facebook.svg"></a></div>
-        <div class="social-icon"><a href=""><img src="img/BiTalk.svg"></a></div>
-        <div class="social-icon"><a href=""><img src="img/Medium.svg"></a></div>
+        <a class="social-icon" href=""><div></div></a>
+        <a class="social-icon" href=""><div></div></a>
+        <a class="social-icon" href=""><div></div></a>
+        <a class="social-icon" href=""><div></div></a>
+        <a class="social-icon" href=""><div></div></a>
         
       </div>
       
@@ -369,17 +381,17 @@ cryptofunding market</p>
        </div>
        
         <div class="d-flex flex-column align-items-start ">
-         <div class="d-flex flex-column flex-md-row justify-content-between">
+         <div class="d-flex flex-column flex-md-row justify-content-between w-100">
            
            <div class="feature-number"><p>2000</p></div>
-           <div class="d-flex justify-content-end justify-content-sm-center align-items-center">
+           <div class="d-flex justify-content-center align-items-center">
            <div class="feature-name text-left"><p>  Successful 
   projects</p></div>
          </div></div>
-         <div class="d-flex flex-column flex-md-row justify-content-between">
+         <div class="d-flex flex-column flex-md-row justify-content-between w-100">
            
            <div class="feature-number"><p>250 000</p></div>
-           <div class="d-flex justify-content-end justify-content-sm-center align-items-center">
+           <div class="d-flex justify-content-center align-items-center">
            <div class="feature-name text-left"><p>  Backers have 
   supported the projects</p></div>
          </div></div>
@@ -2150,11 +2162,11 @@ contract BoomstarterPresale is ArgumentsChecker, ReentrancyGuard, EthPriceDepend
       <div class="row footer-social">
       <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 d-flex align-items-center justify-content-around">
         
-        <div class="social-icon footer-icon"><a href=""><img src="img/Telega.svg"></a></div>
-        <div class="social-icon footer-icon"><a href=""><img src="img/Twitter.svg"></a></div>
-        <div class="social-icon footer-icon"><a href=""><img src="img/Facebook.svg"></a></div>
-        <div class="social-icon footer-icon"><a href=""><img src="img/BiTalk.svg"></a></div>
-        <div class="social-icon footer-icon"><a href=""><img src="img/Medium.svg"></a></div>
+        <a class="social-icon" href=""><div></div></a>
+        <a class="social-icon" href=""><div></div></a>
+        <a class="social-icon" href=""><div></div></a>
+        <a class="social-icon" href=""><div></div></a>
+        <a class="social-icon" href=""><div></div></a>
         
       </div>
      </div>

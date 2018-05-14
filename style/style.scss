@@ -498,6 +498,45 @@ button{
   }
   
 }
+.mob-form-success{
+  margin-top: 40px;
+  font-family: $font;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  h3{
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+.mob-input{
+  width: 100%;
+  border:none;
+  padding: 12px 15px;
+  border-radius: 30px;
+  margin-top: 10px;
+  &:focus{
+    outline: none;
+  }
+  &::-webkit-input-placeholder {
+    font-family: $font;
+    font-size: 12px;
+    font-weight: 700;
+    color: #CDCDCD;
+  }
+  &::-moz-placeholder{
+    font-family: $font;
+    font-size: 12px;
+    font-weight: 700;
+    color: #CDCDCD;
+  }
+  &:-ms-input-placeholder{
+    font-family: $font;
+    font-size: 12px;
+    font-weight: 700;
+    color: #CDCDCD;
+  }
+}
 
 .promo-bttn{
   button{
@@ -535,7 +574,10 @@ button{
   @extend .promo-bttn;
   button{
     margin-bottom: 0;
-  margin-top: 30px;
+    margin-top: 10px;
+    @include breakpoint-xs {
+      padding: 13px 58px;
+    }
   }
   
 }
@@ -641,33 +683,67 @@ button{
 }
 .header-social{
   margin-top: 50px;
-  div.col-sm-8{
-    div:nth-child(5){
-      width: 53px;
-      height: 53px;
-      a{
-        img{
-          width: 53px;
-          height: 53px;
-        }
-      }
-    }
-  }
+  
 }
 .social-icon{
-  width: 45px;
+  div{
+    width: 45px;
   height: 45px;
   opacity: .5;
-  a{
-    img{
-    width: 45px;
-    height: 45px;
+  background-repeat: no-repeat;
+  background-position: center;
   }
-  }
-  &:hover{
-    opacity:1;
-  }
+  
 
+}
+.social-icon:nth-child(1){
+  div{
+    background-image: url(../img/Telega.svg);
+  &:hover{
+    background-image: url(../img/ColorTelega.svg);
+    opacity: 1;
+  }
+  }
+  
+}
+.social-icon:nth-child(2){
+  div{
+    background-image: url(../img/Twitter.svg);
+  &:hover{
+    background-image: url(../img/ColorTw.svg);
+    opacity: 1;
+  }
+  }
+}
+.social-icon:nth-child(3){
+  div{
+    background-image: url(../img/Facebook.svg);
+  &:hover{
+    background-image: url(../img/ColorFb.svg);
+    opacity: 1;
+  }
+  }
+}
+.social-icon:nth-child(4){
+  div{
+    background-image: url(../img/BiTalk.svg);
+  &:hover{
+    background-image: url(../img/ColorBiTalk.svg);
+    opacity: 1;
+  }
+  }
+}
+.social-icon:nth-child(5){
+  div{
+    width: 53px;
+    height: 53px;
+    background-image: url(../img/Medium.svg);
+
+  &:hover{
+    background-image: url(../img/ColorMedium.svg);
+    opacity: 1;
+  }
+  }
 }
 .close{
   font-size: 2.5rem;
@@ -719,7 +795,7 @@ button{
   border-top-right-radius: 0px;
   background-size: cover;
   @include breakpoint-lg {
-    padding:50px 20px 135px 0;
+    padding:50px 20px 105px 0;
   }
   @include breakpoint-md {
     border-top-left-radius: 105px;
@@ -774,7 +850,9 @@ button{
   border-top-right-radius: 125px;
   border-top-left-radius: 0px;
   @include breakpoint-lg {
-    padding-left: 20px;
+    
+    padding:50px 20px 135px 0px;
+  
   }
   @include breakpoint-md {
     border-top-right-radius: 105px;
@@ -890,7 +968,7 @@ button{
     white-space: normal;
   }
   @include breakpoint-xs {
-    width: 80%;
+    width: 70%;
     font-size: 22px;
   }
 }
@@ -1634,23 +1712,11 @@ position: absolute;
   @extend .header-social;
   margin-bottom: 30px;
   div{
-    &:nth-child(5){
-      &:hover{
-          box-shadow:0 0 25px rgba(255,255,255,0.9);
-          border-radius: 30%;
-          background-color: rgba(255,255,255,0.4);
-        }
-    }
-  }
-}
-.footer-icon{
-    &:hover{
-          box-shadow:0 0 30px rgba(255,255,255,1);
-          border-radius: 50%;
-          background-color: rgba(255,255,255,0.2);
-        }
     opacity: 1;
- }
+  }
+  
+}
+
 .footer-text{
   font-family: $font;
   font-weight: 300;

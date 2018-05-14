@@ -430,6 +430,40 @@ button {
     font-weight: 500;
     color: #CDCDCD; }
 
+.mob-form-success {
+  margin-top: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff; }
+  .mob-form-success h3 {
+    font-size: 36px;
+    font-weight: 700; }
+
+.mob-input {
+  width: 100%;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 30px;
+  margin-top: 10px; }
+  .mob-input:focus {
+    outline: none; }
+  .mob-input::-webkit-input-placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #CDCDCD; }
+  .mob-input::-moz-placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #CDCDCD; }
+  .mob-input:-ms-input-placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #CDCDCD; }
+
 .promo-bttn button, .promo-bttn-menu button, .promo-bttn-header button, .Github-bttn button {
   font-family: "Montserrat", sans-serif;
   font-size: 29px;
@@ -462,7 +496,10 @@ button {
 
 .promo-bttn-header button {
   margin-bottom: 0;
-  margin-top: 30px; }
+  margin-top: 10px; }
+  @media only screen and (max-width: 576px) {
+    .promo-bttn-header button {
+      padding: 13px 58px; } }
 
 .text-header-xs {
   color: #fff;
@@ -554,21 +591,44 @@ button {
 
 .header-social, .footer-social {
   margin-top: 50px; }
-  .header-social div.col-sm-8 div:nth-child(5), .footer-social div.col-sm-8 div:nth-child(5) {
-    width: 53px;
-    height: 53px; }
-    .header-social div.col-sm-8 div:nth-child(5) a img, .footer-social div.col-sm-8 div:nth-child(5) a img {
-      width: 53px;
-      height: 53px; }
 
-.social-icon {
+.social-icon div {
   width: 45px;
   height: 45px;
-  opacity: .5; }
-  .social-icon a img {
-    width: 45px;
-    height: 45px; }
-  .social-icon:hover {
+  opacity: .5;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.social-icon:nth-child(1) div {
+  background-image: url(../img/Telega.svg); }
+  .social-icon:nth-child(1) div:hover {
+    background-image: url(../img/ColorTelega.svg);
+    opacity: 1; }
+
+.social-icon:nth-child(2) div {
+  background-image: url(../img/Twitter.svg); }
+  .social-icon:nth-child(2) div:hover {
+    background-image: url(../img/ColorTw.svg);
+    opacity: 1; }
+
+.social-icon:nth-child(3) div {
+  background-image: url(../img/Facebook.svg); }
+  .social-icon:nth-child(3) div:hover {
+    background-image: url(../img/ColorFb.svg);
+    opacity: 1; }
+
+.social-icon:nth-child(4) div {
+  background-image: url(../img/BiTalk.svg); }
+  .social-icon:nth-child(4) div:hover {
+    background-image: url(../img/ColorBiTalk.svg);
+    opacity: 1; }
+
+.social-icon:nth-child(5) div {
+  width: 53px;
+  height: 53px;
+  background-image: url(../img/Medium.svg); }
+  .social-icon:nth-child(5) div:hover {
+    background-image: url(../img/ColorMedium.svg);
     opacity: 1; }
 
 .close {
@@ -613,7 +673,7 @@ button {
   background-size: cover; }
   @media only screen and (max-width: 1200px) {
     .users-container, .market-container {
-      padding: 50px 20px 135px 0; } }
+      padding: 50px 20px 105px 0; } }
   @media only screen and (max-width: 992px) {
     .users-container, .market-container {
       border-top-left-radius: 105px; } }
@@ -664,7 +724,7 @@ button {
   border-top-left-radius: 0px; }
   @media only screen and (max-width: 1200px) {
     .market-container {
-      padding-left: 20px; } }
+      padding: 50px 20px 135px 0px; } }
   @media only screen and (max-width: 992px) {
     .market-container {
       border-top-right-radius: 105px; } }
@@ -765,7 +825,7 @@ button {
       white-space: normal; } }
   @media only screen and (max-width: 576px) {
     .feature-name {
-      width: 80%;
+      width: 70%;
       font-size: 22px; } }
 
 .explanation-container, .roadmap-container, .blockchain-container {
@@ -1421,19 +1481,8 @@ button {
 
 .footer-social {
   margin-bottom: 30px; }
-  .footer-social div:nth-child(5):hover {
-    -webkit-box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
-    border-radius: 30%;
-    background-color: rgba(255, 255, 255, 0.4); }
-
-.footer-icon {
-  opacity: 1; }
-  .footer-icon:hover {
-    -webkit-box-shadow: 0 0 30px white;
-    box-shadow: 0 0 30px white;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2); }
+  .footer-social div {
+    opacity: 1; }
 
 .footer-text {
   font-family: "Montserrat", sans-serif;

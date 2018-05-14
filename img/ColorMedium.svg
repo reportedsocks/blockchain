@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{clip-path:url(#SVGID_7_);}
+	.st2{clip-path:url(#SVGID_8_);}
+	.st3{clip-path:url(#SVGID_9_);}
+	.st4{clip-path:url(#SVGID_10_);fill:#00FD8D;}
+	.st5{clip-path:url(#SVGID_10_);fill:#00E470;}
+	.st6{clip-path:url(#SVGID_10_);fill:#00C967;}
+	.st7{clip-path:url(#SVGID_10_);fill:#00AD6C;}
+</style>
+<g id="Слой_2">
+</g>
+<g>
+	<g>
+		<g id="Слой_1_1_">
+			<g id="Векторный_смарт-объект">
+				<defs>
+					<rect id="SVGID_1_" y="3.4" width="45" height="38.2"/>
+				</defs>
+				<clipPath id="SVGID_2_">
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+				</clipPath>
+				<g class="st0">
+					<g>
+						<defs>
+							<rect id="SVGID_3_" y="3.4" width="45" height="38.2"/>
+						</defs>
+						<defs>
+							<rect id="SVGID_4_" y="3.4" width="45" height="38.2"/>
+						</defs>
+						<defs>
+							<rect id="SVGID_5_" y="3.4" width="45" height="38.2"/>
+						</defs>
+						<defs>
+							<rect id="SVGID_6_" y="3.4" width="45" height="38.2"/>
+						</defs>
+						<clipPath id="SVGID_7_">
+							<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+						</clipPath>
+						<clipPath id="SVGID_8_" class="st1">
+							<use xlink:href="#SVGID_4_"  style="overflow:visible;"/>
+						</clipPath>
+						<clipPath id="SVGID_9_" class="st2">
+							<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+						</clipPath>
+						<clipPath id="SVGID_10_" class="st3">
+							<use xlink:href="#SVGID_6_"  style="overflow:visible;"/>
+						</clipPath>
+						<path class="st4" d="M43.9,41.5L30,34.8l0-30.1c0-0.7,0.7-1.2,1.4-0.9l13.1,6.3c0.3,0.2,0.5,0.5,0.5,0.9v29.9
+							C45,41.4,44.4,41.8,43.9,41.5"/>
+						<path class="st5" d="M30.1,34.9l-15-7.2L29.5,3.9c0.3-0.4,0.8-0.6,1.2-0.4L44,9.9c0.5,0.2,0.7,0.9,0.4,1.4L30.1,34.9z"/>
+						<path class="st6" d="M30.1,34.9l-15-7.2L1.3,5.3c-0.4-0.6,0.3-1.4,0.9-1L15,10.5L30.1,34.9z"/>
+						<path class="st7" d="M14,41.5L0.4,35C0.2,34.9,0,34.6,0,34.3v-30c0-0.5,0.6-0.9,1.1-0.7l14,6.7v30.5
+							C15.1,41.4,14.5,41.8,14,41.5"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

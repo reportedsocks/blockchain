@@ -548,8 +548,6 @@ var scrollOff =false;
  	if(scrollOff){return 0;};
 	var offset = $('.contract-block').offset();
 	var offsetTop =offset.top-600;
-	console.log(offset,"   ",offsetTop);
-	console.log($(this).scrollTop());
   	if ($(this).scrollTop() > offsetTop ) {
 		$('.contract-row').show();
  		$('.contract-row').animate_Text();
@@ -1148,17 +1146,16 @@ var scrollOff =false;
   });
   // verify email
   var emailPattern=/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
-  $('#join-wl').on('click', function(){
-  	var inputValue = $('#join-input').val();
-  	console.log(inputValue);
+  $('#mob-join-bttn').on('click', function(){
+  	var inputValue = $('#mob-input').val();
   	if(emailPattern.test(inputValue)){
-  		$('.join-bttn').css({left: '0'});
-  		$('.email-send').removeClass('d-none');
-  		$('#join-input').val("");
-  		$('#join-input').css({opacity:"0"});
+  		
+  		$('.mob-form-success').removeClass('d-none');
+  		$('#mob-join-bttn').addClass('d-none');
+  		$('#mob-input').addClass('d-none');
   	}else{
-  		$('#join-input').val("");
-  		$('#join-input').attr( 'placeholder', 'Incorrect e-mail');
+  		$('#mob-input').val("");
+  		$('#mob-input').attr( 'placeholder', 'Incorrect e-mail');
   	}
   });
   
@@ -1177,7 +1174,6 @@ var scrollOff =false;
  	$('.header-links-container').addClass('blue');
  	$('.fixed-header').addClass('blue');
  }
-
 
  });
 	
