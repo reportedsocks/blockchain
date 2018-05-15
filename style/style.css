@@ -402,7 +402,8 @@ button {
   color: #fff;
   border: none;
   border-radius: 29px;
-  padding: 21px 40px;
+  padding: 21px 0px;
+  width: 46%;
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
@@ -417,7 +418,8 @@ button {
       left: 230px; } }
   @media only screen and (max-width: 768px) {
     .join-bttn {
-      left: 200px; } }
+      left: 200px;
+      width: 49%; } }
 
 .join-input-div {
   width: 55%;
@@ -538,22 +540,24 @@ button {
   max-height: 87px; }
 
 .reasons-container {
-  color: #fff;
-  font-size: 21px;
+  color: #112A7C;
+  font-size: 18px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 1.2; }
   .reasons-container p {
     margin: 0; }
   .reasons-container button {
+    text-decoration: underline;
     background-color: transparent;
     border: none;
     color: #112A7C;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     padding: 0;
     outline: none; }
     .reasons-container button:hover {
-      font-weight: 700;
+      font-weight: 600;
       outline: none; }
     .reasons-container button:focus {
       outline: none; }
@@ -594,14 +598,16 @@ button {
     outline: none; }
 
 .adoptive-width {
-  padding: 12px 115px; }
+  padding: 30px 115px;
+  border-radius: 50px; }
   @media only screen and (max-width: 1200px) {
     .adoptive-width {
-      padding: 12px 90px; } }
+      padding: 30px 90px; } }
   @media only screen and (max-width: 992px) {
     .adoptive-width {
+      padding: 13px 90px;
       margin-top: 40px; } }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 768px) {
     .adoptive-width {
       margin-top: 20px; } }
 
@@ -703,6 +709,9 @@ button {
       border-top-left-radius: 40px !important;
       border-top-right-radius: 40px;
       padding: 30px 20px 85px 0; } }
+
+.max-width {
+  max-width: 500px; }
 
 .users-number, .market-number {
   font-size: 120px;
@@ -1106,6 +1115,9 @@ button {
     .distribution-bttn {
       margin-left: -3px; } }
 
+.margin-right {
+  margin-right: -100px; }
+
 .active-bttn {
   outline: none;
   font-weight: 500; }
@@ -1115,7 +1127,10 @@ button {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 500;
-    left: -10px; }
+    left: 10px; }
+    @media only screen and (max-width: 992px) {
+      .active-bttn:before {
+        left: -10px; } }
 
 .distribution-svg-container {
   position: relative;
@@ -1510,6 +1525,19 @@ button {
   color: #fff; }
   .footer-text p {
     margin-bottom: 0; }
+
+.github-text {
+  font-family: #font;
+  color: #fff;
+  font-size: 22px; }
+
+.github-link {
+  color: #112a7c; }
+  .github-link:hover {
+    color: #112a7c;
+    font-weight: 500; }
+  .github-link:focus {
+    color: #112a7c; }
 
 .contract-container {
   z-index: 8;

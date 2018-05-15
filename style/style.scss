@@ -467,7 +467,8 @@ button{
   color: #fff;
   border:none;
   border-radius: 29px;
-  padding:21px 40px;
+  padding:21px 0px;
+  width: 46%;
   transition:1s;
   background: linear-gradient(to right, #FC3D00,#F5AA00 );
 
@@ -479,6 +480,7 @@ button{
   }
   @include breakpoint-sm {
   left:200px;
+  width: 49%;
   }
 }
 .join-input-div{
@@ -620,23 +622,25 @@ button{
   max-height: 87px;
 }
 .reasons-container{
-  color: #fff;
-  font-size: 21px;
+  color: #112A7C;
+  font-size: 18px;
   font-family: $font;
   font-weight: 700;
+  line-height: 1.2;
   p{
     margin:0;
   }
   button{
+    text-decoration: underline;
     background-color: transparent;
     border:none;
     color: #112A7C;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     padding: 0;
     outline: none;
     &:hover{
-      font-weight: 700;
+      font-weight: 600;
       outline: none;
     }
     &:focus{
@@ -685,14 +689,16 @@ button{
   }
 }
 .adoptive-width{
-  padding:12px 115px; 
+  padding:30px 115px; 
+  border-radius: 50px;
   @include breakpoint-lg {
-    padding:12px 90px; 
+    padding:30px 90px; 
   }
   @include breakpoint-md {
+    padding:13px 90px;
     margin-top: 40px;
   }
-  @include breakpoint-md {
+  @include breakpoint-sm {
     margin-top: 20px;
   }
 }
@@ -827,6 +833,9 @@ button{
     
   }
 
+}
+.max-width{
+  max-width: 500px;
 }
 .users-number{
   font-size: 120px;
@@ -1278,6 +1287,9 @@ button{
   margin-left: -3px;
   }
 }
+.margin-right{
+  margin-right: -100px;
+}
 .active-bttn{
   outline: none;
   font-weight: 500;
@@ -1287,7 +1299,10 @@ button{
       font-family: $font;
       font-size: 24px;
       font-weight: 500;
-      left:-10px;
+      left:10px;
+      @include breakpoint-md {
+        left: -10px;
+      }
     }
 }
 .distribution-svg-container{
@@ -1744,6 +1759,23 @@ position: absolute;
     margin-bottom: 0;
   }
 }
+.github-text{
+  font-family: #font;
+  color: #fff;
+  font-size: 22px;
+}
+.github-link{
+
+  color: #112a7c;
+  &:hover{
+    color: #112a7c;
+    font-weight: 500;
+  }
+  &:focus{
+    color: #112a7c;
+  }
+}
+
 .contract-container{
   @extend .description-container;
   z-index: 8;

@@ -36,7 +36,7 @@ $('#team-bttn').on("click",function(){
 			$('#diagram-text').css({"left": "25%", "top" : "20%"});
 		}else{
 			$('#diagram-text').html( " <h1>15<sup>%</sup></h1><p>Team</p> ");
-			$('#diagram-text').css({"left": "35%", "top" : "25%"});
+			$('#diagram-text').css({"left": "33%", "top" : "26%"});
 		}
 	groupToRemove =$('#Group_348')
 	groupToRemove.addClass('hidden-diagram-bar');
@@ -62,7 +62,7 @@ $('#partner-bttn').on("click",function(){
 			$('#diagram-text').css({"left": "27%", "top" : "3%"});
 		}else{
 			$('#diagram-text').html( " <h1>4<sup>%</sup></h1><p>Partners<br> & Advisors</p> ");
-			$('#diagram-text').css({"left": "33%", "top" : "15%"});
+			$('#diagram-text').css({"left": "33%", "top" : "20%"});
 		}
 	groupToRemove =$('#Group_347')
 	groupToRemove.addClass('hidden-diagram-bar');
@@ -89,7 +89,7 @@ $('#investor-bttn').on("click",function(){
 			$('#diagram-text').css({"left": "30%", "top" : "5%"});
 		}else{
 			$('#diagram-text').html( " <h1>5<sup>%</sup></h1><p>Early<br> Investors</p> ");
-			$('#diagram-text').css({"left": "35%", "top" : "15%"});
+			$('#diagram-text').css({"left": "35%", "top" : "20%"});
 		}
 	groupToRemove =$('#Group_346')
 	groupToRemove.addClass('hidden-diagram-bar');
@@ -115,7 +115,7 @@ $('#investor-bttn').on("click",function(){
 			$('#diagram-text').css({"left": "32%", "top" : "15%"});
 		}else{
 			$('#diagram-text').html( " <h1>1<sup>%</sup></h1><p>Bounty</p> ");
-			$('#diagram-text').css({"left": "35%", "top" : "25%"});
+			$('#diagram-text').css({"left": "38%", "top" : "25%"});
 		}
 	groupToRemove =$('#Group_350')
 	groupToRemove.addClass('hidden-diagram-bar');
