@@ -6,6 +6,7 @@ button {
 
 .header-container {
   background-image: url("../img/bg-header.png");
+  background-size: cover;
   background-repeat: no-repeat; }
   @media only screen and (max-width: 992px) {
     .header-container {
@@ -188,7 +189,15 @@ button {
   @media only screen and (max-width: 576px) {
     .slogan-text {
       color: #fff;
-      font-size: 29px; } }
+      font-size: 29px; }
+      .slogan-text:after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 5px;
+        background-color: #F5AA00;
+        left: 15px;
+        top: 55%; } }
 
 .header-after-line:after {
   content: '';
@@ -218,7 +227,10 @@ button {
   margin-left: 30px; }
   @media only screen and (max-width: 576px) {
     .header-text {
-      font-size: 18px; } }
+      font-size: 18px;
+      margin-left: 0px;
+      padding-right: 135px;
+      margin-bottom: 20px; } }
   .header-text p {
     margin: 0; }
 
@@ -273,7 +285,8 @@ button {
       width: 100%; } }
   @media only screen and (max-width: 576px) {
     .unit-div {
-      width: 90%; } }
+      width: 90%;
+      max-width: 260px; } }
 
 .timer-unit {
   width: 25%;
@@ -303,6 +316,9 @@ button {
   position: relative; }
   .header-promo-price p {
     margin: 0; }
+  @media only screen and (max-width: 576px) {
+    .header-promo-price {
+      max-width: 240px; } }
 
 .pre-label, .ico-label {
   font-family: "Montserrat", sans-serif;
@@ -685,7 +701,8 @@ button {
   @media only screen and (max-width: 576px) {
     .users-container, .market-container {
       border-top-left-radius: 40px !important;
-      border-top-right-radius: 40px; } }
+      border-top-right-radius: 40px;
+      padding: 30px 20px 85px 0; } }
 
 .users-number, .market-number {
   font-size: 120px;
@@ -715,7 +732,8 @@ button {
   white-space: pre-wrap; }
   @media only screen and (max-width: 576px) {
     .users-heading, .market-heading {
-      font-size: 20px; } }
+      font-size: 20px;
+      font-weight: 700; } }
 
 .market-container {
   background-image: url("../img/Market_bg.png");
@@ -736,7 +754,8 @@ button {
   @media only screen and (max-width: 576px) {
     .market-container {
       border-top-left-radius: 40px;
-      border-top-right-radius: 40px; } }
+      border-top-right-radius: 40px;
+      padding: 30px 20px 120px 0px; } }
 
 .market-number {
   margin-left: 30px; }
