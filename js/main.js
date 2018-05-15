@@ -957,6 +957,21 @@ var scrollOff =false;
   		$('#mob-input').attr( 'placeholder', 'Incorrect e-mail');
   	}
   });
+
+  $('#join-wl').on('click', function(){
+  	var inputValue = $('#join-input').val();
+  	if(emailPattern.test(inputValue)){
+  		$('.header-form').removeClass('d-flex');
+  		$('.header-form').addClass('d-none');
+  		$('#join-wl').addClass('d-none');
+  		$('#join-input').addClass('d-none');
+  		$('.form-success').removeClass('d-none');
+  		
+  	}else{
+  		$('#join-input').val("");
+  		$('#join-input').attr( 'placeholder', 'Incorrect e-mail');
+  	}
+  });
   
 	
 

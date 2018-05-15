@@ -291,7 +291,7 @@ button{
 } 
 .header-promo{
   background: linear-gradient(150deg, #01ABDB,#03609D );
-  border-radius: 30px;
+  border-radius: 10px;
   padding:30px 0px;
   padding-bottom: 35px;
   @include breakpoint-md {
@@ -371,7 +371,7 @@ button{
   background-color: #1280B6;
   margin-top: 15px;
   padding: 5px 20px;
-  border-radius: 40px;
+  border-radius: 10px;
   width: 90%;
   position: relative;
   p{
@@ -403,7 +403,7 @@ button{
   color: #fff;
   font-weight: 700;
   background: linear-gradient(210deg,  #01AEDC,#026FA9);
-  border-radius: 40px;
+  border-radius: 10px;
   padding:5px 25px;
   @include breakpoint-sm {
   padding:5px 15px;
@@ -437,14 +437,14 @@ button{
   p{
     margin:0;
   }
-  margin-top: 5px;
+  margin-top: 20px;
   margin-left: 25px;
 }
 .header-form{
   position: relative;
   background-color: #fff;
-  border-radius: 30px;
-  padding: 15px 0;
+  border-radius: 10px;
+  padding: 5px;
   height: 66px;
 
 }
@@ -459,15 +459,15 @@ button{
 }
 .join-bttn{
   position: absolute;
-  left:225px;
-  top: 0;
+  left:219px;
+  top: 5px;
   font-family: $font;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   color: #fff;
   border:none;
-  border-radius: 29px;
-  padding:21px 0px;
+  border-radius: 10px;
+  padding:16px 0px;
   width: 46%;
   transition:1s;
   background: linear-gradient(to right, #FC3D00,#F5AA00 );
@@ -476,10 +476,10 @@ button{
     outline: none;
   }
   @include breakpoint-lg {
-  left:230px;
+  left:222px;
   }
   @include breakpoint-sm {
-  left:200px;
+  left:194px;
   width: 49%;
   }
 }
@@ -515,6 +515,21 @@ button{
   }
   
 }
+.form-success{
+  font-family: $font;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: -20px;
+  h3{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+  }
+  p{
+    margin:0;
+  }
+}
 .mob-form-success{
   margin-top: 40px;
   font-family: $font;
@@ -530,7 +545,7 @@ button{
   width: 100%;
   border:none;
   padding: 12px 15px;
-  border-radius: 30px;
+  border-radius: 10px;
   margin-top: 10px;
   &:focus{
     outline: none;
@@ -562,7 +577,7 @@ button{
   font-weight: 700;
   color: #fff;
   border:none;
-  border-radius: 30px;
+  border-radius: 10px;
   padding:10px 55px;
   
   background: linear-gradient(to right, #FA940A,#F5CF00 );
@@ -676,7 +691,7 @@ button{
   font-weight: 700;
   color: #fff;
   border:1px solid #fff;
-  border-radius: 30px;
+  border-radius: 10px !important;
   padding:12px 75px;
   
   background-color: transparent;
@@ -689,10 +704,10 @@ button{
   }
 }
 .adoptive-width{
-  padding:30px 115px; 
+  padding:13px 95px; 
   border-radius: 50px;
   @include breakpoint-lg {
-    padding:30px 90px; 
+    padding:13px 90px; 
   }
   @include breakpoint-md {
     padding:13px 90px;
@@ -709,13 +724,11 @@ button{
 .social-icon{
   div{
     width: 45px;
-  height: 45px;
-  opacity: .5;
-  background-repeat: no-repeat;
-  background-position: center;
+    height: 45px;
+    opacity: .5;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-  
-
 }
 .social-icon:nth-child(1){
   div{
@@ -766,6 +779,15 @@ button{
   }
   }
 }
+.social-icon:nth-child(6){
+  div{
+    background-image: url(../img/Git-icon.svg);
+  &:hover{
+    background-image: url(../img/ColorGit.svg);
+    opacity: 1;
+  }
+  }
+}
 .close{
   font-size: 2.5rem;
   &:focus{
@@ -775,7 +797,7 @@ button{
 }
 .my-modal{
   padding: 20px 30px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 16px;
   font-family: $font;
   font-weight: 500;
@@ -1557,7 +1579,7 @@ position: absolute;
   font-weight: 900;
   color: #fff;
   padding: 10px 60px;
-  border-radius: 30px;
+  border-radius: 10px;
   &:hover{
     outline:none;
     background-color: rgba(219, 219, 219, .47);
@@ -1631,7 +1653,7 @@ position: absolute;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 10px 70px;
   &:hover{
     outline: none;
@@ -1790,7 +1812,7 @@ position: absolute;
  height: 400px;
  overflow: hidden;
  border:2px solid #0063AE;
-  border-radius: 30px;
+  border-radius: 10px;
   margin-top: 50px;
   background-color: #0192C6;
   @include breakpoint-lg {
@@ -1905,14 +1927,6 @@ position: absolute;
 }
 .span-gray{
   color: #4f4c4c;
-}
-.Github-bttn{
-  @extend .promo-bttn;
-  margin-top: 50px;
-  button{
-    margin-bottom: 0;
-  }
-  
 }
 .token-crt-bttn{
   background-color: transparent;
