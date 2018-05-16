@@ -52,9 +52,6 @@ button {
 .fixed-header {
   z-index: 14;
   padding: 10px 15px;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
   background-color: rgba(1, 53, 99, 0.7); }
 
 .not-showed {
@@ -185,7 +182,8 @@ button {
   font-size: 55px;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  line-height: 1; }
   @media only screen and (max-width: 576px) {
     .slogan-text {
       color: #fff;
@@ -206,10 +204,10 @@ button {
   height: 5px;
   background-color: #F5AA00;
   left: 15px;
-  top: 76%; }
+  top: 65%; }
   @media only screen and (max-width: 992px) {
     .header-after-line:after {
-      top: 85%; } }
+      top: 71%; } }
   @media only screen and (max-width: 768px) {
     .header-after-line:after {
       top: 75%; } }
@@ -222,7 +220,7 @@ button {
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  padding-right: 60px;
+  padding-right: 100px;
   margin-top: 20px;
   margin-left: 30px; }
   @media only screen and (max-width: 576px) {

@@ -79,7 +79,6 @@ button{
   
   z-index: 14;
   padding: 10px 15px;
-  transition:.5s;
   background-color: rgba(1,53,99,0.7);
 }
 .not-showed{
@@ -236,6 +235,7 @@ button{
   font-family: $font;
   font-weight: 900;
   margin-bottom: 0;
+  line-height: 1;
   @include breakpoint-xs {
     color: #fff;
     font-size: 29px; 
@@ -258,9 +258,9 @@ button{
     height: 5px;
     background-color: #F5AA00;
     left:15px;
-    top: 76%;
+    top: 65%;
     @include breakpoint-md {
-      top: 85%;
+      top: 71%;
     }
     @include breakpoint-sm {
       top: 75%;
@@ -275,7 +275,7 @@ button{
   font-size: 30px;
   font-family: $font;
   font-weight: 400;
-  padding-right: 60px;
+  padding-right: 100px;
   margin-top: 20px;
   margin-left: 30px;
   @include breakpoint-xs {
