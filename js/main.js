@@ -927,20 +927,25 @@ var scrollOff =false;
   	$('.hidden-menu').fadeIn(400);
   	$('.header-menu-icon').html('<img src="img/Close.svg">');
   	$('.fixed-header').addClass('bg-linear');
+  	$('body').css({overflow: 'hidden'});
   	menuCounter++;
   }else{
   	$('.fixed-header').removeClass('h-100');
   	$('.hidden-menu').fadeOut(50);
   	$('.header-menu-icon').html('<img src="img/menu-icon.svg">');
   	$('.fixed-header').removeClass('bg-linear');
+  	$('body').css({overflow: 'auto'});
   	menuCounter++;
   }
   });
   $('.menu-button').on('click',function(){
+  	$('.fixed-header').removeClass('h-100');
   	$('.hidden-menu').fadeOut(50);
   	$('.header-menu-icon').html('<img src="img/menu-icon.svg">');
   	$('.fixed-header').removeClass('bg-linear');
   	$('.fixed-header').addClass('blue');
+  	$('body').css({overflow: 'auto'});
+
   	menuCounter++;
   });
   // verify email
