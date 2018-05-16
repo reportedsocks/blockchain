@@ -927,14 +927,16 @@ var scrollOff =false;
   	$('.hidden-menu').fadeIn(400);
   	$('.header-menu-icon').html('<img src="img/Close.svg">');
   	$('.fixed-header').addClass('bg-linear');
-  	menuOffset = $(this).offset().top;
+  	menuOffset = $(this).offset();
   	console.log(menuOffset);
   	$('body').css({
   		overflow: 'hidden',
 		height: '100%',
    		width: '100%',
    		position: 'fixed',
-   		
+   		top: '-70px',
+   		paddingBottom: '70px',
+   		transform: 'translateY(70px)'
   		});
   	menuCounter++;
   }else{
@@ -943,12 +945,13 @@ var scrollOff =false;
   	$('.header-menu-icon').html('<img src="img/menu-icon.svg">');
   	$('.fixed-header').removeClass('bg-linear');
   	console.log(menuOffset);
+
   	$('body').css({
   		overflow: '',
 		height: '',
    		width: '',
    		position: '',
-   		
+   		transform: ''
   		});
   	menuCounter++;
   }
@@ -963,7 +966,8 @@ var scrollOff =false;
   		overflow: '',
 		height: '',
    		width: '',
-   		position: ''
+   		position: '',
+   		transform: ''
   		});
 
   	menuCounter++;
