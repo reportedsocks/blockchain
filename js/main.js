@@ -1,5 +1,20 @@
 $( document ).ready(function() {
+//pre-load icons
+$('.social-icon:nth-child(1) div').css({backgroundImage:"url(../img/ColorTelega.svg)"});
+$('.social-icon:nth-child(2) div').css({backgroundImage:"url(../img/ColorTw.svg)"});
+$('.social-icon:nth-child(3) div').css({backgroundImage:"url(../img/ColorFb.svg)"});
+$('.social-icon:nth-child(4) div').css({backgroundImage:"url(../img/ColorBiTalk.svg)"});
+$('.social-icon:nth-child(5) div').css({backgroundImage:"url(../img/ColorMedium.svg)"});
+$('.social-icon:nth-child(6) div').css({backgroundImage:" url(../img/ColorGit.svg)"});
 
+setTimeout(function(){
+$('.social-icon:nth-child(6) div').css({backgroundImage:" url(../img/Git-icon.svg)"});
+$('.social-icon:nth-child(5) div').css({backgroundImage:"url(../img/Medium.svg)"});
+$('.social-icon:nth-child(4) div').css({backgroundImage:"url(../img/BiTalk.svg)"});
+$('.social-icon:nth-child(3) div').css({backgroundImage:"url(../img/Facebook.svg)"});
+$('.social-icon:nth-child(2) div').css({backgroundImage:"url(../img/Twitter.svg)"});
+$('.social-icon:nth-child(1) div').css({backgroundImage:"url(../img/Telega.svg)"});
+},1);
 //switch percantage in distribution block
 var groupToRemove;
 $('#token-bttn').on("click",function(){

@@ -15,20 +15,26 @@ button {
     .header-container {
       padding-bottom: 50px; } }
 
-.viget-telegram {
-  width: 100px;
-  height: 100px;
-  position: fixed;
-  top: 85%;
-  right: 15%;
-  z-index: 100; }
+.logo {
+  max-width: 255px; }
+  @media only screen and (max-width: 1200px) {
+    .logo {
+      max-width: 245.5px; } }
   @media only screen and (max-width: 992px) {
-    .viget-telegram {
-      width: 80px;
-      height: 80px; } }
-  @media only screen and (max-width: 992px) {
-    .viget-telegram {
-      right: 5%; } }
+    .logo {
+      max-width: 211.5px; } }
+  @media only screen and (max-width: 768px) {
+    .logo {
+      max-width: 157.5px; } }
+  @media only screen and (max-width: 576px) {
+    .logo {
+      max-width: 250px; } }
+
+.telega-icon {
+  max-width: 49px; }
+
+.open-menu-icon {
+  max-width: 49px; }
 
 .hidden-menu {
   margin-top: 30px;
@@ -547,7 +553,6 @@ button {
       margin-top: 20px; } }
 
 .feature-icon {
-  max-width: 85px;
   max-height: 87px; }
 
 .reasons-container {
@@ -635,25 +640,25 @@ button {
 .social-icon:nth-child(1) div {
   background-image: url(../img/Telega.svg); }
   .social-icon:nth-child(1) div:hover {
-    background-image: url(../img/ColorTelega.svg);
+    background-image: url(../img/ColorTelega.svg) !important;
     opacity: 1; }
 
 .social-icon:nth-child(2) div {
   background-image: url(../img/Twitter.svg); }
   .social-icon:nth-child(2) div:hover {
-    background-image: url(../img/ColorTw.svg);
+    background-image: url(../img/ColorTw.svg) !important;
     opacity: 1; }
 
 .social-icon:nth-child(3) div {
   background-image: url(../img/Facebook.svg); }
   .social-icon:nth-child(3) div:hover {
-    background-image: url(../img/ColorFb.svg);
+    background-image: url(../img/ColorFb.svg) !important;
     opacity: 1; }
 
 .social-icon:nth-child(4) div {
   background-image: url(../img/BiTalk.svg); }
   .social-icon:nth-child(4) div:hover {
-    background-image: url(../img/ColorBiTalk.svg);
+    background-image: url(../img/ColorBiTalk.svg) !important;
     opacity: 1; }
 
 .social-icon:nth-child(5) div {
@@ -661,13 +666,13 @@ button {
   height: 53px;
   background-image: url(../img/Medium.svg); }
   .social-icon:nth-child(5) div:hover {
-    background-image: url(../img/ColorMedium.svg);
+    background-image: url(../img/ColorMedium.svg) !important;
     opacity: 1; }
 
 .social-icon:nth-child(6) div {
   background-image: url(../img/Git-icon.svg); }
   .social-icon:nth-child(6) div:hover {
-    background-image: url(../img/ColorGit.svg);
+    background-image: url(../img/ColorGit.svg) !important;
     opacity: 1; }
 
 .close {
@@ -702,10 +707,11 @@ button {
 .users-container, .market-container {
   background-image: url("../img/Users_bg.png");
   padding: 50px 80px 165px 0;
-  font-weight: 500;
+  font-weight: 900;
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  font-size: 30px;
+  font-size: 36px;
+  line-height: 1;
   z-index: 1;
   border-top-left-radius: 125px;
   border-top-right-radius: 0px;
@@ -1165,7 +1171,7 @@ button {
     margin: 0; }
   .diagram-text sup {
     font-family: "Montserrat", sans-serif;
-    font-size: 50px;
+    font-size: 59px;
     font-weight: 300;
     color: #fff; }
   .diagram-text p {

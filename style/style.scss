@@ -37,21 +37,26 @@ button{
   }
   
 }
-.viget-telegram{
-  width: 100px;
-  height:100px;
-  position: fixed;
-  top:85%;
-  right:15%;
-  z-index: 100;
-  
-  @include breakpoint-md {
-    width: 80px;
-    height: 80px;
+.logo{
+  max-width: 255px;
+  @include breakpoint-lg {
+    max-width: 245.5px;
   }
   @include breakpoint-md {
-    right:5%;
+    max-width: 211.5px;
   }
+  @include breakpoint-sm {
+    max-width: 157.5px;
+  }
+   @include breakpoint-xs {
+    max-width: 250px;
+  }
+}
+.telega-icon{
+  max-width: 49px;
+}
+.open-menu-icon{
+  max-width: 49px;
 }
 .hidden-menu{
   margin-top: 30px;
@@ -633,7 +638,7 @@ button{
   }
 }
 .feature-icon{
-  max-width: 85px;
+
   max-height: 87px;
 }
 .reasons-container{
@@ -734,7 +739,7 @@ button{
   div{
     background-image: url(../img/Telega.svg);
   &:hover{
-    background-image: url(../img/ColorTelega.svg);
+    background-image: url(../img/ColorTelega.svg) !important;
     opacity: 1;
   }
   }
@@ -744,7 +749,7 @@ button{
   div{
     background-image: url(../img/Twitter.svg);
   &:hover{
-    background-image: url(../img/ColorTw.svg);
+    background-image: url(../img/ColorTw.svg) !important;
     opacity: 1;
   }
   }
@@ -753,7 +758,7 @@ button{
   div{
     background-image: url(../img/Facebook.svg);
   &:hover{
-    background-image: url(../img/ColorFb.svg);
+    background-image: url(../img/ColorFb.svg) !important;
     opacity: 1;
   }
   }
@@ -762,7 +767,7 @@ button{
   div{
     background-image: url(../img/BiTalk.svg);
   &:hover{
-    background-image: url(../img/ColorBiTalk.svg);
+    background-image: url(../img/ColorBiTalk.svg) !important;
     opacity: 1;
   }
   }
@@ -774,7 +779,7 @@ button{
     background-image: url(../img/Medium.svg);
 
   &:hover{
-    background-image: url(../img/ColorMedium.svg);
+    background-image: url(../img/ColorMedium.svg) !important;
     opacity: 1;
   }
   }
@@ -783,7 +788,7 @@ button{
   div{
     background-image: url(../img/Git-icon.svg);
   &:hover{
-    background-image: url(../img/ColorGit.svg);
+    background-image: url(../img/ColorGit.svg) !important;
     opacity: 1;
   }
   }
@@ -829,10 +834,11 @@ button{
    
   background-image: url("../img/Users_bg.png");
   padding:50px 80px 165px 0;
-  font-weight: 500;
+  font-weight: 900;
   font-family: $font;
   color:#fff;
-  font-size: 30px;
+  font-size: 36px;
+  line-height: 1;
   z-index: 1;
   border-top-left-radius: 125px;
   border-top-right-radius: 0px;
@@ -1344,7 +1350,7 @@ button{
   }
   sup{
     font-family: $font;
-    font-size: 50px;
+    font-size: 59px;
     font-weight: 300;
     color: #fff;
   }
