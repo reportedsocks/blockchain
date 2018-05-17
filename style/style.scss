@@ -1107,7 +1107,18 @@ button{
 .explain-row-md{
   margin-top: 30px;
 }
-
+.token-icon{
+  max-width: 145px;
+}
+.token-hor-line{
+  max-width: 320px;
+}
+.token-miner-white{
+  max-width: 145px;
+}
+.token-author{
+  max-width: 145px;
+}
 .token-container{
   @extend.description-container;
   margin-top: -125px;
