@@ -19,6 +19,11 @@ $font: 'Montserrat', sans-serif;
     @content;
   }
 }
+@mixin breakpoint-320{
+  @media only screen and (max-width:325px){
+    @content;
+  }
+}
 body{
   font-family: $font !important;
 }
@@ -51,12 +56,21 @@ button{
    @include breakpoint-xs {
     max-width: 250px;
   }
+  @include breakpoint-320 {
+    max-width: 122px;
+  }
 }
 .telega-icon{
   max-width: 49px;
+  @include breakpoint-320 {
+    max-width: 21px;
+  }
 }
 .open-menu-icon{
   max-width: 49px;
+  @include breakpoint-320 {
+    max-width: 21px;
+  }
 }
 .hidden-menu{
   margin-top: 30px;
@@ -1109,15 +1123,27 @@ button{
 }
 .token-icon{
   max-width: 145px;
+  @include breakpoint-320 {
+    max-width: 61px;
+  }
 }
 .token-hor-line{
   max-width: 320px;
+  @include breakpoint-320 {
+    max-width: 152px;
+  }
 }
 .token-miner-white{
   max-width: 145px;
+  @include breakpoint-320 {
+    max-width: 61px;
+  }
 }
 .token-author{
   max-width: 145px;
+  @include breakpoint-320 {
+    max-width: 61px;
+  }
 }
 .token-container{
   @extend.description-container;

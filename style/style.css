@@ -29,12 +29,21 @@ button {
   @media only screen and (max-width: 576px) {
     .logo {
       max-width: 250px; } }
+  @media only screen and (max-width: 325px) {
+    .logo {
+      max-width: 122px; } }
 
 .telega-icon {
   max-width: 49px; }
+  @media only screen and (max-width: 325px) {
+    .telega-icon {
+      max-width: 21px; } }
 
 .open-menu-icon {
   max-width: 49px; }
+  @media only screen and (max-width: 325px) {
+    .open-menu-icon {
+      max-width: 21px; } }
 
 .hidden-menu {
   margin-top: 30px;
@@ -964,15 +973,27 @@ button {
 
 .token-icon {
   max-width: 145px; }
+  @media only screen and (max-width: 325px) {
+    .token-icon {
+      max-width: 61px; } }
 
 .token-hor-line {
   max-width: 320px; }
+  @media only screen and (max-width: 325px) {
+    .token-hor-line {
+      max-width: 152px; } }
 
 .token-miner-white {
   max-width: 145px; }
+  @media only screen and (max-width: 325px) {
+    .token-miner-white {
+      max-width: 61px; } }
 
 .token-author {
   max-width: 145px; }
+  @media only screen and (max-width: 325px) {
+    .token-author {
+      max-width: 61px; } }
 
 .token-container {
   margin-top: -125px;
