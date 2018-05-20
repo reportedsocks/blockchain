@@ -1,10 +1,5 @@
-if (/ip(hone|od)|ipad/i.test(navigator.userAgent)) {
-           $("body").css ("cursor", "pointer");
-        }
+
 $( document ).ready(function() {
-
-//pre-load icons
-
 //switch percantage in distribution block
 var groupToRemove;
 $('#token-bttn').on("click",function(){
@@ -930,7 +925,7 @@ var scrollOff =false;
   	
   	$('.fixed-header').removeClass('blue');
   	$('.hidden-menu').fadeIn(400);
-  	$('.header-menu-icon').html('<img src="img/Close.svg">');
+  	$('.header-menu-icon').html('<img class="open-menu-icon" src="img/Close.png">');
   	$('.fixed-header').addClass('bg-linear');
   	menuOffset = $(this).offset();
   	console.log(menuOffset);
@@ -947,7 +942,7 @@ var scrollOff =false;
   }else{
   	$('.fixed-header').removeClass('h-100');
   	$('.hidden-menu').fadeOut(50);
-  	$('.header-menu-icon').html('<img src="img/menu-icon.svg">');
+  	$('.header-menu-icon').html('<img class="open-menu-icon" src="img/menu-icon.png">');
   	$('.fixed-header').removeClass('bg-linear');
   	console.log(menuOffset);
 
@@ -967,7 +962,7 @@ var scrollOff =false;
   $('.menu-button').on('click',function(){
   	$('.fixed-header').removeClass('h-100');
   	$('.hidden-menu').fadeOut(50);
-  	$('.header-menu-icon').html('<img src="img/menu-icon.svg">');
+  	$('.header-menu-icon').html('<img class="open-menu-icon" src="img/menu-icon.png">');
   	$('.fixed-header').removeClass('bg-linear');
   	$('.fixed-header').addClass('blue');
   	$('.fixed-header').css({
@@ -1031,6 +1026,4 @@ var scrollOff =false;
 
  });
 	
-
- alert('js works');
 
