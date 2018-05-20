@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+	if (/ip(hone|od)|ipad/i.test(navigator.userAgent)) {
+           $("body").css ("cursor", "pointer");
+        }
 //pre-load icons
 $('.social-icon:nth-child(1) div').css({backgroundImage:"url(../img/ColorTelega.svg)"});
 $('.social-icon:nth-child(2) div').css({backgroundImage:"url(../img/ColorTw.svg)"});
@@ -1043,7 +1046,4 @@ var scrollOff =false;
 	
 
  alert('js works');
-
-		
-
 
