@@ -16,31 +16,22 @@ button {
       padding-bottom: 50px; } }
 
 .logo {
-  max-width: 255px; }
-  @media only screen and (max-width: 1200px) {
-    .logo {
-      max-width: 245.5px; } }
-  @media only screen and (max-width: 992px) {
-    .logo {
-      max-width: 211.5px; } }
-  @media only screen and (max-width: 768px) {
-    .logo {
-      max-width: 157.5px; } }
-  @media only screen and (max-width: 576px) {
-    .logo {
-      max-width: 250px; } }
-  @media only screen and (max-width: 325px) {
-    .logo {
-      max-width: 122px; } }
+  max-width: 255px;
+  width: 100%;
+  height: auto; }
 
 .telega-icon {
-  max-width: 49px; }
+  max-width: 49px;
+  width: 100%;
+  height: auto; }
   @media only screen and (max-width: 325px) {
     .telega-icon {
       max-width: 21px; } }
 
 .open-menu-icon {
-  max-width: 49px; }
+  max-width: 49px;
+  width: 100%;
+  height: auto; }
   @media only screen and (max-width: 325px) {
     .open-menu-icon {
       max-width: 21px; } }
@@ -199,6 +190,9 @@ button {
   font-weight: 900;
   margin-bottom: 0;
   line-height: 1; }
+  @media only screen and (max-width: 325px) {
+    .slogan-text {
+      top: 52%; } }
   @media only screen and (max-width: 576px) {
     .slogan-text {
       color: #fff;
@@ -210,7 +204,10 @@ button {
         height: 5px;
         background-color: #F5AA00;
         left: 15px;
-        top: 55%; } }
+        top: 52%; } }
+  @media only screen and (max-width: 325px) {
+    .slogan-text:after {
+      top: 46%; } }
 
 .header-after-line:after {
   content: '';
@@ -417,13 +414,17 @@ button {
   border-radius: 10px;
   padding: 16px 0px;
   width: 46%;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
   background: -webkit-gradient(linear, left top, right top, from(#FC3D00), to(#F5AA00));
   background: -webkit-linear-gradient(left, #FC3D00, #F5AA00);
   background: -o-linear-gradient(left, #FC3D00, #F5AA00);
-  background: linear-gradient(to right, #FC3D00, #F5AA00); }
+  background: linear-gradient(to right, #FC3D00, #F5AA00);
+  background-size: 200%;
+  background-position-x: 60%; }
+  .join-bttn:hover {
+    background-position-x: 0%; }
   .join-bttn:focus {
     outline: none; }
   @media only screen and (max-width: 1200px) {
@@ -516,18 +517,25 @@ button {
   border: none;
   border-radius: 10px;
   padding: 10px 55px;
-  background: -webkit-gradient(linear, left top, right top, from(#FA940A), to(#F5CF00));
-  background: -webkit-linear-gradient(left, #FA940A, #F5CF00);
-  background: -o-linear-gradient(left, #FA940A, #F5CF00);
-  background: linear-gradient(to right, #FA940A, #F5CF00);
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  background: -webkit-gradient(linear, left top, right top, from(#FC3D00), to(#F5AA00));
+  background: -webkit-linear-gradient(left, #FC3D00, #F5AA00);
+  background: -o-linear-gradient(left, #FC3D00, #F5AA00);
+  background: linear-gradient(to right, #FC3D00, #F5AA00);
+  background-size: 200%;
+  background-position-x: 60%; }
+  .promo-bttn button:hover, .promo-bttn-menu button:hover, .promo-bttn-header button:hover {
+    background-position-x: 0%; }
   .promo-bttn button:focus, .promo-bttn-menu button:focus, .promo-bttn-header button:focus {
     outline: none; }
   @media only screen and (max-width: 576px) {
     .promo-bttn button, .promo-bttn-menu button, .promo-bttn-header button {
       font-size: 17px;
       margin-bottom: 15px;
-      padding: 13px 55px;
+      padding: 13px 48px;
       background: #F69F00;
       background-image: url("../img/join-wl-icon.png");
       background-image: url("../img/join-wl-icon.png"), -webkit-gradient(linear, left top, right top, from(#FA5B00), to(#F5AA00));
@@ -536,7 +544,9 @@ button {
       background-image: url("../img/join-wl-icon.png"), linear-gradient(to right, #FA5B00, #F5AA00);
       background-repeat: no-repeat;
       background-position-y: center;
-      background-position-x: 90%; } }
+      background-position-x: 90%; }
+      .promo-bttn button:hover, .promo-bttn-menu button:hover, .promo-bttn-header button:hover {
+        background-position-x: 90%; } }
 
 .promo-bttn-header button {
   margin-bottom: 0;
@@ -562,7 +572,12 @@ button {
       margin-top: 20px; } }
 
 .feature-icon {
+  height: auto;
   max-height: 87px; }
+  @media only screen and (max-width: 768px) {
+    .feature-icon {
+      width: 100%;
+      max-width: 67px; } }
 
 .reasons-container {
   color: #112A7C;
@@ -603,7 +618,9 @@ button {
       margin-left: -1px; } }
 
 .reasons-icon {
-  max-width: 93px; }
+  max-width: 93px;
+  width: 100%;
+  height: auto; }
   @media only screen and (max-width: 768px) {
     .reasons-icon {
       max-width: 80px; } }
@@ -621,6 +638,9 @@ button {
     background-color: rgba(255, 255, 255, 0.3); }
   .whitepaper-bttn:focus, .whitepaper-bttn-menu:focus, .telegram-bttn:focus, .join-telegram-bttn:focus {
     outline: none; }
+  @media only screen and (max-width: 576px) {
+    .whitepaper-bttn, .whitepaper-bttn-menu, .telegram-bttn, .join-telegram-bttn {
+      padding: 12px 68px; } }
 
 .adoptive-width {
   padding: 13px 95px;
@@ -971,29 +991,21 @@ button {
 .explain-row-md, .blockchain-row-md {
   margin-top: 30px; }
 
-.token-icon {
-  max-width: 145px; }
+.token-icon, .token-miner-white, .token-author {
+  max-width: 145px;
+  width: 100%;
+  height: auto; }
   @media only screen and (max-width: 325px) {
-    .token-icon {
+    .token-icon, .token-miner-white, .token-author {
       max-width: 61px; } }
 
 .token-hor-line {
-  max-width: 320px; }
+  max-width: 320px;
+  width: 100%;
+  height: auto; }
   @media only screen and (max-width: 325px) {
     .token-hor-line {
       max-width: 152px; } }
-
-.token-miner-white {
-  max-width: 145px; }
-  @media only screen and (max-width: 325px) {
-    .token-miner-white {
-      max-width: 61px; } }
-
-.token-author {
-  max-width: 145px; }
-  @media only screen and (max-width: 325px) {
-    .token-author {
-      max-width: 61px; } }
 
 .token-container {
   margin-top: -125px;
@@ -1190,11 +1202,20 @@ button {
 
 .distribution-svg-container {
   position: relative;
-  top: 15%; }
+  top: 15%;
+  width: 100%;
+  height: 100%; }
+
+.diagram-svg {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 0;
+  left: 0; }
 
 .diagram-text {
   position: absolute;
-  top: 25%;
+  top: 21%;
   left: 30%; }
   .diagram-text h1 {
     font-family: "Montserrat", sans-serif;
@@ -1385,7 +1406,8 @@ button {
 @media only screen and (max-width: 576px) {
   .member-icon-image {
     width: 80px;
-    height: 80px; } }
+    height: 80px;
+    min-width: 80px; } }
 
 .team-row {
   margin-top: 70px; }
@@ -1764,6 +1786,9 @@ button {
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 25px; }
+  @media only screen and (max-width: 576px) {
+    .telegram-bttn, .join-telegram-bttn {
+      padding: 12px 100px; } }
 
 .join-telegram-bttn {
   padding-right: 30px;
